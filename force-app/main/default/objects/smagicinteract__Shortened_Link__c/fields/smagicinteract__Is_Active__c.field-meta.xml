@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Is_Active__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF((CreatedDate = LastModifiedDate), 
+            AND(
+                IF(ISPICKVAL(smagicinteract__State__c, &apos;Success&apos;), true, false),
+                IF((ISNULL(smagicinteract__Expiry_Date__c)
+                    || NOW() &lt;= DATETIMEVALUE(smagicinteract__Expiry_Date__c)),
+                    true,
+                    false)
+                ), 
+            IF((ISNULL(smagicinteract__Expiry_Date__c)
+                || NOW() &lt;= DATETIMEVALUE(smagicinteract__Expiry_Date__c)),
+                true,
+                false)
+        )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Active</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

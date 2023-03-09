@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>smagicinteract__Conversation_Initiator__c</name>
+    <picklistValues>
+        <masterLabel>Initiated by Agent</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Initiated by Recipient</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

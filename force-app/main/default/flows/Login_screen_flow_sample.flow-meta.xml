@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Login screen flow sample {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Login screen flow sample</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Login_Message_Notification</name>
+        <label>Login Message Notification</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>LoginMessage</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(186, 8, 8); font-family: sans-serif;&quot;&gt;Deployment Message Today &lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong style=&quot;color: rgb(186, 8, 8); font-family: sans-serif;&quot;&gt;Components to be deployed&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;color: rgb(186, 8, 8); font-family: sans-serif;&quot;&gt;Custom objects to be deployed&lt;/strong&gt;&lt;span style=&quot;font-size: 18px; font-family: sans-serif; color: rgb(234, 13, 13);&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Login_Message_Notification</targetReference>
+        </connector>
+    </start>
+    <status>Obsolete</status>
+</Flow>

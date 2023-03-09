@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Residency_Status__c</name>
+    <picklistValues>
+        <masterLabel>Australian citizen</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permanent resident</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temporary Visa</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

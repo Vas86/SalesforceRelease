@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Action_on_Lookup</fullName>
+    <columns>NAME</columns>
+    <columns>smagicinteract__lookupFound__c</columns>
+    <columns>smagicinteract__lookupNotFound__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>Action on Incoming</label>
+</ListView>

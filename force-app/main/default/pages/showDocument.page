@@ -1,0 +1,26 @@
+<apex:page controller="ShowDocumentController">
+    <apex:outputPanel rendered="{!isImage}">
+        <img src="{!documentUrl}" id="currentImg" alt="Image not Available" />
+        <center>
+            <a href="{!documentUrl}" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px 14px;">
+                Download File
+            </a>
+        </center>
+    </apex:outputPanel>
+    <apex:outputPanel rendered="{!isHTML}">
+        <!--<img src="{!documentUrl}" id="currentImg" alt="Image not Available" />-->
+        <iframe src="{!documentUrl}" title="" style="height: {!height}px; width: {!width}px">
+        </iframe>
+        <center>
+            <a href="data:text/html,{!documentUrl}" download="test" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px 14px;">
+                Download File
+            </a>
+        </center>
+    </apex:outputPanel>
+    <apex:outputPanel rendered="{!isPdf}">
+        <iframe src="{!documentUrl}" title="" style="height: {!height}px; width: {!width}px">
+        </iframe>
+        
+    </apex:outputPanel>
+    
+</apex:page>

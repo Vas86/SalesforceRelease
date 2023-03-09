@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assessment_Quality__c</fullName>
+    <externalId>false</externalId>
+    <label>Assessment Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>To Be Assessed</fullName>
+                <default>false</default>
+                <label>To Be Assessed</label>
+            </value>
+            <value>
+                <fullName>At Verification</fullName>
+                <default>false</default>
+                <label>At Verification</label>
+            </value>
+            <value>
+                <fullName>Verified</fullName>
+                <default>false</default>
+                <label>Verified</label>
+            </value>
+            <value>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <label>Low</label>
+            </value>
+            <value>
+                <fullName>Medium</fullName>
+                <default>false</default>
+                <label>Medium</label>
+            </value>
+            <value>
+                <fullName>High</fullName>
+                <default>false</default>
+                <label>High</label>
+            </value>
+            <value>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+                <label>Urgent</label>
+            </value>
+            <value>
+                <fullName>Ready To Lodge</fullName>
+                <default>false</default>
+                <label>Ready To Lodge</label>
+            </value>
+            <value>
+                <fullName>Lodged</fullName>
+                <default>false</default>
+                <label>Lodged</label>
+            </value>
+            <value>
+                <fullName>Conditionally Approved</fullName>
+                <default>false</default>
+                <label>Conditionally Approved</label>
+            </value>
+            <value>
+                <fullName>-</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

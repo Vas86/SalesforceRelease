@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CARS24_Email_1_Awaiting_Documents_Automated_Email</fullName>
+        <description>CARS24 Email 1 Awaiting Documents - Automated Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/CARS24_Awaiting_Documents_email_2_2A_2_on_Flow_Chart_1647233355254</template>
+    </alerts>
+    <alerts>
+        <fullName>CARS24_Email_1_Under_Review_Automated_Email</fullName>
+        <description>CARS24, Email 1 Under Review - Automated Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/CARS24_Under_Review_Email_1_3A_1_on_Flow_chart_1647298554413</template>
+    </alerts>
+    <alerts>
+        <fullName>CARS24_Email_2_Awaiting_Documents_Automated_Email</fullName>
+        <description>CARS24 Email 2 Awaiting Documents - Automated Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/CARS24_Status_Awaiting_Documents_Email_3_2A_3_on_Flow_Chart_1647235429902</template>
+    </alerts>
+    <alerts>
+        <fullName>CARS24_Email_2_Under_Review_Automated_Email</fullName>
+        <description>CARS24, Email 2 Under Review - Automated Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/CARS24_Under_Review_Email_2_3A_2_on_Flow_chart_1647308133866</template>
+    </alerts>
+    <alerts>
+        <fullName>CARS24_Email_3_Awaiting_Documents_Automated_Email</fullName>
+        <description>CARS24 Email 3 Awaiting Documents - Automated Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/CARS24_Awaiting_Documents_Email_4_2A_4_on_Flow_Chart_1647298219074</template>
+    </alerts>
+    <alerts>
+        <fullName>CARS24_Email_3_Under_Review_Automated_Email</fullName>
+        <description>CARS24, Email 3 Under Review - Automated Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/CARS24_Under_Review_Email_3_3A_3_on_Flow_chart_1647308745249</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_notification_when_Status_is_Under_Review_3A</fullName>
+        <description>Send email notification when Status is Under Review (3A-1)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/COLD_ASSESSMENT_FOLLOW_UP_3A_on_Flow_chart_1640132780175</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_customer_once_Case_Status_is</fullName>
+        <description>Send email to customer once Case Status is Awaiting Documentation (1A)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Thanks_for_your_application_AUTOMATED_EMAIL_1A_on_Flow_Chart_1640133409743</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_customer_once_Case_Status_is_Awaiting_Documentation_2A_1</fullName>
+        <description>Send email to customer once Case Status is Awaiting Documentation (2A-1)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Doc_Upload_Chasing_Follow_Up_2A_1_on_Flow_Chart_1642732397019</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_customer_once_Case_Status_is_Awaiting_Documentation_2A_2</fullName>
+        <description>Send email to customer once Case Status is Awaiting Documentation 2A-2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Doc_Upload_Chasing_Follow_Up_2A_2_on_Flow_Chart_1642729063418</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_customer_once_Case_Status_is_Awaiting_Documentation_for_24h_48h_72</fullName>
+        <description>Send email to customer once Case Status is Awaiting Documentation 2A-3</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Doc_Upload_Chasing_Follow_Up_2A_on_Flow_Chart_1640132547346</template>
+    </alerts>
+    <alerts>
+        <fullName>Under_Review_Email_alert_3A_1</fullName>
+        <description>Under Review Email alert 3A-1</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/COLD_ASSESSMENT_FOLLOW_UP_3A_on_Flow_chart_1640132780175</template>
+    </alerts>
+    <alerts>
+        <fullName>Under_Review_Email_alert_3A_2</fullName>
+        <description>Under Review Email alert 3A-2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/COLD_ASSESSMENT_FOLLOW_UP_3A_2_on_Flow_chart_1642732740877</template>
+    </alerts>
+    <alerts>
+        <fullName>Under_Review_Email_alert_3A_3</fullName>
+        <description>Under Review Email alert 3A-3</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/COLD_ASSESSMENT_FOLLOW_UP_3A_3_on_Flow_chart_1642732913178</template>
+    </alerts>
+    <alerts>
+        <fullName>X30_minute_warning_before_Initial_Verification_Expires</fullName>
+        <description>30 minute warning before Initial Verification Expires</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>contact@driva.com.au</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Assign_to_Verification_Agent</fullName>
+        <description>If Verification agent is empty assign to Andrew</description>
+        <field>Verification_Agent__c</field>
+        <lookupValue>andrew@driva.com.au</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign to Verification Agent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Assign_to_case_owner</fullName>
+        <field>OwnerId</field>
+        <lookupValue>vasu@driva.com.au</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign to case owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Task_Owner</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Sales_Service_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Task Owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Notify S%26S of Follow up</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Set_follow_up_date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Received</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Follow_Up_Due</name>
+                <type>Task</type>
+            </actions>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Send email notification to customer%2C once Case Status is Awaiting Documentation</fullName>
+        <actions>
+            <name>Send_email_to_customer_once_Case_Status_is</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Awaiting Documents</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Sub Status to Follow Up date Set</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Set_follow_up_date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Follow_Up_Due</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Set_follow_up_date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Follow Up Due</subject>
+    </tasks>
+</Workflow>

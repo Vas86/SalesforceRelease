@@ -1,0 +1,14 @@
+.shift{
+	position: relative;
+    top: -16px;
+}
+.info {
+	border-color: #2196F3;
+	color: dodgerblue
+  }
+.pointer{
+	cursor: pointer;
+}
+.slds-p-left_x-small{
+	color: royalblue
+}

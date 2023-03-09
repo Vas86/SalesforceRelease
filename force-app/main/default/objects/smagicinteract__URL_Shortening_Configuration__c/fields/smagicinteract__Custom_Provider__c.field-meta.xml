@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Custom_Provider__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>If checked, class name provided in &apos;Provider Class Name&apos; would be used for URL Shortening. Leave unchecked to use out of the box URL Shortening functionality.</inlineHelpText>
+    <label>Use Custom Code</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

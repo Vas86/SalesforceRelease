@@ -1,0 +1,22 @@
+.icn-green{
+    --sds-c-icon-color-foreground-default:rgb(171,226,192); 
+   
+ }
+ .icn-yellow{
+    --sds-c-icon-color-foreground-default: rgb(255,244,156); 
+   
+ }
+ .icn-red{
+    --sds-c-icon-color-foreground-default: rgb(248,195,195); 
+   
+ }
+ .panel-header{
+    background-color:black !important; 
+    color:rgb(127,177,153) !important;
+}
+.bootstrap .panel-default{
+   height: 149px !important;
+}
+.bootstrap .panel{
+     margin-bottom: 8px !important;
+}

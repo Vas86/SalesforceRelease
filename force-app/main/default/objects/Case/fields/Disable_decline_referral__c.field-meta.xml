@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_decline_referral__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field in SF to prevent auto referral</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To prevent auto referral</inlineHelpText>
+    <label>Disable decline referral</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

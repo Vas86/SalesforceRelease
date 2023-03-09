@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_Editing_Of_Incorrect_handover</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( $Profile.Name == &apos;System Administrator&apos;  || $Profile.Name == &apos;Manager&apos;, false, IF(NOT(ISPICKVAL(PRIORVALUE(Incorrect_Handover__c), &quot;&quot;)) &amp;&amp;   ISCHANGED(Incorrect_Handover__c) , true, false))</errorConditionFormula>
+    <errorDisplayField>Incorrect_Handover__c</errorDisplayField>
+    <errorMessage>Incorrect Handover cannot be edited.</errorMessage>
+</ValidationRule>

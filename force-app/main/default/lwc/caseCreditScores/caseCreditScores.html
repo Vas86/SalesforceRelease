@@ -1,0 +1,25 @@
+<template>    
+    <div class = "bootstrap">
+        <div class = "row">
+            <div class = "col-sm-12">
+                <div class="panel panel-default" style="position: relative;flex-wrap: wrap">
+                    <div class="panel-heading panel-header"><b>Credit Score</b></div>
+                    <div class="panel-body">
+                        <template if:true={creditScores}>
+                            <template for:each={creditScores} for:item="caseObj">                    
+                                <div style="padding:5px;" key = {caseObj.value}><lightning-icon icon-name="utility:record" alternative-text="Warning!" title="Warning" size="x-small" class={caseObj.class}></lightning-icon><b style="padding:5px;">{caseObj.name}</b>{caseObj.value} </div>                       
+                           </template> 
+                        </template>                
+                    </div>            
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="spinner">
+        <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                </lightning-spinner>
+        </template>
+    </div>
+</template>

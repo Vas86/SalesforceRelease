@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Picklist__c</fullName>
+    <description>This field is used for tagging agents in Custom Notes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used for tagging agents in Custom Notes</inlineHelpText>
+    <label>User Picklist</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alexandra Lindsay-Black</fullName>
+                <default>false</default>
+                <label>Alexandra Lindsay-Black</label>
+            </value>
+            <value>
+                <fullName>Amanda Finn</fullName>
+                <default>false</default>
+                <label>Amanda Finn</label>
+            </value>
+            <value>
+                <fullName>Andrew Grapsas</fullName>
+                <default>false</default>
+                <label>Andrew Grapsas</label>
+            </value>
+            <value>
+                <fullName>Aniket Sharma</fullName>
+                <default>false</default>
+                <label>Aniket Sharma</label>
+            </value>
+            <value>
+                <fullName>Anuj Seth</fullName>
+                <default>false</default>
+                <label>Anuj Seth</label>
+            </value>
+            <value>
+                <fullName>Banke Pandit</fullName>
+                <default>false</default>
+                <label>Banke Pandit</label>
+            </value>
+            <value>
+                <fullName>Boston Le</fullName>
+                <default>false</default>
+                <label>Boston Le</label>
+            </value>
+            <value>
+                <fullName>Brock Dun</fullName>
+                <default>false</default>
+                <label>Brock Dun</label>
+            </value>
+            <value>
+                <fullName>Chanel Cruz</fullName>
+                <default>false</default>
+                <label>Chanel Cruz</label>
+            </value>
+            <value>
+                <fullName>Clinton Rabjohns</fullName>
+                <default>false</default>
+                <label>Clinton Rabjohns</label>
+            </value>
+            <value>
+                <fullName>Dina Heng</fullName>
+                <default>false</default>
+                <label>Dina Heng</label>
+            </value>
+            <value>
+                <fullName>Dinal Perera</fullName>
+                <default>false</default>
+                <label>Dinal Perera</label>
+            </value>
+            <value>
+                <fullName>Driva ㅤ</fullName>
+                <default>false</default>
+                <label>Driva ㅤ</label>
+            </value>
+            <value>
+                <fullName>Edward Khoury</fullName>
+                <default>false</default>
+                <label>Edward Khoury</label>
+            </value>
+            <value>
+                <fullName>Eric Chow</fullName>
+                <default>false</default>
+                <label>Eric Chow</label>
+            </value>
+            <value>
+                <fullName>Eugene Lee</fullName>
+                <default>false</default>
+                <label>Eugene Lee</label>
+            </value>
+            <value>
+                <fullName>Faith Andrews</fullName>
+                <default>false</default>
+                <label>Faith Andrews</label>
+            </value>
+            <value>
+                <fullName>Hagan Crossan</fullName>
+                <default>false</default>
+                <label>Hagan Crossan</label>
+            </value>
+            <value>
+                <fullName>Harry Annear</fullName>
+                <default>false</default>
+                <label>Harry Annear</label>
+            </value>
+            <value>
+                <fullName>Jessica Barillaro</fullName>
+                <default>false</default>
+                <label>Jessica Barillaro</label>
+            </value>
+            <value>
+                <fullName>Joel Mansfield</fullName>
+                <default>false</default>
+                <label>Joel Mansfield</label>
+            </value>
+            <value>
+                <fullName>Kai Wultsch</fullName>
+                <default>false</default>
+                <label>Kai Wultsch</label>
+            </value>
+            <value>
+                <fullName>Lara Peake</fullName>
+                <default>false</default>
+                <label>Lara Peake</label>
+            </value>
+            <value>
+                <fullName>Lyly Luu</fullName>
+                <default>false</default>
+                <label>Lyly Luu</label>
+            </value>
+            <value>
+                <fullName>Maddison Jones</fullName>
+                <default>false</default>
+                <label>Maddison Jones</label>
+            </value>
+            <value>
+                <fullName>Madison Edwards</fullName>
+                <default>false</default>
+                <label>Madison Edwards</label>
+            </value>
+            <value>
+                <fullName>Madison Flavel</fullName>
+                <default>false</default>
+                <label>Madison Flavel</label>
+            </value>
+            <value>
+                <fullName>Matthew Moon</fullName>
+                <default>false</default>
+                <label>Matthew Moon</label>
+            </value>
+            <value>
+                <fullName>Nithan Srinesa</fullName>
+                <default>false</default>
+                <label>Nithan Srinesa</label>
+            </value>
+            <value>
+                <fullName>Phil McCourt</fullName>
+                <default>false</default>
+                <label>Phil McCourt</label>
+            </value>
+            <value>
+                <fullName>Pran Kothari</fullName>
+                <default>false</default>
+                <label>Pran Kothari</label>
+            </value>
+            <value>
+                <fullName>Roland Gonzalez</fullName>
+                <default>false</default>
+                <label>Roland Gonzalez</label>
+            </value>
+            <value>
+                <fullName>Sathvik Hemantharaju</fullName>
+                <default>false</default>
+                <label>Sathvik Hemantharaju</label>
+            </value>
+            <value>
+                <fullName>Scott Montarello</fullName>
+                <default>false</default>
+                <label>Scott Montarello</label>
+            </value>
+            <value>
+                <fullName>Shatabdi Rashed</fullName>
+                <default>false</default>
+                <label>Shatabdi Rashed</label>
+            </value>
+            <value>
+                <fullName>Stephanie Brabante</fullName>
+                <default>false</default>
+                <label>Stephanie Brabante</label>
+            </value>
+            <value>
+                <fullName>Trent Nathan</fullName>
+                <default>false</default>
+                <label>Trent Nathan</label>
+            </value>
+            <value>
+                <fullName>Vasu V</fullName>
+                <default>false</default>
+                <label>Vasu V</label>
+            </value>
+            <value>
+                <fullName>Wayne Dawson</fullName>
+                <default>false</default>
+                <label>Wayne Dawson</label>
+            </value>
+            <value>
+                <fullName>William Hoang</fullName>
+                <default>false</default>
+                <label>William Hoang</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

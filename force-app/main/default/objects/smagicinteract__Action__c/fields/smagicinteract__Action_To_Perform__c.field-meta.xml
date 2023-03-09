@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Action_To_Perform__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the Action type to perform The type can be: Create Lead or Case or Task.</description>
+    <externalId>false</externalId>
+    <label>Action To Perform</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Convert Lead</fullName>
+                <default>false</default>
+                <label>Convert Lead</label>
+            </value>
+            <value>
+                <fullName>Create Record</fullName>
+                <default>false</default>
+                <label>Create Record</label>
+            </value>
+            <value>
+                <fullName>Edit Record</fullName>
+                <default>false</default>
+                <label>Edit Record</label>
+            </value>
+            <value>
+                <fullName>Open Url</fullName>
+                <default>false</default>
+                <label>Open Url</label>
+            </value>
+            <value>
+                <fullName>Post To Chatter</fullName>
+                <default>false</default>
+                <label>Post To Chatter</label>
+            </value>
+            <value>
+                <fullName>View Record</fullName>
+                <default>false</default>
+                <label>View Record</label>
+            </value>
+            <value>
+                <fullName>ConvertLead</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ConvertLead</label>
+            </value>
+            <value>
+                <fullName>OpenUrl</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OpenUrl</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

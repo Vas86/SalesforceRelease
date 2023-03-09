@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__User__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field contains the user ID that selected List View or Converse App filter in Converse Desk.</description>
+    <externalId>false</externalId>
+    <label>User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Converse_Desk_Recently_Used_Filters</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

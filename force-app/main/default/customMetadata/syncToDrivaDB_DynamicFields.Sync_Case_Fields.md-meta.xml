@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Sync Case Fields</label>
+    <protected>false</protected>
+    <values>
+        <field>syncFields__c</field>
+        <value xsi:type="xsd:string">Status,Partner_Account__c,Source__c,Credit_Agent__c,Personal_Loan__c,ContactId,Lender__c,Asset_Type__c,Loan_Class__c,Loan_Type__c,Vehicle_Price__c,Cash_Deposit__c,Monthly_Fees__c,Interest_rate__c,Origination_fee__c,Brokerage_fee__c,Monthly_repayment__c,Comparison_rate__c,Buying_a_Car_From__c,Car_Condition__c,Vehicle_year__c,Vehicle_make__c,Vehicle_model__c,Dealer_Name__c,Dealer_Contact_Name__c,Dealer_Phone_Number__c,Dealer_Email__c,Balloon_Payment__c,Relationship_Status__c,dependents__c,Job_Title__c,Time_in_Current_Employment_Years__c,Time_in_Current_Employment_Months__c,Current_Employer__c,Previous_Employer__c,Previous_Loan_Term_Remaining__c,Cash__c,Home_Contents__c,Existing_vehicles__c,Investments__c,Any_Other_Assets__c,Rent_Mortgage_per_Month__c,Food_Per_Month__c,Utilities_Per_Month__c,Entertainment_Per_Month__c,Health_Education_Per_Month__c,Transport_Per_Month__c,Others_Per_Month__c,expenses_Rent_Percentage__c,Total_adults_listed_on_the_agreement__c,Loan_ID__c,Help_Find_New_Car__c,Loan_Uuid__c,New_Loan_Years__c,Previous_Employment_Duration_Years__c,Previous_Employment_Duration_Months__c,Comm_Name__c,ABN_Number__c,Comm_Industry__c,Comm_Number_Of_Directors__c,Comm_Company_Type__c,Comm_Trust_Name__c,Comm_Trustee_Name__c,Balloon_payment_percentage__c,Loan_Term__c,Previous_Monthly_Repayment__c,Primary_Income_Amount__c,Primary_Income_Frequency__c,Partner_Income_Amount__c,Partner_Income_Frequency__c,New_Loan_Balloon__c,Currently_on_Probation__c,Employment_Start_Date__c,Business_Duration__c,Business_ABN__c,Business_GST__c,Additional_Information__c,Settlement_Agent__c,All_Documents_Provided__c,Warranty_Financed__c,Is_Finance_First__c,Checkout_Date__c,LastModifiedDate,Partner_Employment_Status__c,Trade_in_Value__c,Trade_in_Finance_owing__c,Purchase_Intent__c,Insurance_Received__c,CGU_insured__c,Vehicle_Referral__c,Successful_Vehicle_Referral__c,Disable_decline_referral__c,Referral_Outcome__c</value>
+    </values>
+    <values>
+        <field>syncObject__c</field>
+        <value xsi:type="xsd:string">Case</value>
+    </values>
+</CustomMetadata>

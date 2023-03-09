@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Short_Link__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Shortened Link</label>
+    <referenceTo>smagicinteract__Shortened_Link__c</referenceTo>
+    <relationshipLabel>Template Short Link Maps</relationshipLabel>
+    <relationshipName>Template_Short_Link_Maps</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

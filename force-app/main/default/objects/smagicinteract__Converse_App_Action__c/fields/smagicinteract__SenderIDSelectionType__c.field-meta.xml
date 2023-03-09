@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__SenderIDSelectionType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the value of the sender ID selection type. The value can be: Auto or Fixed.</description>
+    <externalId>false</externalId>
+    <label>SenderID Selection Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Auto</fullName>
+                <default>false</default>
+                <label>Auto</label>
+            </value>
+            <value>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+                <label>Fixed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

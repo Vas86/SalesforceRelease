@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Favourite__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field contains the value of the message as favorite if the user selects this field.</description>
+    <externalId>false</externalId>
+    <label>Favourite</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

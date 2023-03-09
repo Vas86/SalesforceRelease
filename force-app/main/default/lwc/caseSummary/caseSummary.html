@@ -1,0 +1,38 @@
+<template>
+    <div class = "bootstrap">
+        <div class="panel panel-default " style="flex-wrap: wrap" >        
+            <div class="panel-heading panel-header"><b>{accName}</b></div>
+            <div  class="panel-body">
+                <div class="row">
+                    <div class="col-sm-4" >
+                        <template if:true={caseDetails} for:each={caseDetails} for:item="caseObj">
+                            <div key = {caseObj} style = "padding:5px;"><b>Loan Amount : </b>{caseObj.Loan_Amount__c} </div>
+                            <div key = {caseObj} style = "padding:5px;"><b>Lender : </b>{caseObj.Lender__c} </div>
+                            <div key = {caseObj} style = "padding:5px;"><b>Asset Type : </b> {caseObj.asset_type }</div>                                
+                        </template> 
+                    </div>
+                    <div class="col-sm-4">
+                        <template if:true={caseDetails} for:each={caseDetails} for:item="caseObj">
+                            <div key = {caseObj} style = "padding:5px;"><b>Vehicle Year :  </b>{caseObj.vehicle_year} </div>
+                            <div key = {caseObj} style = "padding:5px;"><b>Buying From : </b> {caseObj.buying_car}</div>
+                            <div key = {caseObj} style = "padding:5px;"><b>Assessment Quality : </b>{caseObj.Assessment_Quality__c}</div>
+                        </template> 
+                    </div>
+                    <div class="col-sm-4">
+                        <template if:true={caseDetails} for:each={caseDetails} for:item="caseObj">
+                            <div key = {caseObj} style = "padding:5px;"><b>Lead Source : </b>{caseObj.lead_source} </div>
+                            <div key = {caseObj} style = "padding:5px;"><b>Employment Status : </b> {caseObj.Employment_Status__c }</div>
+                            <div key = {caseObj} style = "padding:5px;"><b>Relationship Status : </b>{caseObj.Relationship_Status__c } </div>
+                        </template> 
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="spinner">
+        <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                </lightning-spinner>
+        </template>
+    </div>
+</template>

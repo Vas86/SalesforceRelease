@@ -1,0 +1,4 @@
+.visibleLines {
+    --sds-c-textarea-sizing-min-height: var(--rta-visiblelines);
+    
+}

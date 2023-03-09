@@ -1,0 +1,11 @@
+<aura:component controller="DrivaLenderQuotesController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="loanUuid" type="String" />
+    <aura:attribute name="token" type="String" />
+    <aura:attribute name="env" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:if isTrue="{!and(not(empty(v.loanUuid)), not(empty(v.token)), not(empty(v.env)))}">
+        <iframe height="3500px" id="theIframe" name="theIframe" src="{!'https://'+v.env+'.driva.com.au/externalRateEstimate/'+v.loanUuid+'?token='+v.token}" width="100%"></iframe>
+    </aura:if>
+
+</aura:component>

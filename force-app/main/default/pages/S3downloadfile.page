@@ -1,0 +1,34 @@
+<apex:page controller="S3downloadfileapex">    
+    
+    <apex:form >
+        
+        <apex:outputPanel id="showmsg">
+        	<apex:pageMessages ></apex:pageMessages>
+        </apex:outputPanel>
+        
+        <apex:actionFunction action="{!manageFile}" name="methodOneInJavascript" rerender="showmsg"  >
+            <apex:param name="firstParam" assignTo="{!isPreview}" value="" />
+        </apex:actionFunction>
+        
+        <apex:commandButton onclick="previewjsfunction(); return false;" id="previewbtn" value="Preview" style="height: 34px; width: 70px; font-size: medium; margin-top: 1.5%;"/>
+        <apex:commandButton onclick="downloadjsfunction(); return false;" id="downloadbtn" value="Download" style="height: 34px; width: px; font-size: medium; margin-top: 1.5%;"/>
+    </apex:form>
+    
+    <script type="text/javascript">
+    
+    
+    function previewjsfunction() {
+        //alert('previewjsfunction clicked');  
+        methodOneInJavascript(true);
+        //alert('@@ after action function');        
+    }
+    
+    function downloadjsfunction() {
+        //window.location.reload();
+        //alert('downloadjsfunction clicked');  
+        methodOneInJavascript(false);
+    }
+    
+    </script>
+    
+</apex:page>

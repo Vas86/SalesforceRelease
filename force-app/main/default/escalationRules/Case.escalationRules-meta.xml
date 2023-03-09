@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>Driva</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <businessHours>Driva</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Received</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Status__c</field>
+                <operation>equals</operation>
+                <value>Chase</value>
+            </criteriaItems>
+            <disableEscalationWhenModified>true</disableEscalationWhenModified>
+            <escalationAction>
+                <minutesToEscalation>30</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

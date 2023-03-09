@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missed_Inbound_Calls</fullName>
+    <columns>CallStartDateTime</columns>
+    <columns>FromPhoneNumber</columns>
+    <columns>CallType</columns>
+    <columns>CallResolution</columns>
+    <columns>Owner</columns>
+    <columns>Name</columns>
+    <columns>EndUser</columns>
+    <columns>QualityScore</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner</field>
+        <operation>equals</operation>
+        <value>autoproc</value>
+    </filters>
+    <filters>
+        <field>CallType</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CallResolution</field>
+        <operation>notEqual</operation>
+        <value>Resolved</value>
+    </filters>
+    <filters>
+        <field>CallStartDateTime</field>
+        <operation>greaterThan</operation>
+        <value>2/3/2022 12:00 AM</value>
+    </filters>
+    <label>Missed Inbound Calls</label>
+</ListView>

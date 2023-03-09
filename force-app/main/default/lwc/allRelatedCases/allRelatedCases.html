@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title={title} icon-name="standard:case" >
+        <br/>
+        <div style="height: 200px;">
+            <div class="slds-scrollable_y" >
+                <lightning-datatable data={caseData}
+                                     columns={columns}
+                                     key-field="id"
+                                     show-row-number-column
+                                     sorted-by={sortBy}
+                                     sorted-direction={sortDirection}
+                                     onsort={doSorting}
+                                     hide-checkbox-column="true"></lightning-datatable>
+            </div>
+            <template if:false ={totalCases}>
+                <div class="slds-align_absolute-center slds-p-top_x-large" style="vertical-align: middle;">
+                    <p>No items to display.</p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

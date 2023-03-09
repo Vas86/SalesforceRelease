@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TwilioSF__Accepted</fullName>
+    <columns>NAME</columns>
+    <columns>TwilioSF__To_Number__c</columns>
+    <columns>TwilioSF__Body__c</columns>
+    <columns>TwilioSF__Message_SID__c</columns>
+    <columns>TwilioSF__Resource_Location__c</columns>
+    <columns>TwilioSF__SF_Parent_Record_Id__c</columns>
+    <columns>TwilioSF__Twilio_Console_URL__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TwilioSF__Status__c</field>
+        <operation>equals</operation>
+        <value>accepted</value>
+    </filters>
+    <label>Accepted</label>
+</ListView>

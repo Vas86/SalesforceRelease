@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Choisissez d&apos;activer ou de désactiver le déclencheur AC_TaskTrigger</help>
+    <label></label>
+    <name>amazonconnect__disableTaskTrigger__c</name>
+</CustomFieldTranslation>

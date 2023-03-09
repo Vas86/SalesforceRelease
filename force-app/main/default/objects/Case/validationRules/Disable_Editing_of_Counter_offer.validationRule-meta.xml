@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_Editing_of_Counter_offer</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( $Profile.Name == &apos;System Administrator&apos;  || $Profile.Name == &apos;Manager&apos;, false, IF( Counter_offer__c != true &amp;&amp;  ISCHANGED(Counter_offer__c) , true, false))</errorConditionFormula>
+    <errorDisplayField>Counter_offer__c</errorDisplayField>
+    <errorMessage>Counter Offer cannot be edited</errorMessage>
+</ValidationRule>

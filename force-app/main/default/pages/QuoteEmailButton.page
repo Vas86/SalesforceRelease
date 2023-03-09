@@ -1,0 +1,2 @@
+<apex:page standardController="Case" extensions="QuoteEmailButtonController" action="{!urlRedirect}">
+</apex:page>

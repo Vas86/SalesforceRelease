@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Outgoing_Sender_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the related Outgoing Sender ID.</description>
+    <externalId>false</externalId>
+    <label>Outgoing Sender ID</label>
+    <referenceTo>smagicinteract__SMS_SenderId__c</referenceTo>
+    <relationshipLabel>Alpha SenderID Map</relationshipLabel>
+    <relationshipName>Outgoing_Alpha_SenderID_Map</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flowdometer__Handle_Time_Weekdays__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Note that this formula rounds up to whole days</description>
+    <externalId>false</externalId>
+    <formula>IF( AND (Flowdometer__Terminal_Stage__c, ISBLANK( Flowdometer__Next_Step__c )) ,
+null,
+(5 * ( FLOOR( ( DATEVALUE( Flowdometer__Ending_Timestamp_or_NOW__c ) - DATE( 1900, 1, 8) ) / 7 ) ) + MIN( 5, MOD(
+DATEVALUE(Flowdometer__Ending_Timestamp_or_NOW__c) - DATE( 1900, 1, 8), 7 ) ) )
+-
+(5 * ( FLOOR( ( DATEVALUE( Flowdometer__Initial_Timestamp_or_CREATED__c ) - DATE( 1900, 1, 8) ) / 7 ) ) + MIN( 5, MOD(
+DATEVALUE(Flowdometer__Initial_Timestamp_or_CREATED__c) - DATE( 1900, 1, 8), 7 ) ) )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Note that this formula rounds up to whole days</inlineHelpText>
+    <label>Handle Time (Weekdays in this Step)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>Case</SObjectType>
+    <active>false</active>
+    <businessHours>Driva</businessHours>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>false</isVersionDefault>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <criteriaBooleanFilter>1 AND 2 AND 3 AND (4 OR 5)</criteriaBooleanFilter>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Awaiting Customer Response</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Follow up Date Set</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Lodgement Require Driva Action</milestoneName>
+        <minutesToComplete>180</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <criteriaBooleanFilter>1 AND 2 AND 3 AND (4 OR 5)</criteriaBooleanFilter>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Awaiting Customer Response</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Follow up Date Set</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Lodgement Require Driva Action</milestoneName>
+        <minutesToComplete>180</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <criteriaBooleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</criteriaBooleanFilter>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Correspondence Received</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>Ready To Lodge</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Follow up Date Set</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Awaiting Customer Response</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Lodgement Correspondence Received</milestoneName>
+        <minutesToComplete>60</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <criteriaBooleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</criteriaBooleanFilter>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Correspondence Received</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>notEqual</operation>
+            <value>Ready To Lodge</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Awaiting Customer Response</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Follow up Date Set</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Lodgement Correspondence Received</milestoneName>
+        <minutesToComplete>120</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <criteriaBooleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</criteriaBooleanFilter>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>Ready To Lodge</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Awaiting Customer Response</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Follow up Date Set</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Assessment Requires Driva Action</milestoneName>
+        <minutesToComplete>180</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <criteriaBooleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</criteriaBooleanFilter>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>Ready To Lodge</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Awaiting Customer Response</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Follow up Date Set</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Assessment Requires Driva Action</milestoneName>
+        <minutesToComplete>180</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Correspondence Received</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Awaiting Customer Response</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>notEqual</operation>
+            <value>To Be Assessed, At Verification, Verified, Lodged, Conditionally Approved</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Assessment Correspondence Received</milestoneName>
+        <minutesToComplete>60</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Correspondence Received</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Awaiting Customer Response</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>Low, Medium, High, Urgent, Ready To Lodge</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Assessment Correspondence Received</milestoneName>
+        <minutesToComplete>120</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Approved Required Driva Action</milestoneName>
+        <minutesToComplete>240</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>Ready To Lodge</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Lender Lodgement</milestoneName>
+        <minutesToComplete>120</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Approved Required Driva Action</milestoneName>
+        <minutesToComplete>360</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Correspondence Received</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Approved Correspondence Recieved</milestoneName>
+        <minutesToComplete>120</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Settlement_Agent__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Approved Welcome Call</milestoneName>
+        <minutesToComplete>120</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Correspondence Received</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Approved Correspondence Recieved</milestoneName>
+        <minutesToComplete>60</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Settlement_Agent__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Approved Welcome Call</milestoneName>
+        <minutesToComplete>60</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>Ready To Lodge</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Lender Lodgement</milestoneName>
+        <minutesToComplete>60</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>Verified</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>notEqual</operation>
+            <value>Low, Medium, High, Urgent, Ready To Lodge</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Initial Assessment</milestoneName>
+        <minutesToComplete>60</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>Verified</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>notEqual</operation>
+            <value>Low, Medium, High, Urgent, Ready To Lodge</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Initial Assessment</milestoneName>
+        <minutesToComplete>120</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Correspondence Received</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>At Verification</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>notEqual</operation>
+            <value>To Be Assessed, Verified, Low, Medium, High</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Correspondence Received</milestoneName>
+        <minutesToComplete>60</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>Verified</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>notEqual</operation>
+            <value>To Be Assessed, At Verification, Low, Medium, High</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Requires Driva Action</milestoneName>
+        <minutesToComplete>180</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Correspondence Received</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>At Verification</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>notEqual</operation>
+            <value>To Be Assessed, Verified, Low, Medium, High</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Correspondence Received</milestoneName>
+        <minutesToComplete>120</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>Verified</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>notEqual</operation>
+            <value>To Be Assessed, At Verification, Low, Medium, High</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Requires Driva Action</milestoneName>
+        <minutesToComplete>180</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>carsales</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>To Be Assessed</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>notEqual</operation>
+            <value>Verified, At Verification, Low, Medium, High</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Initial Verification</milestoneName>
+        <minutesToComplete>180</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Driva</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.SLA_Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Requires Driva Action</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>equals</operation>
+            <value>To Be Assessed</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Assessment_Quality__c</field>
+            <operation>notEqual</operation>
+            <value>Verified, At Verification, Low, Medium, High</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Initial Verification</milestoneName>
+        <minutesToComplete>60</minutesToComplete>
+        <successActions>
+            <name>Assign_to_Verification_Agent</name>
+            <type>FieldUpdate</type>
+        </successActions>
+        <timeTriggers>
+            <actions>
+                <name>X30_minute_warning_before_Initial_Verification_Expires</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <name>VerificationDev12</name>
+    <versionMaster>552N0000000VP2b</versionMaster>
+    <versionNumber>4</versionNumber>
+</EntitlementProcess>

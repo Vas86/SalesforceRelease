@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Personal_Loan__c</fullName>
+    <description>This field is used for Loan Purpose</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Loan Purpose Options</inlineHelpText>
+    <label>Personal Loan</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Debt Consolidation</fullName>
+                <default>false</default>
+                <label>Debt Consolidation</label>
+            </value>
+            <value>
+                <fullName>Car</fullName>
+                <default>false</default>
+                <label>Car</label>
+            </value>
+            <value>
+                <fullName>Home Improvements</fullName>
+                <default>false</default>
+                <label>Home Improvements</label>
+            </value>
+            <value>
+                <fullName>Holiday</fullName>
+                <default>false</default>
+                <label>Holiday</label>
+            </value>
+            <value>
+                <fullName>Wedding</fullName>
+                <default>false</default>
+                <label>Wedding</label>
+            </value>
+            <value>
+                <fullName>Repairs</fullName>
+                <default>false</default>
+                <label>Repairs</label>
+            </value>
+            <value>
+                <fullName>Moving Costs</fullName>
+                <default>false</default>
+                <label>Moving Costs</label>
+            </value>
+            <value>
+                <fullName>Rental Bond</fullName>
+                <default>false</default>
+                <label>Rental Bond</label>
+            </value>
+            <value>
+                <fullName>Pay Utility Bills</fullName>
+                <default>false</default>
+                <label>Pay Utility Bills</label>
+            </value>
+            <value>
+                <fullName>Pay Fees</fullName>
+                <default>false</default>
+                <label>Pay Fees</label>
+            </value>
+            <value>
+                <fullName>Solar / Battery</fullName>
+                <default>false</default>
+                <label>Solar / Battery</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Legal / Professional Services</fullName>
+                <default>false</default>
+                <label>Legal / Professional Services</label>
+            </value>
+            <value>
+                <fullName>Boat</fullName>
+                <default>false</default>
+                <label>Boat</label>
+            </value>
+            <value>
+                <fullName>Motorbike</fullName>
+                <default>false</default>
+                <label>Motorbike</label>
+            </value>
+            <value>
+                <fullName>Funeral Expenses</fullName>
+                <default>false</default>
+                <label>Funeral Expenses</label>
+            </value>
+            <value>
+                <fullName>Business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+            <value>
+                <fullName>Investment</fullName>
+                <default>false</default>
+                <label>Investment</label>
+            </value>
+            <value>
+                <fullName>Personal Income Tax</fullName>
+                <default>false</default>
+                <label>Personal Income Tax</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

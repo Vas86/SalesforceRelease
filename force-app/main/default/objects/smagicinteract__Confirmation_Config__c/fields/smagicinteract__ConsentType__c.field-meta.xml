@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__ConsentType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Type of consent to be recorded for the keyword. (For e.g. Opt-In, Opt-Out).</description>
+    <externalId>false</externalId>
+    <label>ConsentType</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Opt-In</fullName>
+                <default>true</default>
+                <label>Opt-In</label>
+            </value>
+            <value>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+                <label>Opt-Out</label>
+            </value>
+            <value>
+                <fullName>Help</fullName>
+                <default>false</default>
+                <label>Help</label>
+            </value>
+            <value>
+                <fullName>Double Opt-In</fullName>
+                <default>false</default>
+                <label>Double Opt-In</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

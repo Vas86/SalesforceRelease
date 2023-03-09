@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lender__c</fullName>
+    <externalId>false</externalId>
+    <label>Lender</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Angle</fullName>
+                <default>false</default>
+                <label>Angle</label>
+            </value>
+            <value>
+                <fullName>ANZ</fullName>
+                <default>false</default>
+                <label>ANZ</label>
+            </value>
+            <value>
+                <fullName>BFS</fullName>
+                <default>false</default>
+                <label>BFS</label>
+            </value>
+            <value>
+                <fullName>Finance One</fullName>
+                <default>false</default>
+                <label>Finance One</label>
+            </value>
+            <value>
+                <fullName>GetCapital</fullName>
+                <default>false</default>
+                <label>GetCapital</label>
+            </value>
+            <value>
+                <fullName>Grow</fullName>
+                <default>false</default>
+                <label>Grow</label>
+            </value>
+            <value>
+                <fullName>Latitude</fullName>
+                <default>false</default>
+                <label>Latitude</label>
+            </value>
+            <value>
+                <fullName>Liberty</fullName>
+                <default>false</default>
+                <label>Liberty</label>
+            </value>
+            <value>
+                <fullName>Macquarie</fullName>
+                <default>false</default>
+                <label>Macquarie</label>
+            </value>
+            <value>
+                <fullName>Metro</fullName>
+                <default>false</default>
+                <label>Metro</label>
+            </value>
+            <value>
+                <fullName>Money3</fullName>
+                <default>false</default>
+                <label>Money3</label>
+            </value>
+            <value>
+                <fullName>MoneyPlace</fullName>
+                <default>false</default>
+                <label>MoneyPlace</label>
+            </value>
+            <value>
+                <fullName>Now Finance</fullName>
+                <default>false</default>
+                <label>Now Finance</label>
+            </value>
+            <value>
+                <fullName>Pepper</fullName>
+                <default>false</default>
+                <label>Pepper</label>
+            </value>
+            <value>
+                <fullName>Society One</fullName>
+                <default>false</default>
+                <label>Society One</label>
+            </value>
+            <value>
+                <fullName>Afs</fullName>
+                <default>false</default>
+                <label>Afs</label>
+            </value>
+            <value>
+                <fullName>Finance One Commercial</fullName>
+                <default>false</default>
+                <label>Finance One Commercial</label>
+            </value>
+            <value>
+                <fullName>Liberty Commercial</fullName>
+                <default>false</default>
+                <label>Liberty Commercial</label>
+            </value>
+            <value>
+                <fullName>Macquarie Commercial</fullName>
+                <default>false</default>
+                <label>Macquarie Commercial</label>
+            </value>
+            <value>
+                <fullName>Pepper Commercial</fullName>
+                <default>false</default>
+                <label>Pepper Commercial</label>
+            </value>
+            <value>
+                <fullName>Prospa</fullName>
+                <default>false</default>
+                <label>Prospa</label>
+            </value>
+            <value>
+                <fullName>Plenti PL</fullName>
+                <default>false</default>
+                <label>Plenti PL</label>
+            </value>
+            <value>
+                <fullName>SocietyOne</fullName>
+                <default>false</default>
+                <label>SocietyOne</label>
+            </value>
+            <value>
+                <fullName>St.George</fullName>
+                <default>false</default>
+                <label>St.George</label>
+            </value>
+            <value>
+                <fullName>Westpac</fullName>
+                <default>false</default>
+                <label>Westpac</label>
+            </value>
+            <value>
+                <fullName>Wisr PL</fullName>
+                <default>false</default>
+                <label>Wisr PL</label>
+            </value>
+            <value>
+                <fullName>Plenti Commercial</fullName>
+                <default>false</default>
+                <label>Plenti Commercial</label>
+            </value>
+            <value>
+                <fullName>Firstmac</fullName>
+                <default>false</default>
+                <label>Firstmac</label>
+            </value>
+            <value>
+                <fullName>Plenti</fullName>
+                <default>false</default>
+                <label>Plenti</label>
+            </value>
+            <value>
+                <fullName>Wisr</fullName>
+                <default>false</default>
+                <label>Wisr</label>
+            </value>
+            <value>
+                <fullName>Volkswagen</fullName>
+                <default>false</default>
+                <label>Volkswagen</label>
+            </value>
+            <value>
+                <fullName>Autopay Commercial</fullName>
+                <default>false</default>
+                <label>Autopay Commercial</label>
+            </value>
+            <value>
+                <fullName>AutoPay</fullName>
+                <default>false</default>
+                <label>AutoPay</label>
+            </value>
+            <value>
+                <fullName>MoneyMe PL</fullName>
+                <default>false</default>
+                <label>MoneyMe PL</label>
+            </value>
+            <value>
+                <fullName>Money3 PL</fullName>
+                <default>false</default>
+                <label>Money3 PL</label>
+            </value>
+            <value>
+                <fullName>MoneyPlace PL</fullName>
+                <default>false</default>
+                <label>MoneyPlace PL</label>
+            </value>
+            <value>
+                <fullName>LoanU PL</fullName>
+                <default>false</default>
+                <label>LoanU PL</label>
+            </value>
+            <value>
+                <fullName>Green Light Auto</fullName>
+                <default>false</default>
+                <label>Green Light Auto</label>
+            </value>
+            <value>
+                <fullName>CarStart</fullName>
+                <default>false</default>
+                <label>CarStart</label>
+            </value>
+            <value>
+                <fullName>Medfin</fullName>
+                <default>false</default>
+                <label>Medfin</label>
+            </value>
+            <value>
+                <fullName>AMMF</fullName>
+                <default>false</default>
+                <label>AMMF</label>
+            </value>
+            <value>
+                <fullName>Latitude PL</fullName>
+                <default>false</default>
+                <label>Latitude PL</label>
+            </value>
+            <value>
+                <fullName>LoanU</fullName>
+                <default>false</default>
+                <label>LoanU</label>
+            </value>
+            <value>
+                <fullName>Finance One PL</fullName>
+                <default>false</default>
+                <label>Finance One PL</label>
+            </value>
+            <value>
+                <fullName>Affordable Car Loans</fullName>
+                <default>false</default>
+                <label>Affordable Car Loans</label>
+            </value>
+            <value>
+                <fullName>Alex Bank</fullName>
+                <default>false</default>
+                <label>Alex Bank</label>
+            </value>
+            <value>
+                <fullName>OurMoneyMarket PL</fullName>
+                <default>false</default>
+                <label>OurMoneyMarket PL</label>
+            </value>
+            <value>
+                <fullName>Fair Go Finance</fullName>
+                <default>false</default>
+                <label>Fair Go Finance</label>
+            </value>
+            <value>
+                <fullName>Salt And Lime</fullName>
+                <default>false</default>
+                <label>Salt And Lime</label>
+            </value>
+            <value>
+                <fullName>Metro Consumer</fullName>
+                <default>false</default>
+                <label>Metro Consumer</label>
+            </value>
+            <value>
+                <fullName>Salt And Lime Secured</fullName>
+                <default>false</default>
+                <label>Salt And Lime Secured</label>
+            </value>
+            <value>
+                <fullName>Rapid Loans PL</fullName>
+                <default>false</default>
+                <label>Rapid Loans PL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

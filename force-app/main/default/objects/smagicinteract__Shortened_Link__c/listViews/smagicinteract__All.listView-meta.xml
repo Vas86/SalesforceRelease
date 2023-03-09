@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__All</fullName>
+    <columns>NAME</columns>
+    <columns>smagicinteract__Long_URL__c</columns>
+    <columns>smagicinteract__Short_URL__c</columns>
+    <columns>smagicinteract__Domain__c</columns>
+    <columns>smagicinteract__Slash_Tag__c</columns>
+    <columns>smagicinteract__Click_Count__c</columns>
+    <columns>smagicinteract__Is_Active__c</columns>
+    <columns>smagicinteract__Expiry_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

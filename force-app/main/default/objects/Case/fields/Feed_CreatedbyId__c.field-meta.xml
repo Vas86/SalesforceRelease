@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Feed_CreatedbyId__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(IF( OR(Set_follow_up_date__c&lt; DATETIMEVALUE(DATE(YEAR(DATEVALUE(Set_follow_up_date__c)),3,31)-(WEEKDAY(DATE(YEAR(DATEVALUE(Set_follow_up_date__c)),3,31))-1)) +1/24,
+    	Set_follow_up_date__c&gt; DATETIMEVALUE(DATE(YEAR(DATEVALUE(Set_follow_up_date__c)),10,31)- (WEEKDAY(DATE(YEAR(DATEVALUE(Set_follow_up_date__c)),10,31))-1))+1/24),
+    HOUR(TIMEVALUE(Set_follow_up_date__c))
+    -IF(HOUR(TIMEVALUE(Set_follow_up_date__c))&gt;23,24,0)
+    ,
+    HOUR(TIMEVALUE(Set_follow_up_date__c+1/24))
+    -IF(HOUR(TIMEVALUE(Set_follow_up_date__c+1/24))&gt;23,24,0)
+    ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Feed CreatedbyId</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

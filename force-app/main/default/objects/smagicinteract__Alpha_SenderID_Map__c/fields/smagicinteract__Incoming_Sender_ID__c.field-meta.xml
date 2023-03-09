@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Incoming_Sender_ID__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field contains the related Incoming Sender ID.</description>
+    <externalId>false</externalId>
+    <label>Incoming Sender ID</label>
+    <referenceTo>smagicinteract__SMS_SenderId__c</referenceTo>
+    <relationshipLabel>Alpha SenderID Map (Incoming Sender ID)</relationshipLabel>
+    <relationshipName>Incoming_Alpha_SenderID_Map</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

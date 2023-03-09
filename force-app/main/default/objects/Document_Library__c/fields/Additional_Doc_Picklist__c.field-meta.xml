@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Doc_Picklist__c</fullName>
+    <externalId>false</externalId>
+    <label>Additional Doc Picklist</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Category__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tenancy Agreement</fullName>
+                <default>false</default>
+                <label>Tenancy Agreement</label>
+            </value>
+            <value>
+                <fullName>3 Months Recent Bank Statements</fullName>
+                <default>false</default>
+                <label>3 Months Recent Bank Statements</label>
+            </value>
+            <value>
+                <fullName>Most Recent Partner Payslip</fullName>
+                <default>false</default>
+                <label>Most Recent Partner Payslip</label>
+            </value>
+            <value>
+                <fullName>Second Most Recent Partner Payslip</fullName>
+                <default>false</default>
+                <label>Second Most Recent Partner Payslip</label>
+            </value>
+            <value>
+                <fullName>Centrelink Income Statement</fullName>
+                <default>false</default>
+                <label>Centrelink Income Statement</label>
+            </value>
+            <value>
+                <fullName>Child Support Asssessment</fullName>
+                <default>false</default>
+                <label>Child Support Asssessment</label>
+            </value>
+            <value>
+                <fullName>2021 Notice of Assessment</fullName>
+                <default>false</default>
+                <label>2021 Notice of Assessment</label>
+            </value>
+            <value>
+                <fullName>2021 Individual Tax Return</fullName>
+                <default>false</default>
+                <label>2021 Individual Tax Return</label>
+            </value>
+            <value>
+                <fullName>Employment Letter</fullName>
+                <default>false</default>
+                <label>Employment Letter</label>
+            </value>
+            <value>
+                <fullName>Employment Contract</fullName>
+                <default>false</default>
+                <label>Employment Contract</label>
+            </value>
+            <value>
+                <fullName>Third Most Recent Payslip</fullName>
+                <default>false</default>
+                <label>Third Most Recent Payslip</label>
+            </value>
+            <value>
+                <fullName>Year to Date MyGov Income Statement</fullName>
+                <default>false</default>
+                <label>Year to Date MyGov Income Statement</label>
+            </value>
+            <value>
+                <fullName>Copy of Last Payslip for June 2022</fullName>
+                <default>false</default>
+                <label>Copy of Last Payslip for June 2022</label>
+            </value>
+            <value>
+                <fullName>MyGov Income Statement FY 2021</fullName>
+                <default>false</default>
+                <label>MyGov Income Statement FY 2021</label>
+            </value>
+            <value>
+                <fullName>Governement Issued Photo ID</fullName>
+                <default>false</default>
+                <label>Governement Issued Photo ID</label>
+            </value>
+            <value>
+                <fullName>Medicare Card</fullName>
+                <default>false</default>
+                <label>Medicare Card</label>
+            </value>
+            <value>
+                <fullName>Passport</fullName>
+                <default>false</default>
+                <label>Passport</label>
+            </value>
+            <value>
+                <fullName>Parners 2021 Notice of Assessment</fullName>
+                <default>false</default>
+                <label>Parners 2021 Notice of Assessment</label>
+            </value>
+            <value>
+                <fullName>Partners 2021 Individual Tax Return</fullName>
+                <default>false</default>
+                <label>Partners 2021 Individual Tax Return</label>
+            </value>
+            <value>
+                <fullName>Recent Vehicle Loan Statement</fullName>
+                <default>false</default>
+                <label>Recent Vehicle Loan Statement</label>
+            </value>
+            <value>
+                <fullName>Recent Personal Loan Statement</fullName>
+                <default>false</default>
+                <label>Recent Personal Loan Statement</label>
+            </value>
+            <value>
+                <fullName>Recent Debt Collection Statement</fullName>
+                <default>false</default>
+                <label>Recent Debt Collection Statement</label>
+            </value>
+            <value>
+                <fullName>Recent Credit Card Statement</fullName>
+                <default>false</default>
+                <label>Recent Credit Card Statement</label>
+            </value>
+            <value>
+                <fullName>3 x Most Recent Business Invoices</fullName>
+                <default>false</default>
+                <label>3 x Most Recent Business Invoices</label>
+            </value>
+            <value>
+                <fullName>Rental Income Statement</fullName>
+                <default>false</default>
+                <label>Rental Income Statement</label>
+            </value>
+            <value>
+                <fullName>Rental Ledger</fullName>
+                <default>false</default>
+                <label>Rental Ledger</label>
+            </value>
+            <value>
+                <fullName>Rates Notice</fullName>
+                <default>false</default>
+                <label>Rates Notice</label>
+            </value>
+            <value>
+                <fullName>Additional Job1 Payslip 1</fullName>
+                <default>false</default>
+                <label>Additional Job1 Payslip 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job1 Payslip 2</fullName>
+                <default>false</default>
+                <label>Additional Job1 Payslip 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job2 Payslip 1</fullName>
+                <default>false</default>
+                <label>Additional Job2 Payslip 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job2 Payslip 2</fullName>
+                <default>false</default>
+                <label>Additional Job2 Payslip 2</label>
+            </value>
+            <value>
+                <fullName>6 Months Digital Bank Statements</fullName>
+                <default>false</default>
+                <label>6 Months Digital Bank Statements</label>
+            </value>
+            <value>
+                <fullName>Trust Deed</fullName>
+                <default>false</default>
+                <label>Trust Deed</label>
+            </value>
+            <value>
+                <fullName>Most Recent Business Activity Statement (BAS)</fullName>
+                <default>false</default>
+                <label>Most Recent Business Activity Statement (BAS)</label>
+            </value>
+            <value>
+                <fullName>2021 Company Financials</fullName>
+                <default>false</default>
+                <label>2021 Company Financials</label>
+            </value>
+            <value>
+                <fullName>2022 Interim Company Financials</fullName>
+                <default>false</default>
+                <label>2022 Interim Company Financials</label>
+            </value>
+            <value>
+                <fullName>Up To Date Tax Portal (Integrated Client Account)</fullName>
+                <default>false</default>
+                <label>Up To Date Tax Portal (Integrated Client Account)</label>
+            </value>
+            <value>
+                <fullName>Up To Date Tax Portal (Income Tax Account)</fullName>
+                <default>false</default>
+                <label>Up To Date Tax Portal (Income Tax Account)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Tenancy Agreement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>3 Months Recent Bank Statements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Most Recent Partner Payslip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Second Most Recent Partner Payslip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Centrelink Income Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Child Support Asssessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>2021 Notice of Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>2021 Individual Tax Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Employment Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Employment Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Third Most Recent Payslip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Year to Date MyGov Income Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Copy of Last Payslip for June 2022</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>MyGov Income Statement FY 2021</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Governement Issued Photo ID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Medicare Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Passport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Parners 2021 Notice of Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Partners 2021 Individual Tax Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Recent Vehicle Loan Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Recent Personal Loan Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Recent Debt Collection Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Recent Credit Card Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>3 x Most Recent Business Invoices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Rental Income Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Rental Ledger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Rates Notice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job1 Payslip 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job1 Payslip 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job2 Payslip 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job2 Payslip 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>6 Months Digital Bank Statements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Trust Deed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Most Recent Business Activity Statement (BAS)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>2021 Company Financials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>2022 Interim Company Financials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Up To Date Tax Portal (Integrated Client Account)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Up To Date Tax Portal (Income Tax Account)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

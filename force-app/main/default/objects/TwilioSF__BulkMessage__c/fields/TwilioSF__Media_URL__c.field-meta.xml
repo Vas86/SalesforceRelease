@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TwilioSF__Media_URL__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A URL that points to an image to be included in the Bulk Message</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a valid URL that points to an image.</inlineHelpText>
+    <label>Media URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

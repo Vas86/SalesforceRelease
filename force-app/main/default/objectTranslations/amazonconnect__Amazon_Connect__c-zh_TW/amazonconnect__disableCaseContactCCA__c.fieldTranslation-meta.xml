@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>選擇啟用或停用 AC_AssociateCaseContactCCA 觸發，該觸發會將案例和聯絡人與聯絡案例管道分析紀錄建立關聯。</help>
+    <label></label>
+    <name>amazonconnect__disableCaseContactCCA__c</name>
+</CustomFieldTranslation>

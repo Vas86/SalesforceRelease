@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__OptOutDisclaimer__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Opt-out instruction to be displayed at regular intervals to the users to be stored here.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Recurring-messaging programs must also display opt-out instructions at regular intervals, whether in content or service messages, at least once per month.</inlineHelpText>
+    <label>OptOutDisclaimer</label>
+    <length>1000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

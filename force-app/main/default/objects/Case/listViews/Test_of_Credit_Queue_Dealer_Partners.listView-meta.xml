@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_of_Credit_Queue_Dealer_Partners</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>Follow_Up_Calls__c</columns>
+    <columns>Set_follow_up_date__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Partner_Account__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <filterScope>Queue</filterScope>
+    <label>Test of Credit Queue - Dealer Partners</label>
+    <queue>Dealers_Packaging_Queue</queue>
+</ListView>

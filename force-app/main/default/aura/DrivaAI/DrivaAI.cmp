@@ -1,0 +1,66 @@
+<aura:component controller="DrivaAIApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="loanUuid" type="String" />
+    <aura:attribute name="token" type="String" />
+    <aura:attribute name="env" type="String" />
+    <aura:attribute name="openModel" type="Boolean" />
+    <aura:attribute name="isCollapsed" type="Boolean"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <ltng:require styles="resource/bootstrap/bootstrap.css"/>
+    
+    <div class = "bootstrap">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_2-of-3">
+                        <span><b>Driva AI</b> </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <div class="slds-clearfix">
+                            <div class="slds-float_right">
+                                <lightning:icon iconName="utility:new_window" size = "x-small" alternativeText="Open" title="Open" class="slds-p-right_x-small" onclick="{!c.handleOpenModel}" style = "cursor:pointer;"/>
+                                <!--<aura:if isTrue = "{!!v.isCollapsed}">-->
+                                <aura:if isTrue = "{!v.isCollapsed}"><!--AG-3039-->
+                                    <!--<lightning:icon iconName="utility:jump_to_bottom" size = "x-small" alternativeText="Open" title="Open" onclick="{!c.handleCollapsed}" style = "cursor:pointer"/>-->
+                                    <span onclick="{!c.handleCollapsed}" data-id = "Open" ><lightning:icon iconName="utility:jump_to_bottom" size = "x-small" alternativeText="Open" title="Open" style = "cursor:pointer"/></span> <!--AG-3039-->
+                                    <aura:set attribute="else">
+                                        <lightning:icon iconName="utility:jump_to_top" size = "x-small" alternativeText="Close" title="Close" onclick="{!c.handleCollapsed}" style = "cursor:pointer" />
+                                    </aura:set>
+                                </aura:if>                                
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+                
+            </div>
+            <!--<aura:if isTrue = "{!v.isCollapsed}">-->
+            <aura:if isTrue = "{!!v.isCollapsed}"><!--AG-3039-->
+                <div class="panel-body">
+                    <aura:if isTrue="{!and(not(empty(v.loanUuid)), not(empty(v.token)), not(empty(v.env)))}">
+                        <!--3500px--><iframe height="4550px" id="theIframe" name="theIframe" src="{!'https://'+v.env+'.driva.com.au/externalAI/'+v.loanUuid+'?token='+v.token}" width="100%"></iframe>
+                    </aura:if>
+                </div>
+            </aura:if>
+            
+        </div>
+    </div>
+    <aura:if isTrue = "{!v.openModel}"> 
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <aura:if isTrue="{!and(not(empty(v.loanUuid)), not(empty(v.token)), not(empty(v.env)))}">
+                            <iframe height="4550px" id="theIframe" name="theIframe" src="{!'https://'+v.env+'.driva.com.au/externalAI/'+v.loanUuid+'?token='+v.token}" width="100%"></iframe>
+                        </aura:if>
+                    </div>
+                    <div class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" onclick="{!c.handleCloseModel}">Cancel</button>
+                        
+                    </div>
+                </div>            
+        </section>
+	<!--<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>-->
+    
+    </aura:if>
+    
+
+</aura:component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flowdometer__Step_is_currently_active__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(
+  AND(
+    NOT(Flowdometer__isGoal__c),
+    NOT(Flowdometer__Terminal_Stage__c),
+    ISBLANK(Flowdometer__Next_Step__c)
+  ),
+  true,
+  false
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This flag identifies the steps your team is currently working through.</inlineHelpText>
+    <label>Step Is Currently Active?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

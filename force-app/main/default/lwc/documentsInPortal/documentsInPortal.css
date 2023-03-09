@@ -1,0 +1,30 @@
+.default-body{
+    padding: 0.65em !important; 
+    margin-left:5px !important;
+    margin-top:5px !important;  
+    color: black !important;
+    font-weight: normal !important;
+    
+}
+.grey-bkg{
+    background-color:rgb(227,228,226) !important;
+}
+.red-bkg{
+    background-color:rgb(248,195,195) !important;
+}
+.green-bkg{
+    background-color:rgb(171,226,192) !important;
+}
+.icon-body{
+    text-decoration: none !important;
+    color: rgb(0,0,0) !important;
+}
+.light-grey-bkg{
+    background-color:rgb(245,245,245) !important;
+}
+.minus-action{
+    color:black;
+    flex-wrap: wrap;
+    height: 100%;
+    display:inline-block
+}

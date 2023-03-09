@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>smagicinteract__Message_Limit_Fequency__c</name>
+    <picklistValues>
+        <masterLabel>Message Per Day</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Message Per Month</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

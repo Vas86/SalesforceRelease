@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Scheduled_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Deprecated. Do not use.</description>
+    <externalId>false</externalId>
+    <label>Scheduled Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

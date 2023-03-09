@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Canned_Responses_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checking this will enable canned responses functionality</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checking this will enable canned responses functionality</inlineHelpText>
+    <label>Canned Responses Enabled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

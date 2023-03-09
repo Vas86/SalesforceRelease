@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is junction object between Interface group/category and routing rule.</description>
+    <label>Rule Interface Category Map</label>
+    <pluralLabel>Rule Interface Category Maps</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

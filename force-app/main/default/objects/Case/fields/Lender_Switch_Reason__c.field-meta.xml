@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lender_Switch_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Lender Switch Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RE higher than quoted</fullName>
+                <default>false</default>
+                <label>RE higher than quoted</label>
+            </value>
+            <value>
+                <fullName>BS required &amp; falls out of policy</fullName>
+                <default>false</default>
+                <label>BS required &amp; falls out of policy</label>
+            </value>
+            <value>
+                <fullName>Serviceability</fullName>
+                <default>false</default>
+                <label>Serviceability</label>
+            </value>
+            <value>
+                <fullName>Emp Type or Tenure Incorrect</fullName>
+                <default>false</default>
+                <label>Emp Type or Tenure Incorrect</label>
+            </value>
+            <value>
+                <fullName>ATM Withdrawals/Gambling</fullName>
+                <default>false</default>
+                <label>ATM Withdrawals/Gambling</label>
+            </value>
+            <value>
+                <fullName>Loan Amount</fullName>
+                <default>false</default>
+                <label>Loan Amount</label>
+            </value>
+            <value>
+                <fullName>Dishonours</fullName>
+                <default>false</default>
+                <label>Dishonours</label>
+            </value>
+            <value>
+                <fullName>Paydays</fullName>
+                <default>false</default>
+                <label>Paydays</label>
+            </value>
+            <value>
+                <fullName>Repayment History</fullName>
+                <default>false</default>
+                <label>Repayment History</label>
+            </value>
+            <value>
+                <fullName>Customer Requires PL</fullName>
+                <default>false</default>
+                <label>Customer Requires PL</label>
+            </value>
+            <value>
+                <fullName>Doc Requirements not met</fullName>
+                <default>false</default>
+                <label>Doc Requirements not met</label>
+            </value>
+            <value>
+                <fullName>Joint Application</fullName>
+                <default>false</default>
+                <label>Joint Application</label>
+            </value>
+            <value>
+                <fullName>No Early Termination Fees</fullName>
+                <default>false</default>
+                <label>No Early Termination Fees</label>
+            </value>
+            <value>
+                <fullName>Switch to Commercial</fullName>
+                <default>false</default>
+                <label>Switch to Commercial</label>
+            </value>
+            <value>
+                <fullName>Recent Drawdown</fullName>
+                <default>false</default>
+                <label>Recent Drawdown</label>
+            </value>
+            <value>
+                <fullName>Debt to income Ratio</fullName>
+                <default>false</default>
+                <label>Debt to income Ratio</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__All</fullName>
+    <columns>NAME</columns>
+    <columns>smagicinteract__Object_Name__c</columns>
+    <columns>smagicinteract__Name_Field__c</columns>
+    <columns>smagicinteract__Opt_Out_Field__c</columns>
+    <columns>smagicinteract__Opt_Out_Operator__c</columns>
+    <columns>smagicinteract__Opt_Out_Field_Value__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

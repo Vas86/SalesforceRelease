@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__SMS_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the ID of the related SMS template.</description>
+    <externalId>false</externalId>
+    <label>SMS Template</label>
+    <referenceTo>smagicinteract__SMS_Template__c</referenceTo>
+    <relationshipLabel>Converse App Template Maps</relationshipLabel>
+    <relationshipName>Converse_App_Template_Maps</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call 1 Made</fullName>
+                <default>false</default>
+                <label>Call 1 Made</label>
+            </value>
+            <value>
+                <fullName>Call 2 Made</fullName>
+                <default>false</default>
+                <label>Call 2 Made</label>
+            </value>
+            <value>
+                <fullName>Follow up Date</fullName>
+                <default>false</default>
+                <label>Follow up Date</label>
+            </value>
+            <value>
+                <fullName>Chase</fullName>
+                <default>false</default>
+                <label>Chase</label>
+            </value>
+            <value>
+                <fullName>Correspondence Received</fullName>
+                <default>false</default>
+                <label>Correspondence Received</label>
+            </value>
+            <value>
+                <fullName>Awaiting Customer Response</fullName>
+                <default>false</default>
+                <label>Awaiting Customer Response</label>
+            </value>
+            <value>
+                <fullName>Requires Driva Action</fullName>
+                <default>false</default>
+                <label>Requires Driva Action</label>
+            </value>
+            <value>
+                <fullName>Follow up Date Set</fullName>
+                <default>false</default>
+                <label>Follow up Date Set</label>
+            </value>
+            <value>
+                <fullName>Declinature Sent</fullName>
+                <default>false</default>
+                <label>Declinature Sent</label>
+            </value>
+            <value>
+                <fullName>Settlement in Progress</fullName>
+                <default>false</default>
+                <label>Settlement in Progress</label>
+            </value>
+            <value>
+                <fullName>Settled</fullName>
+                <default>false</default>
+                <label>Settled</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Ready for Lodgement</fullName>
+                <default>false</default>
+                <label>Ready for Lodgement</label>
+            </value>
+            <value>
+                <fullName>Cold Lead</fullName>
+                <default>false</default>
+                <label>Cold Lead</label>
+            </value>
+            <value>
+                <fullName>Withdraw Request</fullName>
+                <default>false</default>
+                <label>Withdraw Request</label>
+            </value>
+            <value>
+                <fullName>Document Received</fullName>
+                <default>false</default>
+                <label>Document Received</label>
+            </value>
+            <value>
+                <fullName>-</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Chase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Correspondence Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Awaiting Customer Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Requires Driva Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Follow up Date Set</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <valueName>Settlement in Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Document Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Declinature Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <valueName>Follow up Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <valueName>Cold Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <valueName>Ready for Lodgement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <valueName>Withdraw Request</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

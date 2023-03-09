@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__senderId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the ID of the sender.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Modifying sender ID will impact outgoing messages. Get in touch with SMS-Magic support team before updating the sender ID field.</inlineHelpText>
+    <label>SenderId</label>
+    <length>20</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

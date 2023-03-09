@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__ParentId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Stores the Conversation Id</description>
+    <externalId>false</externalId>
+    <label>Conversation</label>
+    <referenceTo>smagicinteract__Conversation__c</referenceTo>
+    <relationshipLabel>Internal Notes</relationshipLabel>
+    <relationshipName>Internal_Notes</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

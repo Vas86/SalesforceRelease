@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Settlements_Monica_Cases</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>Partner_Account__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Settlement_Agent__c</columns>
+    <columns>Pre_Approval__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Estimated_Delivery_Date__c</columns>
+    <columns>Set_follow_up_date__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>Lender__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Conditionally Approved,Approved</value>
+    </filters>
+    <filters>
+        <field>Sub_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Settled</value>
+    </filters>
+    <filters>
+        <field>Case_Owner_Name_for_SMS__c</field>
+        <operation>equals</operation>
+        <value>Monica</value>
+    </filters>
+    <filters>
+        <field>Settlement_Agent_First_Name__c</field>
+        <operation>equals</operation>
+        <value>Monica</value>
+    </filters>
+    <label>Settlements - Monica Cases</label>
+    <sharedTo>
+        <group>Settlements_Managers</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,73 @@
+<aura:component controller="DrivaNoteApex" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInitialization}"/>
+    <aura:handler event="force:refreshView" action="{!c.doInitialization}" />
+    <aura:attribute name="existingNotesList" type="Note__c[]"/>
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <aura:attribute name="notesCount" type="string"/>
+    <aura:attribute name="newNote" type="String" />
+    <aura:attribute name="public" type="boolean" default="false" />
+    <aura:attribute name="currentUser" type="User"/> 
+    <!--quick Text-Experiment-->
+    <aura:attribute name="options" type="List" />
+    <!--quick Text-Experiment-->
+    <!--AG-2754-->
+    <aura:attribute name="userOptions" type="List" />
+    <aura:attribute name="selectedUsersList" type="List" />
+    <!--AG-2754-->
+    <force:recordData aura:id="recordLoader" recordId="{!$SObjectType.CurrentUser.Id}" fields="Id, FirstName, LastName" targetFields="{!v.currentUser}"/>
+    
+    <lightning:card title="{!v.notesCount}" iconName="standard:note">
+        <aura:set attribute="title">
+            <a href="javascript:void(0)" onclick="{!c.navigateToRelatedList}">
+                {!v.notesCount}
+            </a>
+        </aura:set>
+        <lightning:menuDivider />
+        <p class="slds-p-horizontal_small">
+            <aura:iteration items="{!v.existingNotesList}" var="nt">
+                <lightning:formattedRichText value="{!nt.Poster__c}" />
+                <div class="slds-grid">
+                    <div class="slds-col"> {!nt.Created_At__c}</div>
+                    <div class="slds-col"> Public:</div>
+                    <div class="slds-col"> <lightning:input type="checkbox" name="public" variant="label-hidden" checked="{!nt.Public__c}" disabled="true"/> </div>
+                </div>
+                <p> </p> 
+                <lightning:formattedRichText value="{!nt.Content__c}" />
+                <lightning:menuDivider />
+            </aura:iteration>
+        </p>
+        <aura:set attribute="footer">
+            <a href="javascript:void(0)" onclick="{!c.navigateToRelatedList}">
+                View All
+            </a>
+        </aura:set>
+        
+    </lightning:card>
+    <lightning:menuDivider />
+    <lightning:card title="Add new note">
+         <!--quick Text-Experiment-->
+         <lightning:combobox name="quickText" class="slds-m-bottom_x-small" label="Quick Text" placeholder="Select Quick Text" options="{!v.options}" onchange="{! c.handleChange }"/>
+         <!--quick Text-Experiment-->
+         
+      <!-- <lightning:inputRichText value="{!v.newNote}" placeholder="Type note here" formats="{script}"/>-->
+      <!--Internal notes not showing on feed-->
+       <!--AG-2754-->
+      <lightning:dualListbox name="users"
+                           label= "Select Users"
+                           sourceLabel="Available"
+                           selectedLabel="Selected"
+                           
+                           options="{!v.userOptions}"
+                           onchange="{! c.handleUserChange }"/>
+        <br></br>
+         <!--AG-2754-->
+       <lightning:inputRichText value="{!v.newNote}" placeholder="Type note here" formats="{script}"/>
+    
+       <!--Internal notes not showing on feed-->
+      <!-- <lightning:formattedRichText value="{!v.newNote}" placeholder="Type note here"/>-->
+        <aura:set attribute="footer">
+            <lightning:button label="Add Note" onclick="{!c.addNote}"/>
+            <lightning:input type="checkbox" label="Public" name="public" checked="{!v.public}"/>
+        </aura:set>
+    </lightning:card>
+</aura:component>

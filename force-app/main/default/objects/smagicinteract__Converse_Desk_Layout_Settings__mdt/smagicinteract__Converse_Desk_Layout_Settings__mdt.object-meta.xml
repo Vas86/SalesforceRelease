@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This setting stores the Converse Desk Layouts assigned to various users and profiles.</description>
+    <label>Converse Desk Layout Settings</label>
+    <pluralLabel>Converse Desk Layout Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

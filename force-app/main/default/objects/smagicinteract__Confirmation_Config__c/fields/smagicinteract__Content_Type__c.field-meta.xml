@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Content_Type__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Look up to the content type for which consent will be recorded.</description>
+    <externalId>false</externalId>
+    <label>Content Type</label>
+    <referenceTo>smagicinteract__ContentType__c</referenceTo>
+    <relationshipLabel>Confirmation Configs</relationshipLabel>
+    <relationshipName>Confirmation_Configs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

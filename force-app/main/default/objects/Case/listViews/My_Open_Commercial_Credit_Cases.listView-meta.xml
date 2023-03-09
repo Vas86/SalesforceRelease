@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Commercial_Credit_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Lender__c</columns>
+    <columns>Assessment_Quality__c</columns>
+    <columns>Set_follow_up_date__c</columns>
+    <columns>Credit_Agent__c</columns>
+    <columns>Partner_Account__c</columns>
+    <columns>Asset_Backed__c</columns>
+    <columns>Comprehensive_Score__c</columns>
+    <columns>Business_Duration__c</columns>
+    <columns>Business_GST__c</columns>
+    <columns>Under_Review_Date__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>contains</operation>
+        <value>Under Review</value>
+    </filters>
+    <filters>
+        <field>Sub_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Chase,Awaiting Customer Response,Follow up Date Set</value>
+    </filters>
+    <label>My Open Commercial Credit Cases</label>
+</ListView>

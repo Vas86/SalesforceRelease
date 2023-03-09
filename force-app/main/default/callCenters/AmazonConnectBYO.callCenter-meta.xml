@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <adapterUrl>https://driva--dev.sandbox.my.salesforce.com/hvcc/amz/index.html</adapterUrl>
+    <customSettings>{&quot;reqTimeout&quot;:&quot;5000&quot;,&quot;vendorInfoApiName&quot;:&quot;c__AMAZON_CONNECT&quot;,&quot;reqStandbyUrl&quot;:&quot;https://domain:port/softphone&quot;,&quot;reqCallCenterType&quot;:&quot;SCVBYOT&quot;,&quot;reqSoftphoneHeight&quot;:&quot;300&quot;,&quot;reqUseApi&quot;:&quot;true&quot;,&quot;reqSoftphoneWidth&quot;:&quot;300&quot;,&quot;reqSalesforceCompatibilityMode&quot;:&quot;Lightning&quot;}</customSettings>
+    <displayName>AmazonConnect-BYO</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>InternalName</internalNameLabel>
+    <sections>
+        <items>
+            <label>Conversation Vendor Info Developer Name</label>
+            <name>reqVendorInfoApiName</name>
+            <value>c__AMAZON_CONNECT</value>
+        </items>
+        <items>
+            <label>CTI Adapter URL</label>
+            <name>reqAdapterUrl</name>
+            <value>https://driva--dev.sandbox.my.salesforce.com/hvcc/amz/index.html</value>
+        </items>
+        <items>
+            <label>Softphone Height</label>
+            <name>reqSoftphoneHeight</name>
+            <value>300</value>
+        </items>
+        <items>
+            <label>Softphone Width</label>
+            <name>reqSoftphoneWidth</name>
+            <value>300</value>
+        </items>
+        <items>
+            <label>Salesforce Compatibility Mode</label>
+            <name>reqSalesforceCompatibilityMode</name>
+            <value>Lightning</value>
+        </items>
+        <items>
+            <label>Use CTI API</label>
+            <name>reqUseApi</name>
+            <value>true</value>
+        </items>
+        <label>General Information</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Relay State</label>
+            <name>reqRelayState</name>
+            <value>https://ap-southeast-2.console.aws.amazon.com/connect/federate/ab516d1d-fec5-43cc-b566-2a3102359504</value>
+        </items>
+        <items>
+            <label>Identity URL</label>
+            <name>reqIdentityUrl</name>
+            <value>https://driva--dev.sandbox.my.salesforce.com/idp/login?app=0sp5g000000fxtC</value>
+        </items>
+        <items>
+            <label>Telephony Integration Certificate</label>
+            <name>reqTelephonyIntegrationCertificate</name>
+            <value>-----BEGIN CERTIFICATE-----
+MIIDeTCCAmECFCcHl4d0qTlTfqXpJwCPR/ZmvtaaMA0GCSqGSIb3DQEBCwUAMHkx
+CzAJBgNVBAYTAkFVMQwwCgYDVQQIDANOU1cxDDAKBgNVBAcMA1N5ZDEOMAwGA1UE
+CgwFRHJpdmExCzAJBgNVBAsMAkNDMRAwDgYDVQQDDAdDb25uZWN0MR8wHQYJKoZI
+hvcNAQkBFhBhYmNAZHJpdmEuY29tLmF1MB4XDTIyMTAyNzA0MTE0N1oXDTMyMTAy
+NDA0MTE0N1oweTELMAkGA1UEBhMCQVUxDDAKBgNVBAgMA05TVzEMMAoGA1UEBwwD
+U3lkMQ4wDAYDVQQKDAVEcml2YTELMAkGA1UECwwCQ0MxEDAOBgNVBAMMB0Nvbm5l
+Y3QxHzAdBgkqhkiG9w0BCQEWEGFiY0Bkcml2YS5jb20uYXUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQC6yU97uK96D/iTXmcC80CQChnGRNqNhQF6Bppv
+Z+MJWfqdZpapH+9iVgTfeJi4l2QbPcduf9vcik/nK8At349f7gsmbP7L2k8PM/Uw
+ZdYn6wE3uxZqckeV03GknQlCOIgLvSn7rIhSTr/HL+F8SkfEXxDvK/fnOLqpXYJT
+nIRnD1cB5hkSU55LFYIymQRD1oAUzQ8Ujq5Rfxlmm5ecTDueRyPOTuNfTHcnAI3/
+JIFGNw929UjiqfCDYeAqcyPVhtanwYEgkjXtMMIuKHqxX4ltEVDUNkXpv90T50Bh
+iEc/1r5Y5UZyiVvS8mnQK/PEgpbv5L0kM0SoxQIW0hi8HsDXAgMBAAEwDQYJKoZI
+hvcNAQELBQADggEBAIZ0TE4k08iDu00GtLLpZ8KKUe8tL5UOKFwumVQ2CSlYKCyk
+KcKTkx7s/0ibCsfpetZeZuud1nFOimdcyiCF/3CjHkJUYr5Y3sdnZddU100aZrcu
+K3kak6RdNx9ni5M3FQ9SCppa+S95d0H7wLsvxQF8BRQX85bMYbe3cIv/tVb+OKSN
+urCFRWioel1eDHPxs7aQgBdOJuwlOJ5yykFbCNSkBQ7PWufutDj1J2aDn/NJE/5J
+2Aysit2q7VR4dbz+o4BS+nbzXCatEl7Sj/RES5r02UTu9gNInoYMcfUWhMbAdTPp
+JggoHtSlTN61NWS+v39egmRiDZVuFz+eqSd4YSI=
+-----END CERTIFICATE-----</value>
+        </items>
+        <items>
+            <label>Long Distance Prefix</label>
+            <name>reqLongDistPrefix</name>
+            <value>+61</value>
+        </items>
+        <items>
+            <label>Instance Name</label>
+            <name>reqInstanceName</name>
+            <value>connect-driva-nonprod</value>
+        </items>
+        <items>
+            <label>Instance Recording Role</label>
+            <name>reqInstanceRecordingRole</name>
+            <value>arn:aws:iam::943846385165:role/byotAmazonConnect-ConnectCallRole</value>
+        </items>
+        <items>
+            <label>Telephony Provider</label>
+            <name>reqTelephonyProvider</name>
+            <value>AMAZON_CONNECT</value>
+        </items>
+        <items>
+            <label>Cloud Formation template version</label>
+            <name>reqVersion</name>
+            <value>1.0</value>
+        </items>
+        <items>
+            <label>Universal Call Recording Access</label>
+            <name>reqUniversalCallRecordingAccess</name>
+            <value>false</value>
+        </items>
+        <items>
+            <label>Telephony Integration Keypair Expiration Date</label>
+            <name>reqTelephonyIntegrationKeyPairExpDate</name>
+            <value>27/10/2032 00:25:46</value>
+        </items>
+        <label>SCV Settings</label>
+        <name>reqHvcc</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Region</label>
+            <name>reqRegion</name>
+            <value>ap-southeast-2</value>
+        </items>
+        <items>
+            <label>Settings Relay State</label>
+            <name>reqSettingsRelayState</name>
+            <value>https://ap-southeast-2.console.aws.amazon.com/connect/federate/ab516d1d-fec5-43cc-b566-2a3102359504</value>
+        </items>
+        <label>Amazon Connect Settings</label>
+        <name>AmazonConnectSettings</name>
+    </sections>
+    <version>1</version>
+</CallCenter>

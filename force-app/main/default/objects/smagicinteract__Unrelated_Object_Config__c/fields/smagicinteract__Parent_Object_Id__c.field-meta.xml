@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Parent_Object_Id__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>gives information about parent object.</description>
+    <externalId>false</externalId>
+    <label>Parent Object Id</label>
+    <referenceTo>smagicinteract__Message_Object_Config__c</referenceTo>
+    <relationshipLabel>Unrelated Object Configs</relationshipLabel>
+    <relationshipName>Unrelated_Object_Configs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

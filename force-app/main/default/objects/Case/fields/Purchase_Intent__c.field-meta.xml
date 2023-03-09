@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Intent__c</fullName>
+    <externalId>false</externalId>
+    <label>Purchase Intent</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ASAP</fullName>
+                <default>false</default>
+                <label>ASAP</label>
+            </value>
+            <value>
+                <fullName>Within a month</fullName>
+                <default>false</default>
+                <label>Within a month</label>
+            </value>
+            <value>
+                <fullName>No hurry</fullName>
+                <default>false</default>
+                <label>No hurry</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

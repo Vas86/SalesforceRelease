@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flowdometer__My_Next_Steps</fullName>
+    <columns>NAME</columns>
+    <columns>Flowdometer__Tracked_Object_Link__c</columns>
+    <columns>Flowdometer__Sequence_and_Initial_Field_Value__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Next Steps</label>
+</ListView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chat_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Chat Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Check an Application</fullName>
+                <default>false</default>
+                <label>Check an Application</label>
+            </value>
+            <value>
+                <fullName>Questions about Driva</fullName>
+                <default>false</default>
+                <label>Questions about Driva</label>
+            </value>
+            <value>
+                <fullName>Questions about Application Flow</fullName>
+                <default>false</default>
+                <label>Questions about Application Flow</label>
+            </value>
+            <value>
+                <fullName>Questions about Post-Approval</fullName>
+                <default>false</default>
+                <label>Questions about Post-Approval</label>
+            </value>
+            <value>
+                <fullName>Questions about Under-Review</fullName>
+                <default>false</default>
+                <label>Questions about Under-Review</label>
+            </value>
+            <value>
+                <fullName>Error / Bug / Product Issue</fullName>
+                <default>false</default>
+                <label>Error / Bug / Product Issue</label>
+            </value>
+            <value>
+                <fullName>Update Application Details</fullName>
+                <default>false</default>
+                <label>Update Application Details</label>
+            </value>
+            <value>
+                <fullName>Intent to Withdraw</fullName>
+                <default>false</default>
+                <label>Intent to Withdraw</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

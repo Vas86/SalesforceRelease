@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tiger_Queue</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>Follow_Up_Calls__c</columns>
+    <columns>Source__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Comprehensive_Score__c</columns>
+    <columns>Awaiting_Documents_Date__c</columns>
+    <columns>Partner_Account__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>Personal_Loan__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Tiger Queue</label>
+    <queue>Sales_Service_Queue</queue>
+</ListView>

@@ -1,0 +1,190 @@
+<template>
+    <div class = "bootstrap">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 slds-p-top_small" style="border: 1px solid rgb(201, 196, 196);">
+                    <ul class="slds-list_horizontal slds-has-inline-block-links_space">
+                        <li><lightning-icon icon-name="standard:case" alternative-text="case image" ></lightning-icon></li>
+                        <li class="slds-p-left_medium slds-p-top_xx-small"><div class="slds-text-heading_small"><b>Request documents in customer Portal</b></div></li>            
+                    </ul>
+                    <div class="row" style="display: flex;">
+        
+                        <div class="col-lg-6">
+                            <div class="panel panel-default" style="flex-wrap: wrap;height: 100%">
+                                <div class="panel-heading"><b>Select Document</b></div>
+                                <div class="panel-body">
+                                        <select onchange = {handleSearch} name="category" class=" form-control " aria-label="Default select example">
+                                            <option selected value="" >All Categories</option>
+                                            <option data-name = "category"  value="lenderRequested">Lender Requested</option>
+                                            <option  value="postApproval">Post Approval</option>
+                            
+                                          </select>
+                                    <lightning-input class="slds-p-top_medium" data-name="search" variant = "label-hidden" placeholder = "Search document" type="search" onchange={handleSearch}></lightning-input><br>
+                                        <div class="slds-scrollable_y " style="height:250px;">
+                                            <template for:each={filterDocuments} for:item="doc" >
+                                                <span key={doc}>
+                                                    <div if:true={doc.isDisplay} class="slds-col">
+                                                        <lightning-input style="padding : 5px;" checked={doc.isSelected} type="checkbox" label={doc.name} onchange = {handleChecked} value={doc.name} data-id={doc.id} ></lightning-input>
+                                                    </div>
+                                                </span>
+                                            </template>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-6">
+                            <div class="panel panel-default" style="position: relative;flex-wrap: wrap;height: 100%">
+                                <div class="panel-heading"><b>Confirm Document Request</b></div>
+                                <div class="panel-body">
+                                    <template if:false={selectedDocs.length}>
+                                        <div class="slds-p-top_small shift"><i>Select document from list</i></div>
+                                    </template>
+                                    <div class="slds-scrollable_y " style="height:250px;">
+                                        <template for:each={selectedDocument} for:item="doc" >                                       
+                                                <div style="padding : 5px;" key={doc.docId} >                                                
+                                                        {doc.docName}
+                                                        <lightning-button-icon variant="base" class="slds-p-left_x-small" size="small" icon-name="utility:edit_form" onclick={handlePopUpEdit}  data-id={doc.docId} data-name={doc.docName}>
+                                                        </lightning-button-icon>
+                                                        <lightning-icon class="slds-m-left_x-small pointer" icon-name="utility:close" size="x-small" alternative-text="Remove" title="Remove" onclick={handleRemove} data-id={doc.docId}></lightning-icon>                                                                                              
+                                                </div>                                    
+                                        </template>
+                                    </div>
+                                </div>
+        
+                               <!--<div class="panel-footer" style="position: absolute;right: 0;bottom: 0;width: 100%;">
+                                    <p><b style="font-size:12px;">Would you like to notify the customer?</b></p>
+        
+                                    <div class="">
+                                        <span>
+                                            <span style="background: #286090;width: 45px;font-size: 11px;padding: 5px;color: white;    border-radius: 4px;">Email -</span> 
+                                        
+                                            <span><lightning-button-icon variant="base" class="slds-p-left_x-small" size="small" icon-name="utility:edit_form" alternative-text="Email">
+                                            </lightning-button-icon></span>
+                                        
+                                        </span>
+        
+                                        <span style="padding-left: 20px;">
+                                            <span style="background: #286090;width: 45px;font-size: 11px;padding: 5px;color: white;    border-radius: 4px;">SMS -</span> 
+                                            <span><lightning-button-icon variant="base" class="slds-p-left_x-small" size="small" icon-name="utility:edit_form" alternative-text="SMS">
+                                            </lightning-button-icon></span>
+                                        </span>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="row" style="padding-bottom: 20px;padding-top:10px;">
+                       <div class="col-lg-6">
+                            <button type="button" class="btn btn-default" style="width: 70%;" onclick={handleNewDoc}>Create New Document</button>
+                         </div>
+        
+                         <div class="col-lg-6">
+                            <button type="button" onclick={handleSubmit} class="btn btn-primary"><b>Submit Request</b></button>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            
+      </div>
+    </div>
+    <div class="custom-modal" if:true={isModelOpen}>
+        <section role="dialog" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container ">
+                <header class="slds-modal__header">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_10-of-12 ">
+                          <span><h2 class="slds-text-heading_medium slds-hyphenate slds-float_left">Request in portal: Create new document</h2></span>
+                        </div>
+                        <div class="slds-col slds-size_2-of-12 ">
+                          <span>   
+                            <lightning-button-icon icon-name="utility:close"  variant="bare" alternative-text="Close" size="large"  title="Close" onclick={handleClose}></lightning-button-icon></span>
+                        </div>
+                      </div>
+                    
+                    <!-- <span class="slds-float_right slds-p-bottom_x-large">
+                        
+                    </span> -->
+                    
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-input type="text" variant="standard" name="Document Name" label="Document Name" class="docName" onchange={handleDocNameDesc} data-errormsg="Enter document name to be added to document list and portal"></lightning-input>
+                    <lightning-textarea type="text" variant="standard"  name="Document description" class="slds-p-top_medium docDesc" onchange={handleDocNameDesc} label="Document description" placeholder="This description will appear in Portal" data-errormsg="Enter description to explain documents requirements to customer"></lightning-textarea>
+                    <lightning-combobox
+                        class="slds-p-top_medium"
+                        label="Request Type"
+                        value={newDocumentActionType}
+                        options={actionTypes}
+                        onchange={handleActionType} >
+                    </lightning-combobox>
+                    <lightning-input type="checkbox" label="Mark this as a post-approval document" class="slds-p-top_medium" onchange ={handlePostApprove} ></lightning-input> 
+                    <div class="slds-float_right">
+                        <lightning-button label="Cancel" title="Cancel" variant="brand-outline" onclick={handleCancel} class="slds-m-right_small" ></lightning-button>
+                        <lightning-button variant="brand" label="Create" title="Create" onclick={handleCreate}></lightning-button>
+    
+                    </div>            
+                </div>
+                
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+
+    <div class="custom-modal" if:true={isDDModelOpen}>
+        <section role="dialog" class="slds-modal slds-fade-in-open" >
+            <div class="slds-modal__container ">
+                <header class="slds-modal__header">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_10-of-12 " >
+                           
+                            <!--<template for:each={selectedDocument} for:item="doc" >     
+                                                                 
+                                <div style="padding : 5px;" key={doc.docId} >  -->
+                                   
+                                    <span> <h2 class="slds-text-heading_medium slds-hyphenate slds-float_left" > {selectedDocName}  </h2>   </span>                                       
+                                        
+                                <!--</div>
+                            
+                            </template>-->
+                          <!--<span><h2 class="slds-text-heading_medium slds-hyphenate slds-float_left" >Clarification question 1</h2></span>-->
+                        
+                        </div>
+                        <div class="slds-col slds-size_2-of-12 ">
+                          <span>   
+                            <lightning-button-icon icon-name="utility:close"  variant="bare" alternative-text="Close" size="large"  title="Close" onclick={handleClose}></lightning-button-icon></span>
+                        </div>
+                      </div>
+                    
+                    <!-- <span class="slds-float_right slds-p-bottom_x-large">
+                        
+                    </span> -->
+                    
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <b>Document Description</b><br/>
+                    Enter the question you want to appear for this customer.
+                    <lightning-textarea value={documentDescription} type="text" variant="standard"  name="doc_desc" class="slds-p-top_medium doc-desc" onchange={handleDocNameDesc} label="Document description" data-errormsg="Enter description to explain documents requirements to customer"></lightning-textarea><br/>
+                    <div class="slds-float_right">
+                        <lightning-button label="Cancel" title="Cancel" variant="brand-outline" onclick={handleCancel} class="slds-m-right_small" ></lightning-button>
+                        <lightning-button variant="brand" label="Continue" title="Continue" onclick={handleDocumentSave}></lightning-button>
+    
+                    </div>            
+                </div>
+                
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+
+    
+   
+    <div class="spinner">
+        <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                </lightning-spinner>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__actionTaken__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the action taken on Incoming. The action can be: Create Task, Create Lead, Create Contact, Create Case, etc.</description>
+    <externalId>false</externalId>
+    <label>actionTaken</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

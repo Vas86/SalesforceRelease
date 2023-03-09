@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Field_Purpose__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stores purpose for which field name to be used by Message Object Config object.</description>
+    <externalId>false</externalId>
+    <label>Field Purpose</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Incoming</fullName>
+                <default>false</default>
+                <label>Incoming</label>
+            </value>
+            <value>
+                <fullName>Outgoing</fullName>
+                <default>false</default>
+                <label>Outgoing</label>
+            </value>
+            <value>
+                <fullName>unrelated Search</fullName>
+                <default>false</default>
+                <label>unrelated Search</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

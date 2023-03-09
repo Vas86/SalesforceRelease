@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TwilioSF__Keyword_Cannot_Contain_a_Space</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TwilioSF__Keyword_cannot_be_edited_w_optins</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Cases_To_Update</name>
+        <label>Cases To Update</label>
+        <locationX>270</locationX>
+        <locationY>815</locationY>
+        <assignmentItems>
+            <assignToReference>CasesRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Iterate_Cases</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_Cases</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Case_Call_Exp</name>
+        <label>Set Case Call Exp</label>
+        <locationX>270</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>Iterate_Cases.Call_Experiment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Call_Experiment__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Cases_To_Update</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Call_Experiment_is_Changed</name>
+        <label>Call Experiment is Changed</label>
+        <locationX>380</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Call_Experiment__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Call_Experiment__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Related_Cases</targetReference>
+            </connector>
+            <label>Is Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Size_Of_Cases</name>
+        <label>Size Of Cases</label>
+        <locationX>182</locationX>
+        <locationY>1031</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_size</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CasesRecords</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Cases</targetReference>
+            </connector>
+            <label>check size</label>
+        </rules>
+    </decisions>
+    <description>Used to sync case and conatct&apos;s call experiment field</description>
+    <environments>Default</environments>
+    <interviewLabel>Sync Case and Contact Call Experiment (Contact) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sync Case and Contact Call Experiment [Contact]</label>
+    <loops>
+        <name>Iterate_Cases</name>
+        <label>Iterate Cases</label>
+        <locationX>182</locationX>
+        <locationY>575</locationY>
+        <collectionReference>Get_Related_Cases</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Set_Case_Call_Exp</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Size_Of_Cases</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Related_Cases</name>
+        <label>Get Related Cases</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Iterate_Cases</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Cases</name>
+        <label>Update Cases</label>
+        <locationX>50</locationX>
+        <locationY>1151</locationY>
+        <inputReference>CasesRecords</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Call_Experiment_is_Changed</targetReference>
+        </connector>
+        <object>Contact</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>CasesRecords</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

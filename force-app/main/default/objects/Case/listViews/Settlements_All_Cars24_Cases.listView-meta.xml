@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Settlements_All_Cars24_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Ready_for_Rego__c</columns>
+    <columns>Cars24_Invoice_Received__c</columns>
+    <columns>Pre_Approval__c</columns>
+    <columns>Settlement_Agent__c</columns>
+    <columns>Lender__c</columns>
+    <columns>Estimated_Delivery_Date__c</columns>
+    <columns>Set_follow_up_date__c</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>Checkout_Date__c</columns>
+    <columns>Is_Finance_First__c</columns>
+    <columns>Warranty_Financed__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Conditionally Approved,Approved</value>
+    </filters>
+    <filters>
+        <field>Partner_Account__c</field>
+        <operation>equals</operation>
+        <value>CARS24</value>
+    </filters>
+    <filters>
+        <field>Pre_Approval__c</field>
+        <operation>notEqual</operation>
+        <value>Verimoto Pending,Cancellation In Progress,Delayed Delivery,Vehicle Search,Unresponsive,Not Proceeding</value>
+    </filters>
+    <label>Settlements - All Cars24 Cases</label>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label></label>
+        <name>Flowdometer__Goal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Flowdometer__Tracker</name>
+    </recordTypes>
+    <webLinks>
+        <label></label>
+        <name>Flowdometer__Set_a_Goal_SLA</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TwilioSF__Failed_To_Send</fullName>
+    <columns>NAME</columns>
+    <columns>TwilioSF__To_Number__c</columns>
+    <columns>TwilioSF__Body__c</columns>
+    <columns>TwilioSF__API_Failure_Message__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TwilioSF__Status__c</field>
+        <operation>equals</operation>
+        <value>failed</value>
+    </filters>
+    <label>Failed To Send</label>
+</ListView>

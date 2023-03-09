@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Consent__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Consent</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Opt-In</fullName>
+                <default>false</default>
+                <label>Opt-In</label>
+            </value>
+            <value>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+                <label>Opt-Out</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Double Opt-In</fullName>
+                <default>false</default>
+                <label>Double Opt-In</label>
+            </value>
+            <value>
+                <fullName>Expired</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

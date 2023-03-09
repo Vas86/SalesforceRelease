@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__outgoing_sms__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field contains the ID of the previous outgoing SMS.</description>
+    <externalId>false</externalId>
+    <label>Outgoing SMS</label>
+    <referenceTo>smagicinteract__smsMagic__c</referenceTo>
+    <relationshipLabel>Incoming SMS</relationshipLabel>
+    <relationshipName>Incoming_SMS</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

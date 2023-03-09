@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Withdraw_Decline_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Withdraw / Decline Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BS - Other Bank Statement Conduct</fullName>
+                <default>false</default>
+                <label>BS - Other Bank Statement Conduct</label>
+            </value>
+            <value>
+                <fullName>BS - Pay Day Activity</fullName>
+                <default>false</default>
+                <label>BS - Pay Day Activity</label>
+            </value>
+            <value>
+                <fullName>CF - Financial Defaults</fullName>
+                <default>false</default>
+                <label>CF - Financial Defaults</label>
+            </value>
+            <value>
+                <fullName>CF - Late Payments</fullName>
+                <default>false</default>
+                <label>CF - Late Payments</label>
+            </value>
+            <value>
+                <fullName>CF - Other Credit File Conduct</fullName>
+                <default>false</default>
+                <label>CF - Other Credit File Conduct</label>
+            </value>
+            <value>
+                <fullName>CF - Too Many Enquiries</fullName>
+                <default>false</default>
+                <label>CF - Too Many Enquiries</label>
+            </value>
+            <value>
+                <fullName>Found Other Finance Option</fullName>
+                <default>false</default>
+                <label>Found Other Finance Option</label>
+            </value>
+            <value>
+                <fullName>Fraud</fullName>
+                <default>false</default>
+                <label>Fraud</label>
+            </value>
+            <value>
+                <fullName>Insufficient Employment History</fullName>
+                <default>false</default>
+                <label>Insufficient Employment History</label>
+            </value>
+            <value>
+                <fullName>No Longer Buying a Car</fullName>
+                <default>false</default>
+                <label>No Longer Buying a Car</label>
+            </value>
+            <value>
+                <fullName>No Longer Using Finance</fullName>
+                <default>false</default>
+                <label>No Longer Using Finance</label>
+            </value>
+            <value>
+                <fullName>No Reply / Cold Lead</fullName>
+                <default>false</default>
+                <label>No Reply / Cold Lead</label>
+            </value>
+            <value>
+                <fullName>No Servicing Capacity</fullName>
+                <default>false</default>
+                <label>No Servicing Capacity</label>
+            </value>
+            <value>
+                <fullName>Other Knockout</fullName>
+                <default>false</default>
+                <label>Other Knockout</label>
+            </value>
+            <value>
+                <fullName>Residency</fullName>
+                <default>false</default>
+                <label>Residency</label>
+            </value>
+            <value>
+                <fullName>Lockdown Impact</fullName>
+                <default>false</default>
+                <label>Lockdown Impact</label>
+            </value>
+            <value>
+                <fullName>System</fullName>
+                <default>false</default>
+                <label>System</label>
+            </value>
+            <value>
+                <fullName>Insufficient ABN</fullName>
+                <default>false</default>
+                <label>Insufficient ABN</label>
+            </value>
+            <value>
+                <fullName>Counter-offer</fullName>
+                <default>false</default>
+                <label>Counter-offer</label>
+            </value>
+            <value>
+                <fullName>Could not find vehicle</fullName>
+                <default>false</default>
+                <label>Could not find vehicle</label>
+            </value>
+            <value>
+                <fullName>BS - Dishonours</fullName>
+                <default>false</default>
+                <label>BS - Dishonours</label>
+            </value>
+            <value>
+                <fullName>BS - Days in Negative</fullName>
+                <default>false</default>
+                <label>BS - Days in Negative</label>
+            </value>
+            <value>
+                <fullName>BS - Gambling</fullName>
+                <default>false</default>
+                <label>BS - Gambling</label>
+            </value>
+            <value>
+                <fullName>BS - ATM Withdrawals</fullName>
+                <default>false</default>
+                <label>BS - ATM Withdrawals</label>
+            </value>
+            <value>
+                <fullName>Recent Drawdown</fullName>
+                <default>false</default>
+                <label>Recent Drawdown</label>
+            </value>
+            <value>
+                <fullName>Delayed Delivery</fullName>
+                <default>false</default>
+                <label>Delayed Delivery</label>
+            </value>
+            <value>
+                <fullName>Loan Purpose</fullName>
+                <default>false</default>
+                <label>Loan Purpose</label>
+            </value>
+            <value>
+                <fullName>ATM Withdrawals/Gambling</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ATM Withdrawals/Gambling</label>
+            </value>
+            <value>
+                <fullName>BS - Dishonours / Days in Negative</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BS - Dishonours / Days in Negative</label>
+            </value>
+            <value>
+                <fullName>BS - Gambling / ATM Withdrawals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BS - Gambling / ATM Withdrawals</label>
+            </value>
+            <value>
+                <fullName>BS required &amp; falls out of policy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BS required &amp; falls out of policy</label>
+            </value>
+            <value>
+                <fullName>Customer Requires PL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Requires PL</label>
+            </value>
+            <value>
+                <fullName>Debt to income Ratio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Debt to income Ratio</label>
+            </value>
+            <value>
+                <fullName>Dishonours</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dishonours</label>
+            </value>
+            <value>
+                <fullName>Doc Requirements not met</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Doc Requirements not met</label>
+            </value>
+            <value>
+                <fullName>Emp Type or Tenure Incorrect</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Emp Type or Tenure Incorrect</label>
+            </value>
+            <value>
+                <fullName>Joint Application</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Joint Application</label>
+            </value>
+            <value>
+                <fullName>Loan Amount</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Loan Amount</label>
+            </value>
+            <value>
+                <fullName>No Early Termination Fees</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Early Termination Fees</label>
+            </value>
+            <value>
+                <fullName>Paydays</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paydays</label>
+            </value>
+            <value>
+                <fullName>RE higher than quoted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RE higher than quoted</label>
+            </value>
+            <value>
+                <fullName>Repayment History</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Repayment History</label>
+            </value>
+            <value>
+                <fullName>Serviceability</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Serviceability</label>
+            </value>
+            <value>
+                <fullName>Switch to Commercial</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Switch to Commercial</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>BS - Other Bank Statement Conduct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>BS - Pay Day Activity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>CF - Financial Defaults</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>CF - Late Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>CF - Other Credit File Conduct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>CF - Too Many Enquiries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Found Other Finance Option</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Fraud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Insufficient Employment History</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>No Longer Buying a Car</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>No Longer Using Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>No Reply / Cold Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>No Servicing Capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Other Knockout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Residency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Lockdown Impact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Insufficient ABN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Counter-offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Could not find vehicle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>BS - Dishonours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>BS - Days in Negative</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>BS - Gambling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>BS - ATM Withdrawals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Recent Drawdown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Delayed Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <controllingFieldValue>Withdrawn</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <controllingFieldValue>Started</controllingFieldValue>
+            <controllingFieldValue>Awaiting Documents</controllingFieldValue>
+            <controllingFieldValue>Under Review</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Received</controllingFieldValue>
+            <controllingFieldValue>Lodged</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <controllingFieldValue>Referred</controllingFieldValue>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Loan Purpose</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

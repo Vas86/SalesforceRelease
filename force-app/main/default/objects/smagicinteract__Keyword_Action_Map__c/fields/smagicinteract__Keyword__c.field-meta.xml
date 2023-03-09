@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Keyword__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field contains the lookup of related keyword.</description>
+    <externalId>false</externalId>
+    <label>Keyword</label>
+    <referenceTo>smagicinteract__Keyword__c</referenceTo>
+    <relationshipName>KeywordActionMaps</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

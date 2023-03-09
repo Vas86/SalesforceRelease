@@ -1,0 +1,43 @@
+<template>
+    <div class="bootstrap">
+        <p><b>The following documents are appearing in the customer portal.</b></p>
+        <template if:true={documentsWithCategory}>
+            <template for:each={documentsWithCategory} for:item="objMap">
+                <div key={objMap.key} class="panel panel-default" style="flex-wrap: wrap;height: 100%">
+                    <div class="panel-heading"><b>{objMap.key}</b></div>
+                    <div class="panel-body">
+                        <template if:true={objMap.value} for:each={objMap.value} for:item="objVal">
+                            <div key={objVal.docId} class={objVal.color}>
+                                <!-- Added On 10-02/2023  || Start-->
+                                <a href="javascript:void(0)" data-doc-type={objVal.documentType}
+                                    data-doc-data-value={objVal.description} onclick={handleSelect} class="minus-action">
+                                    <lightning-layout>
+                                        <lightning-layout-item padding="horizontal-small">
+                                            <span>{objVal.name}</span>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </a>
+                                <!-- Added On 10-02/2023  || End slds-p-left_x-small-->
+                                <a if:true={objVal.enableDel}
+                                    class="glyphicon glyphicon-minus minus-action"
+                                    onclick={handleDelete} data-id={objVal.docId} data-desc={objVal.description}></a>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </template>
+
+    </div>
+    <!--<template if:true={documentsWithCategory.data}>  -->
+    <template if:true={documentsWithCategory}>
+        <lightning-button variant="brand" label="Update" title="Update" onclick={handleUpdate}
+            class="slds-m-left_x-small"></lightning-button></template>
+
+    <div class="spinner">
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+            </lightning-spinner>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Incoming_Lookup_Configuration</fullName>
+    <columns>smagicinteract__objectName__c</columns>
+    <columns>smagicinteract__MobilePhoneField__c</columns>
+    <columns>smagicinteract__ReferenceField__c</columns>
+    <columns>smagicinteract__incoming_sms_owner__c</columns>
+    <columns>smagicinteract__Notify_Record_Owner__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>Incoming Lookup</label>
+</ListView>

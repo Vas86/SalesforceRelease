@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <label></label>
+        <name>smagicinteract__Expire_BULK_URL</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>smagicinteract__Short_URL_BULK_Delete</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Liability</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Liabilities</value>
+    </caseValues>
+    <layouts>
+        <layout>Credit Card Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Liability Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mortgage</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Other Liability</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pay Later Account</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Personal Loans Page Layouts</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vehicle Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Credit_Card</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Mortgage</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Other_Liabilities</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Pay_Later_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Personal_Loan</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Vehicle</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

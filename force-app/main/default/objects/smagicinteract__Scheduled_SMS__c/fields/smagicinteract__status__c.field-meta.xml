@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__status__c</fullName>
+    <defaultValue>&quot;active&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Deprecated. Do not use.</description>
+    <externalId>false</externalId>
+    <label>status</label>
+    <length>100</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

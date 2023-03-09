@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TwilioSF__Twilio_Delay_for_Autoresponder__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this field only in scheduled Actions of process builder, Whenever you want to send autoresponder SMS for incoming messages</description>
+    <externalId>false</externalId>
+    <formula>CreatedDate   - 0.0409</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Twilio Delay for Autoresponder</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

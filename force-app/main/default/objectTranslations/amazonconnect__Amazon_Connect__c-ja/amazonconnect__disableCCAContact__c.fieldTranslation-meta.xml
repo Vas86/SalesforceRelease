@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>AC_AssociateCCAContact トリガーを有効または無効にします。これにより、Contact が Contact Channel Analytics レコードに関連付けられます。</help>
+    <label></label>
+    <name>amazonconnect__disableCCAContact__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Listing_Field__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Api name of the field to be displayed on the conversation listing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Api name of the field to be displayed on the conversation listing.</inlineHelpText>
+    <label>Listing Field</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

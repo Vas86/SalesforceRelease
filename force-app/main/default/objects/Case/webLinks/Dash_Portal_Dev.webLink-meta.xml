@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dash_Portal_Dev</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Dash Portal (Dev)</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>https://{!IF( ISBLANK( Case.Quoted_Date__c ) , &apos;dash-dev&apos;, &apos;desk-dev&apos;)}.driva.com.au/{!IF( ISBLANK( Case.Quoted_Date__c ) , &apos;partial&apos;, &apos;gotoportal&apos;)}/{!Case.Driva_UUID__c}</url>
+</WebLink>

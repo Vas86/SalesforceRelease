@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the type of Action. The type can be: Automation, Auto Reply, Schedule, etc.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automation</fullName>
+                <default>true</default>
+                <label>Automation</label>
+            </value>
+            <value>
+                <fullName>Auto Reply</fullName>
+                <default>false</default>
+                <label>Auto Reply</label>
+            </value>
+            <value>
+                <fullName>Bulk</fullName>
+                <default>false</default>
+                <label>Bulk</label>
+            </value>
+            <value>
+                <fullName>Notification to User</fullName>
+                <default>false</default>
+                <label>Notification to User</label>
+            </value>
+            <value>
+                <fullName>ResponseAutomation</fullName>
+                <default>false</default>
+                <label>ResponseAutomation(Donot use)</label>
+            </value>
+            <value>
+                <fullName>Schedule</fullName>
+                <default>false</default>
+                <label>Schedule</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

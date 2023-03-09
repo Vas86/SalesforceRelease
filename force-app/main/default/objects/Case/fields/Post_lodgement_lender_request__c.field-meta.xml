@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_lodgement_lender_request__c</fullName>
+    <externalId>false</externalId>
+    <label>Post-lodgement lender request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct debit details</fullName>
+                <default>false</default>
+                <label>Direct debit details</label>
+            </value>
+            <value>
+                <fullName>Liability statement</fullName>
+                <default>false</default>
+                <label>Liability statement</label>
+            </value>
+            <value>
+                <fullName>ID / Certified ID</fullName>
+                <default>false</default>
+                <label>ID / Certified ID</label>
+            </value>
+            <value>
+                <fullName>Tenancy Agreement</fullName>
+                <default>false</default>
+                <label>Tenancy Agreement</label>
+            </value>
+            <value>
+                <fullName>Payslips</fullName>
+                <default>false</default>
+                <label>Payslips</label>
+            </value>
+            <value>
+                <fullName>Bank statements (incorrect)</fullName>
+                <default>false</default>
+                <label>Bank statements (incorrect)</label>
+            </value>
+            <value>
+                <fullName>Bank statements (other account)</fullName>
+                <default>false</default>
+                <label>Bank statements (other account)</label>
+            </value>
+            <value>
+                <fullName>Proof of address</fullName>
+                <default>false</default>
+                <label>Proof of address</label>
+            </value>
+            <value>
+                <fullName>Closure statement</fullName>
+                <default>false</default>
+                <label>Closure statement</label>
+            </value>
+            <value>
+                <fullName>BNPL clarification</fullName>
+                <default>false</default>
+                <label>BNPL clarification</label>
+            </value>
+            <value>
+                <fullName>Partner payslip</fullName>
+                <default>false</default>
+                <label>Partner payslip</label>
+            </value>
+            <value>
+                <fullName>Employment contract</fullName>
+                <default>false</default>
+                <label>Employment contract</label>
+            </value>
+            <value>
+                <fullName>Personal loan reason</fullName>
+                <default>false</default>
+                <label>Personal loan reason</label>
+            </value>
+            <value>
+                <fullName>ATM transactions</fullName>
+                <default>false</default>
+                <label>ATM transactions</label>
+            </value>
+            <value>
+                <fullName>Other transaction clarification</fullName>
+                <default>false</default>
+                <label>Other transaction clarification</label>
+            </value>
+            <value>
+                <fullName>Payout letter</fullName>
+                <default>false</default>
+                <label>Payout letter</label>
+            </value>
+            <value>
+                <fullName>Employer contact details</fullName>
+                <default>false</default>
+                <label>Employer contact details</label>
+            </value>
+            <value>
+                <fullName>Rental/Boarding contact details</fullName>
+                <default>false</default>
+                <label>Rental/Boarding contact details</label>
+            </value>
+            <value>
+                <fullName>Medicare card clarification</fullName>
+                <default>false</default>
+                <label>Medicare card clarification</label>
+            </value>
+            <value>
+                <fullName>Default clarification</fullName>
+                <default>false</default>
+                <label>Default clarification</label>
+            </value>
+            <value>
+                <fullName>Outcome of recent enquiries</fullName>
+                <default>false</default>
+                <label>Outcome of recent enquiries</label>
+            </value>
+            <value>
+                <fullName>Liability details</fullName>
+                <default>false</default>
+                <label>Liability details</label>
+            </value>
+            <value>
+                <fullName>Living expense clarification</fullName>
+                <default>false</default>
+                <label>Living expense clarification</label>
+            </value>
+            <value>
+                <fullName>Maximum lend confirmation</fullName>
+                <default>false</default>
+                <label>Maximum lend confirmation</label>
+            </value>
+            <value>
+                <fullName>Relationship clarification</fullName>
+                <default>false</default>
+                <label>Relationship clarification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

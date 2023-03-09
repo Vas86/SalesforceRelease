@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Converse_App__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Lookup to Converse App object.</description>
+    <externalId>false</externalId>
+    <label>Converse App</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 OR 2 OR 3)</booleanFilter>
+        <filterItems>
+            <field>smagicinteract__Converse_App__c.smagicinteract__Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <filterItems>
+            <field>smagicinteract__Converse_App__c.smagicinteract__Status__c</field>
+            <operation>equals</operation>
+            <value>Draft</value>
+        </filterItems>
+        <filterItems>
+            <field>smagicinteract__Converse_App__c.smagicinteract__Status__c</field>
+            <operation>equals</operation>
+            <value>Paused</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>smagicinteract__Converse_App__c</referenceTo>
+    <relationshipLabel>Converse App Action</relationshipLabel>
+    <relationshipName>Converse_App_Action</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

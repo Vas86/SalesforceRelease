@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>check_case_status_is_still_lodged</name>
+        <label>check case status is still lodged</label>
+        <locationX>182</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_case_status_is_still_lodged_outcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lodged</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reset_substatus_to_requires_driva_action_1day_post_lodgement</targetReference>
+            </connector>
+            <label>check case status is still lodged outcome</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>check_case_status_is_still_lodged_2d_post</name>
+        <label>check case status is still lodged 2d post</label>
+        <locationX>710</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_case_status_is_still_lodged_2d_post_outcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lodged</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reset_substatus_to_requires_driva_action_2day_post_lodgement</targetReference>
+            </connector>
+            <label>check case status is still lodged 2d post outcome</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>check_case_status_is_still_lodged_3d_post</name>
+        <label>check case status is still lodged 3d post</label>
+        <locationX>1238</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_case_status_is_still_lodged_3d_post_outcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lodged</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reset_substatus_to_requires_driva_action_3day_post_lodgement</targetReference>
+            </connector>
+            <label>check case status is still lodged 3d post outcome</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>check_case_status_is_still_lodged_4d_post</name>
+        <label>check case status is still lodged 4d post</label>
+        <locationX>1766</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_case_status_is_still_lodged_4d_post_outcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lodged</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reset_substatus_to_requires_driva_action_4day_post_lodgement</targetReference>
+            </connector>
+            <label>check case status is still lodged 4d post outcome</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>check_case_status_is_still_lodged_5d_post</name>
+        <label>check case status is still lodged 5d post</label>
+        <locationX>2294</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_case_status_is_still_lodged_5d_post_outcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lodged</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reset_substatus_to_requires_driva_action_5day_post_lodgement</targetReference>
+            </connector>
+            <label>check case status is still lodged 5d post outcome</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>check_case_status_is_still_lodged_6d_post</name>
+        <label>check case status is still lodged 6d post</label>
+        <locationX>2822</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_case_status_is_still_lodged_6d_post_outcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lodged</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reset_substatus_to_requires_driva_action_6day_post_lodgement</targetReference>
+            </connector>
+            <label>check case status is still lodged 6d post outcome</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>check_case_status_is_still_lodged_7d_post</name>
+        <label>check case status is still lodged 7d post</label>
+        <locationX>3350</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_case_status_is_still_lodged_7d_post_outcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lodged</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reset_substatus_to_requires_driva_action_7day_post_lodgement</targetReference>
+            </connector>
+            <label>check case status is still lodged 7d post outcome</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Reset substatus to Requires Driva Action 24hrs, 48hrs, 72hrs following lodgement {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Reset substatus to Requires Driva Action 24hrs, 48hrs, 72hrs following lodgement</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Reset_substatus_to_requires_driva_action_1day_post_lodgement</name>
+        <label>Reset substatus to requires driva action 1day post lodgement</label>
+        <locationX>50</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Requires Driva Action</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Reset_substatus_to_requires_driva_action_2day_post_lodgement</name>
+        <label>Reset substatus to requires driva action 2day post lodgement</label>
+        <locationX>578</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Requires Driva Action</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Reset_substatus_to_requires_driva_action_3day_post_lodgement</name>
+        <label>Reset substatus to requires driva action 3day post lodgement</label>
+        <locationX>1106</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Requires Driva Action</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Reset_substatus_to_requires_driva_action_4day_post_lodgement</name>
+        <label>Reset substatus to requires driva action 4day post lodgement</label>
+        <locationX>1634</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Requires Driva Action</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Reset_substatus_to_requires_driva_action_5day_post_lodgement</name>
+        <label>Reset substatus to requires driva action 5day post lodgement</label>
+        <locationX>2162</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Requires Driva Action</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Reset_substatus_to_requires_driva_action_6day_post_lodgement</name>
+        <label>Reset substatus to requires driva action 6day post lodgement</label>
+        <locationX>2690</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Requires Driva Action</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Reset_substatus_to_requires_driva_action_7day_post_lodgement</name>
+        <label>Reset substatus to requires driva action 7day post lodgement</label>
+        <locationX>3218</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Requires Driva Action</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>1442</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Lodged</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <name>Reset_substatus_one_day_after_Lodgment</name>
+            <connector>
+                <targetReference>check_case_status_is_still_lodged</targetReference>
+            </connector>
+            <label>Reset substatus one day after Lodgment</label>
+            <offsetNumber>24</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Lodgement_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Reset_substatus_two_days_after_Lodgment</name>
+            <connector>
+                <targetReference>check_case_status_is_still_lodged_2d_post</targetReference>
+            </connector>
+            <label>Reset substatus two days after Lodgment</label>
+            <offsetNumber>48</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Lodgement_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Reset_substatus_three_days_after_Lodgment</name>
+            <connector>
+                <targetReference>check_case_status_is_still_lodged_3d_post</targetReference>
+            </connector>
+            <label>Reset substatus three days after Lodgment</label>
+            <offsetNumber>72</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Lodgement_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Reset_substatus_four_days_after_Lodgement</name>
+            <connector>
+                <targetReference>check_case_status_is_still_lodged_4d_post</targetReference>
+            </connector>
+            <label>Reset substatus four days after Lodgement</label>
+            <offsetNumber>96</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Lodgement_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Reset_substatus_five_days_after_Lodgement</name>
+            <connector>
+                <targetReference>check_case_status_is_still_lodged_5d_post</targetReference>
+            </connector>
+            <label>Reset substatus five days after Lodgement</label>
+            <offsetNumber>120</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Lodgement_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Reset_substatus_six_days_after_Lodgement</name>
+            <connector>
+                <targetReference>check_case_status_is_still_lodged_6d_post</targetReference>
+            </connector>
+            <label>Reset substatus six days after Lodgement</label>
+            <offsetNumber>144</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Lodgement_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Reset_substatus_seven_days_after_Lodgement</name>
+            <connector>
+                <targetReference>check_case_status_is_still_lodged_7d_post</targetReference>
+            </connector>
+            <label>Reset substatus seven days after Lodgement</label>
+            <offsetNumber>168</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Lodgement_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

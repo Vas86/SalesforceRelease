@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Last_30_days</fullName>
+    <columns>NAME</columns>
+    <columns>smagicinteract__Last_Incoming_Time__c</columns>
+    <columns>smagicinteract__Last_Message_Direction__c</columns>
+    <columns>smagicinteract__Last_Message_Time__c</columns>
+    <columns>smagicinteract__Object__c</columns>
+    <columns>smagicinteract__State__c</columns>
+    <columns>smagicinteract__Sender__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>smagicinteract__Last_Message_Time__c</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:30</value>
+    </filters>
+    <label>Last 30 days</label>
+    <language>en_US</language>
+</ListView>

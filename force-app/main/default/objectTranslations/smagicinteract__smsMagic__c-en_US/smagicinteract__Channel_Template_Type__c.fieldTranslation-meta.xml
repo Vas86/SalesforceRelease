@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>smagicinteract__Channel_Template_Type__c</name>
+    <picklistValues>
+        <masterLabel>MTM</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Message Tag</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

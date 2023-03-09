@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Optout_Settings</fullName>
+    <columns>NAME</columns>
+    <columns>smagicinteract__Object_Name__c</columns>
+    <columns>smagicinteract__Optout_Field__c</columns>
+    <columns>smagicinteract__Keyword__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Optout Settings</label>
+</ListView>

@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applications</fullName>
+    <active>true</active>
+    <businessProcess>Applications</businessProcess>
+    <compactLayoutAssignment>Driva</compactLayoutAssignment>
+    <label>Applications</label>
+    <picklistValues>
+        <picklist>Assessment_Quality__c</picklist>
+        <values>
+            <fullName>At Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conditionally Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready To Lodge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Assessed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Asset_Type__c</picklist>
+        <values>
+            <fullName>Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caravan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motorbike</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Balloon_payment_percentage__c</picklist>
+        <values>
+            <fullName>10%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_ABN__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_GST__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Buying_a_Car_From__c</picklist>
+        <values>
+            <fullName>Dealership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private sale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Still deciding</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Experiment__c</picklist>
+        <values>
+            <fullName>Call 1 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 10 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 2 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 3 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 4 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 5 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 6 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 7 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 8 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 9 Made</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Car_Condition__c</picklist>
+        <values>
+            <fullName>Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Used</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cars24_Potential_Withdraw__c</picklist>
+        <values>
+            <fullName>Dealer match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Going to big 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rate match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shopping around</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Currently_on_Probation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Eligible_Lender_List__c</picklist>
+        <values>
+            <fullName>False</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>True</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fleet_Avenue_Referal__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Follow_Up_Calls__c</picklist>
+        <values>
+            <fullName>Call 1 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 2 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 3 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 4 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 5 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Call</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Follow_Up_Type__c</picklist>
+        <values>
+            <fullName>Awaiting Customer Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Lender Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requiring Driva Action</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Income_Frequency__c</picklist>
+        <values>
+            <fullName>Fortnightly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Incorrect_Handover__c</picklist>
+        <values>
+            <fullName>Minor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Significant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_Finance_First__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lender_Switch_Reason__c</picklist>
+        <values>
+            <fullName>ATM Withdrawals%2FGambling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BS required %26 falls out of policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Requires PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debt to income Ratio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dishonours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doc Requirements not met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emp Type or Tenure Incorrect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joint Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Early Termination Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paydays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RE higher than quoted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recent Drawdown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repayment History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serviceability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch to Commercial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lender__c</picklist>
+        <values>
+            <fullName>AMMF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Affordable Car Loans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Afs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alex Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AutoPay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autopay Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CarStart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fair Go Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance One Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance One PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firstmac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GetCapital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Light Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latitude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latitude PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liberty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liberty Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LoanU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LoanU PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macquarie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macquarie Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medfin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metro Consumer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Money3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Money3 PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MoneyMe PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MoneyPlace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MoneyPlace PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Now Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OurMoneyMarket PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pepper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pepper Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plenti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plenti Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plenti PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rapid Loans PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salt And Lime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salt And Lime Secured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Society One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SocietyOne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>St%2EGeorge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Westpac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisr PL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loan_Class__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loan_Term__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loan_Type__c</picklist>
+        <values>
+            <fullName>Purchase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refinance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opt_Out__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Employment_Status__c</picklist>
+        <values>
+            <fullName>Casual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Employed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unemployed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Income_Frequency__c</picklist>
+        <values>
+            <fullName>Fortnightly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Personal_Loan__c</picklist>
+        <values>
+            <fullName>Boat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debt Consolidation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funeral Expenses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holiday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Improvements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal %2F Professional Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motorbike</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moving Costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay Utility Bills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Income Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Bond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar %2F Battery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wedding</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Post_lodgement_lender_request__c</picklist>
+        <values>
+            <fullName>ATM transactions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BNPL clarification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank statements %28incorrect%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank statements %28other account%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closure statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Default clarification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct debit details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer contact details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID %2F Certified ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liability details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liability statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Living expense clarification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maximum lend confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medicare card clarification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other transaction clarification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outcome of recent enquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner payslip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payout letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payslips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal loan reason</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relationship clarification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental%2FBoarding contact details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tenancy Agreement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pre_Approval__c</picklist>
+        <values>
+            <fullName>Awaiting Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Settlement Conditions From Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents for Customer for Signing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lender Contract Generator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Proceeding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requires Pre-approval Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Invoice Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresponsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verimoto Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Income_Frequency__c</picklist>
+        <values>
+            <fullName>Fortnightly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Purchase_Intent__c</picklist>
+        <values>
+            <fullName>ASAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No hurry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Within a month</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Outcome__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Relationship_Status__c</picklist>
+        <values>
+            <fullName>Defacto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divorced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Married</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Separated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Widow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Status__c</picklist>
+        <values>
+            <fullName>Awaiting Customer Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 1 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call 2 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correspondence Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declinature Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow up Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow up Date Set</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Lodgement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requires Driva Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement in Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdraw Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Successful_Vehicle_Referral__c</picklist>
+        <values>
+            <fullName>CARS24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CarConnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbuyers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sydney City MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified Cars</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Total_adults_listed_on_the_agreement__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Trade_In__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Trustpilot_Review__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vehicle_Referral__c</picklist>
+        <values>
+            <fullName>CARS24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CarConnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbuyers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sydney City MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified Cars</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Warranty_Financed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Withdraw_Decline_Reason__c</picklist>
+        <values>
+            <fullName>BS - ATM Withdrawals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BS - Days in Negative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BS - Dishonours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BS - Gambling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BS - Other Bank Statement Conduct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BS - Pay Day Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF - Financial Defaults</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF - Late Payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF - Other Credit File Conduct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF - Too Many Enquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Could not find vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter-offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Found Other Finance Option</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fraud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient ABN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Employment History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan Purpose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lockdown Impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer Buying a Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer Using Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Reply %2F Cold Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Servicing Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Knockout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recent Drawdown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

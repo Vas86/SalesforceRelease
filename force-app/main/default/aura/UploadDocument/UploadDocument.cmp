@@ -1,0 +1,758 @@
+<!--/*************************** 
+* @Name    caseDetail.js
+* @Author   vasu@driva.com.au
+* @Date     22/08/2022
+* @description Handles Documents in Portal,show existing documents with respect to Each lender from SF : Refer AG- 2592,AG-2802 for details
+******************************************************
+/* MODIFICATION LOG
+* Version          Developer          Date               Description
+
+*  1.0              Vasu      22/08/2022          Initial Creation 
+
+****************************** */-->
+<aura:component controller="FileUploadController"
+                implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+                access="global">
+    
+    <!-- attribute section start -->
+    <aura:attribute name="parentId" type="Id" default="" />
+    <aura:attribute name="fileName" type="String" default="No File Selected.." />
+    <aura:attribute name="fileType" type="String" default="image/jpeg" />
+    <aura:attribute name="lstDocType" type="List"  />
+    <aura:attribute name="selTabId" type="String" default="" />
+    <aura:attribute name="documentsData" type="List" />
+    <aura:attribute name="selTabname" type="String"  />
+    <aura:attribute name="lstFileLink" type="List" />
+    <aura:attribute name="lstWrapper" type="List" />
+    <aura:attribute name="clickedIconURL" type="String" />
+    <aura:attribute name="folderName" type="String" />
+    <aura:attribute name="fileNameOnOpenModal" type="String" />
+    <aura:attribute name="AWSInfoList" type="List" />
+    <aura:attribute name="isCreditFile" type="boolean" default="false" />
+    <aura:attribute name="isDocumentInPortal" type="boolean" default="false" />
+    <aura:attribute name="loanUuid" type="String" />
+    <aura:attribute name="retrievingCreditFile" type="boolean" default="false" />
+    <aura:attribute name="isSalesInvoice" type="boolean" default="false" />
+    <aura:attribute name="isPrivacyPolicy" type="boolean" default="false" />
+    <aura:attribute name="retrievingSalesInvoice" type="boolean" default="false" />
+    <aura:attribute name="retrievingPrivacyPolicy" type="boolean" default="false" />
+    <aura:attribute name="clickedFileName" type="String" />
+    <aura:attribute name="showSpinner" type="boolean" default="true" />
+    
+    <aura:attribute name="removeFileId" type="String" />
+    <!--AG-3200 
+    <aura:attribute name="dynamicDocs" type="List"  />
+    <aura:attribute name="isUploadDisplay" type="boolean"  />
+    AG-3200-->
+    <aura:attribute name="dynamicDocs" type="List" />
+    <aura:attribute name="isUploadDisplay" type="boolean" />
+    
+    <!-- Register and handle the Refresh Event to refresh the current component -->
+    <aura:registerEvent name="selfRefreshEvt" type="c:SelfRefreshEvent" />
+    
+    <!-- Now handle the selfRefreshEvt by calling createCntCreateTempl which is the same method called on init to initialize a Contact Obj  -->
+    <aura:handler name="selfRefreshEvt" event="c:SelfRefreshEvent" action="{!c.tabSelected}" />
+    
+    
+    <ltng:require scripts="{!$Resource.AWS1}" />
+    
+    <!--AG-3200-->
+    <ltng:require styles="{!$Resource.bootstrap + '/bootstrap/bootstrap.css'}"/>
+    <!--AG-3200-->
+    
+    <!-- attribute section end -->
+    
+    <!--Boolean attribute to indicate if modal is open or not 
+       default value is false as modal is closed when page is loaded 
+    -->
+    <aura:attribute name="isModalOpen" type="boolean" default="false" />
+    <aura:attribute name="isPDFModalOpen" type="boolean" default="false" />
+    <aura:attribute name="isDocModalOpen" type="boolean" default="false" />
+    
+    <!--Declare Handler-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="init" value="{!this}" action="{!c.tabSelected}" />
+    
+    <!-- <lightning:notificationsLibrary aura:id="notifLib"/> -->
+    <aura:attribute name="isNotificationModalOpen" type="boolean" default="false" />
+    <aura:attribute name="isNotificationModalFooter" type="boolean" default="true" />
+    <aura:attribute name="isNotificationVariant" type="String"   />
+    <aura:attribute name="isNotificationHeader" type="String" />
+    <aura:attribute name="isNotificationMessage" type="String"  />
+    
+    <aura:attribute name="isRemoveModalOpen" type="boolean" default="false" />
+    
+    <!-- Added On 10-02/2023  || Start-->
+    <aura:attribute name="docType" type="String" />
+    <aura:attribute name="docDescription" type="String" />
+    <aura:attribute name="closeModelPopup" type="boolean" default="false" />
+    <aura:attribute name="showModalSpinner" type="boolean" default="false" />
+    <!-- Added On 10-02/2023  || End-->
+    
+    <!-- Main Div start -->
+    <div>
+        <div class="slds-tabs_default">
+            <div>
+                <div class="slds-align--absolute-center">
+                    <aura:if isTrue = "{!v.showSpinner}">
+                        <lightning:spinner aura:id="spinner" variant="brand" size="large" alternativeText ='Open'/>
+                        <aura:set attribute="else">
+                            <!-- Added On 10-02/2023  || Description: Added 'onselecteddocument' on component call-->
+                            <c:documentsInPortal aura:id="childLwcCompId" documentsList="{!v.documentsData}" caseRecordId="{!v.recordId}" onselecteddocument="{!c.handleAccountSelect}" onloadappevent="{!c.handleRefresh}" ></c:documentsInPortal>
+                            <aura:iteration items="{!v.lstDocType}" var="dType">
+                                
+                                <!-- Modal Popup Starts -->
+                                <aura:if isTrue="{!!v.closeModelPopup}">
+                                    <aura:if isTrue="{!v.docType == dType.key}">
+                                        <!-- Modal/Popup Box starts here-->
+                                        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                                            <div class="slds-modal__container">
+                                                <!-- Modal/Popup Box Header Starts here-->
+                                                <header class="slds-modal__header">
+                                                    <lightning:buttonIcon iconName="utility:close"
+                                                                          onclick="{! c.closeModel }"
+                                                                          alternativeText="close"
+                                                                          variant="bare-inverse"
+                                                                          class="slds-modal__close"/>
+                                                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{!dType.key}</h2>
+                                                </header>
+                                                <!--Modal/Popup Box Body Starts here-->
+                                                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                                                    <aura:if isTrue = "{!v.showModalSpinner}">
+                                                        <lightning:spinner aura:id="spinner" variant="brand" size="large" alternativeText ='Open'/>
+                                                    </aura:if>
+                                                    <div style="margin-left: 3%;">
+                                                        <!--AG-3200-->
+                                                        <aura:if isTrue = "{!dType.isDynamicField}">
+                                                            <!-- added 21-02-2023 start-->
+                                                            <b>
+                                                                <h2> {!dType.value} List Of {!dType.key} Files</h2>
+                                                                <h2> {!v.docDescription}</h2>
+                                                            </b><br />
+                                                            <!-- added 21-02-2023 end-->
+                                                            <div class = "bootstrap">
+                                                                <aura:iteration items="{!dType.dataArr}" var="dArr">
+                                                                    <div class="panel panel-default" style="flex-wrap: wrap;height: 100%;width: 50%">
+                                                                        <div class="panel-heading"><b>{!dArr.panelHeading}</b></div>
+                                                                        <div class="panel-body">
+                                                                            <aura:unescapedHtml value="{!dArr.panelBody}"/>
+                                                                        </div>
+                                                                    </div>
+                                                                </aura:iteration>
+                                                            </div>
+                                                            <aura:set attribute = "else">
+                                                                <!--AG-3200-->   
+                                                                <b>
+                                                                    <h2> {!dType.value} List Of {!dType.key} Files</h2>
+                                                                    <h2> {!v.docDescription}</h2>
+                                                                </b><br />
+                                                                <!--AG-3200-->
+                                                            </aura:set>
+                                                        </aura:if>
+                                                        <!--AG-3200-->
+                                                        <aura:if isTrue="{!v.isCreditFile}">
+                                                            <div>
+                                                                <aura:if isTrue="{!v.retrievingCreditFile}">
+                                                                    <div class="loading-only" style="height:6rem;position:relative">
+                                                                        <div class="slds-spinner_container">
+                                                                            <div role="status"
+                                                                                 class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                                                                                <span class="slds-assistive-text">Retrieving</span>
+                                                                                <div class="slds-spinner__dot-a"></div>
+                                                                                <div class="slds-spinner__dot-b"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <aura:set attribute="else">
+                                                                        <button onclick="{!c.getCreditFile}"
+                                                                                class="slds-button slds-button_brand">Retrieve New Credit
+                                                                            File</button>
+                                                                    </aura:set>
+                                                                </aura:if>
+                                                            </div>
+                                                        </aura:if>
+                                                        <aura:if isTrue="{!v.isPrivacyPolicy}">
+                                                            <div>
+                                                                <aura:if isTrue="{!v.retrievingPrivacyPolicy}">
+                                                                    <div class="loading-only" style="height:6rem;position:relative">
+                                                                        <div class="slds-spinner_container">
+                                                                            <div role="status"
+                                                                                 class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                                                                                <span class="slds-assistive-text">Retrieving</span>
+                                                                                <div class="slds-spinner__dot-a"></div>
+                                                                                <div class="slds-spinner__dot-b"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <aura:set attribute="else">
+                                                                        <button onclick="{!c.getPrivacyPolicy}"
+                                                                                class="slds-button slds-button_brand">Retrieve file from
+                                                                            DocuSign</button>
+                                                                    </aura:set>
+                                                                </aura:if>
+                                                            </div>
+                                                        </aura:if>
+                                                        <lightning:layout multipleRows="true">
+                                                            <aura:if isTrue="{!v.lstWrapper}">
+                                                                <aura:iteration items="{!v.lstWrapper}" var="objWrap" indexVar="index">
+                                                                    <lightning:layoutItem flexibility="auto" size="4" padding="around-small">
+                                                                        <div>
+                                                                            <ul class="slds-has-dividers_around-space">
+                                                                                <p align="justify">   
+                                                                                    <aura:if isTrue = "{!!objWrap.isSoftDelete}">
+                                                                                        <div class="slds-clearfix">
+                                                                                            
+                                                                                            <span onclick = "{!c.handleRemove}" data-id="{!objWrap.docId}" >
+                                                                                                <lightning:icon iconName="utility:close" alternativeText="Remove" size="x-small" title="Remove" class="slds-float_right" style="cursor: pointer; margin-left: 5px;"/>
+                                                                                            </span>
+                                                                                            <!-- Mock-popup in different icon on documents in portal ( Implement this once confirmed)-->            
+                                                                                            <!--<aura:if isTrue="{!!objWrap.isPDFFile}">-->
+                                                                                            <aura:if isTrue="{!!or(objWrap.isPDFFile,objWrap.isHTMLFile)}">
+                                                                                                <span data-id="{!'imgId' + index}" onclick="{!c.openModelNewWindow}">
+                                                                                                    <lightning:icon iconName="utility:new_window" alternativeText="New Window" size="x-small" title="New Window" class="slds-float_right" style="cursor: pointer; margin-left:7px"/></span>
+                                                                                                
+                                                                                                <aura:set attribute="else">
+                                                                                                    <span 
+                                                                                                          id="{!objWrap.strFileLink}" onclick="{!c.openModelForPDFNewWindow}">
+                                                                                                        <lightning:icon iconName="utility:new_window" alternativeText="New Window" size="x-small" title="New Window" class="slds-float_right" style="cursor: pointer;"/></span>
+                                                                                                    
+                                                                                                </aura:set>
+                                                                                                <!--  <aura:set attribute="else">
+                                                                                <span 
+                                                                                id="{!objWrap.isHTMLFile}" onclick="{!c.openModelForHTMLNewWindow}">
+                                                                                <lightning:icon iconName="utility:new_window" alternativeText="New Window" size="x-small" title="New Window" class="slds-float_right" style="cursor: pointer;"/></span>
+                                                                                
+                                                                            </aura:set>-->
+                                                                                            </aura:if>
+                                                                                            
+                                                                                            
+                                                                                            <!-- Mock-popup in different icon on documents in portal(Implement this once confirmed)-->  
+                                                                                            <!--<span onclick = "{!c.handleRemove}" data-id="{!objWrap.docId}" ></span>
+                                                                            <lightning:icon iconName="utility:close" alternativeText="Remove" size="x-small" title="Remove" class="slds-float_right" style="cursor: pointer;"/>
+                                                                        </span>-->
+                                                                                        </div>
+                                                                                        <aura:set attribute="else">
+                                                                                            <div class="slds-clearfix">
+                                                                                                <span><lightning:icon iconName="utility:close" alternativeText="Remove" size="x-small" title="Remove" class="slds-float_right slds-hidden"/></span>
+                                                                                            </div>
+                                                                                        </aura:set>
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is img/png/gif -->
+                                                                                    <aura:if isTrue="{!!objWrap.isPDFFile}">
+                                                                                        <aura:if isTrue="{!!objWrap.isDocFile}">
+                                                                                            <aura:if isTrue="{!!objWrap.isExcelFile}">
+                                                                                                <aura:if isTrue="{!!objWrap.isEMLFile}">
+                                                                                                    <aura:if isTrue="{!!objWrap.isHEICFile}">
+                                                                                                        <aura:if isTrue="{!!objWrap.isHTMLFile}">
+                                                                                                            <aura:if
+                                                                                                                     isTrue="{!!objWrap.isJSONFile}">
+                                                                                                                <aura:if
+                                                                                                                         isTrue="{!!objWrap.isTIFFFile}">
+                                                                                                                    <aura:if
+                                                                                                                             isTrue="{!!objWrap.isXMLFile}">
+                                                                                                                        <aura:if
+                                                                                                                                 isTrue="{!!objWrap.isXLSMFile}">
+                                                                                                                            
+                                                                                                                            <figure
+                                                                                                                                    class="slds-image slds-image--card"
+                                                                                                                                    style="position:relative;width: 100%;">
+                                                                                                                                
+                                                                                                                                <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                                                    <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                                                        <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                                                        <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                                                    </div>
+                                                                                                                                </aura:if>
+                                                                                                                                <a href="javascript:void(0);"
+                                                                                                                                   class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                                                    <img src="{!objWrap.strFileLink}"
+                                                                                                                                         id="{!'imgId' + index}"
+                                                                                                                                         onclick="{!c.openModel}"
+                                                                                                                                         style="height: 75%;width: 100%;"
+                                                                                                                                         alt="Image not Available" />
+                                                                                                                                    &nbsp;&nbsp;
+                                                                                                                                </a>
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                <figcaption
+                                                                                                                                            class="slds-image__title slds-image__title--card">
+                                                                                                                                    <span
+                                                                                                                                          class="slds-image__text slds-truncate"
+                                                                                                                                          title="Image Title">
+                                                                                                                                        {!objWrap.strFileName}
+                                                                                                                                    </span>
+                                                                                                                                </figcaption>
+                                                                                                                            </figure>
+                                                                                                                            
+                                                                                                                        </aura:if>
+                                                                                                                    </aura:if>
+                                                                                                                </aura:if>
+                                                                                                            </aura:if>
+                                                                                                        </aura:if>
+                                                                                                    </aura:if>
+                                                                                                </aura:if>
+                                                                                            </aura:if>
+                                                                                        </aura:if>
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is pdf -->
+                                                                                    <aura:if isTrue="{!objWrap.isPDFFile}">
+                                                                                        
+                                                                                        <figure
+                                                                                                class="slds-image slds-image--card"
+                                                                                                style="position:relative;width: 100%;">
+                                                                                            
+                                                                                            <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                    <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                    <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                </div>
+                                                                                            </aura:if>
+                                                                                            <a href="javascript:void(0);"
+                                                                                               class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                <img src="{!$Resource.PDFLogo}"
+                                                                                                     id="{!objWrap.strFileLink}"
+                                                                                                     data-id="{!objWrap.strFileName}"
+                                                                                                     onclick="{!c.openModelForPDF}"
+                                                                                                     style="height: 62%;width: 62%;"
+                                                                                                     alt="Image not Available" /> &nbsp;&nbsp;
+                                                                                            </a>
+                                                                                            <figcaption
+                                                                                                        class="slds-image__title slds-image__title--card">
+                                                                                                <span class="slds-image__text slds-truncate"
+                                                                                                      title="Image Title"> {!objWrap.strFileName}
+                                                                                                </span>
+                                                                                            </figcaption>
+                                                                                        </figure>
+                                                                                        
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is doc -->
+                                                                                    <aura:if isTrue="{!objWrap.isDocFile}">
+                                                                                        <figure
+                                                                                                class="slds-image slds-image--card"
+                                                                                                style="position:relative;width: 100%;">
+                                                                                            
+                                                                                            <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                    <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                    <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                </div>
+                                                                                            </aura:if>
+                                                                                            <a href="{!objWrap.strFileLink}"
+                                                                                               class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                <img src="{!$Resource.WordLogo}"
+                                                                                                     id="{!objWrap.strFileLink}"
+                                                                                                     style="height: 62%;width: 62%;"
+                                                                                                     alt="Image not Available" /> &nbsp;&nbsp;
+                                                                                            </a>
+                                                                                            <figcaption
+                                                                                                        class="slds-image__title slds-image__title--card">
+                                                                                                <span class="slds-image__text slds-truncate"
+                                                                                                      title="Image Title"> {!objWrap.strFileName}
+                                                                                                </span>
+                                                                                            </figcaption>
+                                                                                        </figure>
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is JSON -->
+                                                                                    <aura:if isTrue="{!objWrap.isJSONFile}">
+                                                                                        <figure
+                                                                                                class="slds-image slds-image--card"
+                                                                                                style="position:relative;width: 100%;">
+                                                                                            
+                                                                                            <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                    <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                    <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                </div>
+                                                                                            </aura:if>
+                                                                                            <a href="javascript:void(0);"
+                                                                                               class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                <img src="{!$Resource.JSON_Logo}"
+                                                                                                     id="{!objWrap.strFileLink}"
+                                                                                                     data-id="{!objWrap.strFileName}"
+                                                                                                     onclick="{!c.openModelForPDF}"
+                                                                                                     style="height: 62%;width: 62%;"
+                                                                                                     alt="Image not Available" /> &nbsp;&nbsp;
+                                                                                            </a>
+                                                                                            <figcaption
+                                                                                                        class="slds-image__title slds-image__title--card">
+                                                                                                <span class="slds-image__text slds-truncate"
+                                                                                                      title="Image Title"> {!objWrap.strFileName}
+                                                                                                </span>
+                                                                                            </figcaption>
+                                                                                        </figure>
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is XLSM -->
+                                                                                    <aura:if isTrue="{!objWrap.isXLSMFile}">
+                                                                                        <figure
+                                                                                                class="slds-image slds-image--card"
+                                                                                                style="position:relative;width: 100%;">
+                                                                                            
+                                                                                            <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                    <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                    <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                </div>
+                                                                                            </aura:if>
+                                                                                            <a href="{!objWrap.strFileLink}"
+                                                                                               class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                <img src="{!$Resource.XLSM_Logo}"
+                                                                                                     id="{!objWrap.strFileLink}"
+                                                                                                     style="height: 62%;width: 62%;"
+                                                                                                     alt="Image not Available" /> &nbsp;&nbsp;
+                                                                                            </a>
+                                                                                            <figcaption
+                                                                                                        class="slds-image__title slds-image__title--card">
+                                                                                                <span class="slds-image__text slds-truncate"
+                                                                                                      title="Image Title"> {!objWrap.strFileName}
+                                                                                                </span>
+                                                                                            </figcaption>
+                                                                                        </figure>
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is XML -->
+                                                                                    <aura:if isTrue="{!objWrap.isXMLFile}">
+                                                                                        <figure
+                                                                                                class="slds-image slds-image--card"
+                                                                                                style="position:relative;width: 100%;">
+                                                                                            
+                                                                                            <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                    <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                    <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                </div>
+                                                                                            </aura:if>
+                                                                                            <a href="javascript:void(0);"
+                                                                                               class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                <img src="{!$Resource.XML_Logo}"
+                                                                                                     id="{!objWrap.strFileLink}"
+                                                                                                     onclick="{!c.openModelForPDF}"
+                                                                                                     style="height: 62%;width: 62%;"
+                                                                                                     alt="Image not Available" /> &nbsp;&nbsp;
+                                                                                            </a>
+                                                                                            <figcaption
+                                                                                                        class="slds-image__title slds-image__title--card">
+                                                                                                <span class="slds-image__text slds-truncate"
+                                                                                                      title="Image Title"> {!objWrap.strFileName}
+                                                                                                </span>
+                                                                                            </figcaption>
+                                                                                        </figure>
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is eml -->
+                                                                                    <aura:if isTrue="{!objWrap.isEMLFile}">
+                                                                                        <figure
+                                                                                                class="slds-image slds-image--card"
+                                                                                                style="position:relative;width: 100%;">
+                                                                                            
+                                                                                            <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                    <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                    <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                </div>
+                                                                                            </aura:if>
+                                                                                            <a href="{!objWrap.strFileLink}"
+                                                                                               class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                <img src="{!$Resource.EML_Logo}"
+                                                                                                     id="{!objWrap.strFileLink}"
+                                                                                                     style="height: 62%;width: 62%;"
+                                                                                                     alt="Image not Available" /> &nbsp;&nbsp;
+                                                                                            </a>
+                                                                                            <figcaption
+                                                                                                        class="slds-image__title slds-image__title--card">
+                                                                                                <span class="slds-image__text slds-truncate"
+                                                                                                      title="Image Title"> {!objWrap.strFileName}
+                                                                                                </span>
+                                                                                            </figcaption>
+                                                                                        </figure>
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is HEIC -->
+                                                                                    <aura:if isTrue="{!objWrap.isHEICFile}">
+                                                                                        <figure
+                                                                                                class="slds-image slds-image--card"
+                                                                                                style="position:relative;width: 100%;">
+                                                                                            
+                                                                                            <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                    <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                    <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                </div>
+                                                                                            </aura:if>
+                                                                                            <a href="{!objWrap.strFileLink}"
+                                                                                               class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                <img src="{!$Resource.HEIC_Logo}"
+                                                                                                     id="{!objWrap.strFileLink}"
+                                                                                                     style="height: 62%;width: 62%;"
+                                                                                                     alt="Image not Available" /> &nbsp;&nbsp;
+                                                                                            </a>
+                                                                                            <figcaption
+                                                                                                        class="slds-image__title slds-image__title--card">
+                                                                                                <span class="slds-image__text slds-truncate"
+                                                                                                      title="Image Title"> {!objWrap.strFileName}
+                                                                                                </span>
+                                                                                            </figcaption>
+                                                                                        </figure>
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is HTML -->
+                                                                                    <aura:if isTrue="{!objWrap.isHTMLFile}">
+                                                                                        <figure
+                                                                                                class="slds-image slds-image--card"
+                                                                                                style="position:relative;width: 100%;">
+                                                                                            
+                                                                                            <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                    <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                    <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                </div>
+                                                                                            </aura:if>
+                                                                                            <a href="javascript:void(0);"
+                                                                                               class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                <img src="{!$Resource.HTML}"
+                                                                                                     id="{!objWrap.strFileLink}"
+                                                                                                     data-id="{!objWrap.strFileName}"
+                                                                                                     onclick="{!c.openModelForPDF}"
+                                                                                                     style="height: 62%;width: 62%;"
+                                                                                                     alt="Image not Available" /> &nbsp;&nbsp;
+                                                                                            </a>
+                                                                                            <figcaption
+                                                                                                        class="slds-image__title slds-image__title--card">
+                                                                                                <span class="slds-image__text slds-truncate"
+                                                                                                      title="Image Title"> {!objWrap.strFileName}
+                                                                                                </span>
+                                                                                            </figcaption>
+                                                                                        </figure>
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is TIFF -->
+                                                                                    <aura:if isTrue="{!objWrap.isTIFFFile}">
+                                                                                        <figure
+                                                                                                class="slds-image slds-image--card"
+                                                                                                style="position:relative;width: 100%;">
+                                                                                            
+                                                                                            <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                    <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                    <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                </div>
+                                                                                            </aura:if>
+                                                                                            <a href="{!objWrap.strFileLink}"
+                                                                                               class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                <img src="{!$Resource.TIFF_Logo}"
+                                                                                                     id="{!objWrap.strFileLink}"
+                                                                                                     style="height: 62%;width: 62%;"
+                                                                                                     alt="Image not Available" /> &nbsp;&nbsp;
+                                                                                            </a>
+                                                                                            <figcaption
+                                                                                                        class="slds-image__title slds-image__title--card">
+                                                                                                <span class="slds-image__text slds-truncate"
+                                                                                                      title="Image Title"> {!objWrap.strFileName}
+                                                                                                </span>
+                                                                                            </figcaption>
+                                                                                        </figure>
+                                                                                    </aura:if>
+                                                                                    
+                                                                                    <!-- if file is excel -->
+                                                                                    <aura:if isTrue="{!objWrap.isExcelFile}">
+                                                                                        
+                                                                                        <figure
+                                                                                                class="slds-image slds-image--card"
+                                                                                                style="position:relative;width: 100%;">
+                                                                                            
+                                                                                            <aura:if isTrue = "{!objWrap.isSoftDelete}" >
+                                                                                                <div style="position: absolute;z-index: 10;bottom: 0;top: 0;background-color: rgb(0 0 0 / 61%);padding: 5px;color: white;">
+                                                                                                    <p><b>Removed By : {!objWrap.removedBy}</b> </p>
+                                                                                                    <p><b>Removed At : {!objWrap.removedAt}</b> </p>
+                                                                                                </div>
+                                                                                            </aura:if>
+                                                                                            <a href="{!objWrap.strFileLink}"
+                                                                                               class="slds-image__crop  slds-image__crop--16-by-9">
+                                                                                                <img src="{!$Resource.ExcelLogo}"
+                                                                                                     id="{!objWrap.strFileLink}"
+                                                                                                     style="height: 62%;width: 62%;"
+                                                                                                     alt="Image not Available" /> &nbsp;&nbsp;
+                                                                                            </a>
+                                                                                            <figcaption
+                                                                                                        class="slds-image__title slds-image__title--card">
+                                                                                                <span class="slds-image__text slds-truncate"
+                                                                                                      title="Image Title"> {!objWrap.strFileName}
+                                                                                                </span>
+                                                                                            </figcaption>
+                                                                                        </figure>
+                                                                                    </aura:if>
+                                                                                </p> 
+                                                                            </ul>
+                                                                        </div>
+                                                                    </lightning:layoutItem>
+                                                                    
+                                                                </aura:iteration>
+                                                            </aura:if>
+                                                        </lightning:layout>
+                                                        <br /><br />
+                                                    </div>
+                                                    
+                                                    <aura:if isTrue = "{!v.isDocumentInPortal}">
+                                                        <aura:set attribute="else">
+                                                            <!--AG-3200-->
+                                                            <aura:if isTrue = "{!!v.isUploadDisplay}">
+                                                                <aura:set attribute = "else">
+                                                                    <!--AG-3200-->
+                                                                    <div>
+                                                                        <label style="display: inline-block;position: relative;height: 150px;width: 205px;"
+                                                                               for="inputFile">
+                                                                            <div style="position: absolute;left: 0;top: 0;bottom: 0;
+                                                                                        width: 100%;display: flex;
+                                                                                        align-items: center;justify-content: center;
+                                                                                        border: 3px dashed ;">
+                                                                                Drag 'n' drop or browse
+                                                                            </div>
+                                                                            <input type="file" id="fileUpload" onchange="{!c.handleFilesChange}"
+                                                                                   style="position: absolute;left: 0;opacity: 0;top: 0;bottom: 0;width: 100%;" />
+                                                                        </label>
+                                                                        <div class="slds-text-body_small slds-text-color_error">{!v.fileName} </div>
+                                                                    </div>
+                                                                    <br />
+                                                                    <!-- <button class="slds-button slds-button_neutral" onclick="{!c.handleFileCancel}" >Cancel</button> -->
+                                                                    
+                                                                    <!--AG-3200-->
+                                                                </aura:set>
+                                                            </aura:if>
+                                                            <!-- AG-3200-->
+                                                            
+                                                            <!-- File drag and drop end -->
+                                                        </aura:set>
+                                                    </aura:if>
+                                                </div>
+                                                <!--Modal/Popup Box Footer Starts here-->
+                                                <footer class="slds-modal__footer">
+                                                    <!-- Added 20-02-2023-->
+                                                    <aura:if isTrue = "{!dType.isDynamicField}">
+                                                         <lightning:button label="Cancel" onclick="{!c.closeModel}" />
+                                                    	<aura:set attribute = "else">
+                                                        	<lightning:button label="Cancel" onclick="{!c.closeModel}" />
+                                                            <button onclick="{!c.s3upload}" class="slds-button slds-button_brand">Upload File</button>
+                                                        </aura:set>
+                                                    </aura:if>
+                                                    <!-- Added 20-02-2023-->
+                                                </footer>
+                                            </div>
+                                        </section>
+                                        <div class="slds-backdrop slds-backdrop_open"></div>
+                                    </aura:if>
+                                </aura:if>
+                                <!-- Modal Popup Ends -->
+                            </aura:iteration>
+                         </aura:set>
+                    </aura:if>        
+                </div>
+             </div>
+        </div>
+    </div>
+    <!-- Main Div end -->
+    
+    <!-- Image Modal start-->
+    <aura:if isTrue="{!v.isModalOpen}">
+        <!-- Image Modal/Popup Box starts here-->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container" style="width: 100%; padding: 0px;">
+                <!--Image Modal/Popup Box Body Starts here-->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <img src="{!v.clickedIconURL}" id="currentImg" alt="Image not Available" />
+                </div>
+                <!--Image Modal/Popup Box Footer Starts here-->
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral" label="Cancel" title="Cancel" onclick="{!c.closeModel}" />
+                    &nbsp;
+                    
+                    <a href="{!v.clickedIconURL}" download="download">
+                        <lightning:button variant="brand" label="Download File" title="Download File" />
+                    </a>&nbsp;&nbsp;
+                    <!-- <lightning:button label="Delete" onclick="{!c.handleDelete}"
+                                     variant="destructive" class="slds-p-left_medium" /> -->
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    <!--Modal end-->
+    
+    <!-- PDF Modal start -->
+    <aura:if isTrue="{!v.isPDFModalOpen}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container" style="width: 100%; padding: 0px;">
+                
+                <!-- PDF Modal body start -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" style="height: 100%;">
+                    <iframe src="{!v.clickedIconURL}" title="" style="height: 100%;width:100%">
+                    </iframe>
+                </div>
+                <!-- PDF Modal body end -->
+                
+                <!-- PDF Modal Footer start -->
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral" label="Cancel" title="Cancel" onclick="{! c.closeModel }" />
+                    &nbsp;
+                    <lightning:button variant="brand" onclick="{!c.downloadFile}" label="Download File"
+                                      title="Download File" />
+                </footer>
+                <!-- PDF Modal Footer start -->
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    <!-- PDF Modal end -->
+    
+    
+    <!--Use aura:if tag to display/hide popup based on isModalOpen value-->
+    <aura:if isTrue="{!v.isNotificationModalOpen}">
+        <div class="demo-only" style="height:24rem">
+            <section role="dialog" tabindex="0" aria-modal="true" aria-labelledby="prompt-heading-id"
+                     aria-describedby="prompt-message-wrapper" class="slds-modal slds-fade-in-open slds-modal_prompt">
+                <div class="slds-modal__container">
+                    <!-- slds-modal__header slds-theme_error slds-theme_alert-texture -->
+                    <div class="{!v.isNotificationVariant}">
+                        <h1 class="slds-text-heading_medium" id="prompt-heading-id">{!v.isNotificationHeader}</h1>
+                    </div>
+                    <div class="slds-modal__content slds-p-around_medium" id="prompt-message-wrapper">{!v.isNotificationMessage}</div>
+                    <aura:if isTrue="{!v.isNotificationModalFooter}">
+                        <div class="slds-modal__footer slds-theme_default" >
+                            <button class="slds-button slds-button_neutral" onclick="{!c.handleNotificationOk}">OK</button>
+                        </div>
+                        <aura:set attribute="else">
+                            <div class="slds-modal__footer slds-theme_default" >
+                                <button class="slds-button slds-button_neutral" onclick="{!c.handleNotificationClose}">Close</button>
+                            </div>
+                        </aura:set>
+                    </aura:if>
+                 </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </div>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.isRemoveModalOpen}">
+        <div class="demo-only" style="height:24rem">
+            <section role="dialog" tabindex="0" aria-modal="true" aria-labelledby="prompt-heading-id"
+                     aria-describedby="prompt-message-wrapper" class="slds-modal slds-fade-in-open slds-modal_prompt">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless" id="modal-content-id-1">
+                        <p>Are you sure you want to remove file ? </p>
+                    </div>
+                    <div class="slds-modal__footer" >
+                        <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick = "{!c.handleRemoveModelClose}">No</button>
+                        <button class="slds-button slds-button_brand" onclick = "{!c.handleSoftDelete}">Yes</button>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </div>
+    </aura:if>
+    
+</aura:component>

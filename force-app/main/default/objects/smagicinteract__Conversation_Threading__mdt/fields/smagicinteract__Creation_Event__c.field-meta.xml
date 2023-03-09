@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Creation_Event__c</fullName>
+    <deprecated>false</deprecated>
+    <description>It will store info about when conversation should be assigned to someone. Eg- Both Incoming and Outgoing, Incoming, Outgoing</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Creation Event</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Both</fullName>
+                <default>true</default>
+                <label>Both</label>
+            </value>
+            <value>
+                <fullName>Incoming</fullName>
+                <default>false</default>
+                <label>Incoming</label>
+            </value>
+            <value>
+                <fullName>Outgoing</fullName>
+                <default>false</default>
+                <label>Outgoing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

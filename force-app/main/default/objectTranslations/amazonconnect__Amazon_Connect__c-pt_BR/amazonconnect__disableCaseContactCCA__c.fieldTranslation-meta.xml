@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Escolha habilitar ou desabilitar o trigger AC_AssociateCaseContactCCA, que associa casos e contatos a um registro de análise de dados do canal de contato.</help>
+    <label></label>
+    <name>amazonconnect__disableCaseContactCCA__c</name>
+</CustomFieldTranslation>

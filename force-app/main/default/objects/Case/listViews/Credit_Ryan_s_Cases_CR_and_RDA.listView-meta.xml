@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Ryan_s_Cases_CR_and_RDA</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Credit_Agent__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>Lender__c</columns>
+    <columns>Assessment_Quality__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>Set_follow_up_date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Started,Awaiting Documents,Under Review,Lodged</value>
+    </filters>
+    <filters>
+        <field>Sub_Status__c</field>
+        <operation>equals</operation>
+        <value>Follow up Date,Correspondence Received,Requires Driva Action</value>
+    </filters>
+    <filters>
+        <field>Credit_Agent_First_Name__c</field>
+        <operation>contains</operation>
+        <value>William</value>
+    </filters>
+    <label>Credit - Team Leader View Cases</label>
+</ListView>

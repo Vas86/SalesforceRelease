@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Update related lists of incoming and outgoing messages on lead conversion</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Update Related List On Lead Conversion</label>
+    <visibility>Public</visibility>
+</CustomObject>

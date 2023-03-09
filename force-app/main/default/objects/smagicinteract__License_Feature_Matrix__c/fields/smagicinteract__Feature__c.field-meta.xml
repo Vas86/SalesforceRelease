@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Feature__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Feature</label>
+    <referenceTo>smagicinteract__Feature__c</referenceTo>
+    <relationshipLabel>License Feature Matrices</relationshipLabel>
+    <relationshipName>License_Feature_Matrices</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

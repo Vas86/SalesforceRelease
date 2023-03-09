@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <attributes>
+        <formula>&apos;arn:aws:iam::943846385165:role/driva-nonprod-connect-SSO&apos;&amp;&apos;,&apos;&amp;&apos;arn:aws:iam::943846385165:saml-provider/driva-dev-SF-IDP&apos;</formula>
+        <key>https://aws.amazon.com/SAML/Attributes/Role</key>
+    </attributes>
+    <attributes>
+        <formula>$User.Email</formula>
+        <key>https://aws.amazon.com/SAML/Attributes/RoleSessionName</key>
+    </attributes>
+    <contactEmail>sony.mammen@voicefoundry.com.au</contactEmail>
+    <label>AmazonConnectIntegration_Dev</label>
+    <samlConfig>
+        <acsUrl>https://signin.aws.amazon.com/saml</acsUrl>
+        <encryptionType>AES_128</encryptionType>
+        <entityUrl>AmazonConnectSFDC</entityUrl>
+        <issuer>https://driva--dev.sandbox.my.salesforce.com</issuer>
+        <samlIdpSLOBindingEnum>RedirectBinding</samlIdpSLOBindingEnum>
+        <samlNameIdFormat>Persistent</samlNameIdFormat>
+        <samlSigningAlgoType>SHA1</samlSigningAlgoType>
+        <samlSloUrl>https://driva--dev.sandbox.my.salesforce.com/services/auth/idp/saml2/logout</samlSloUrl>
+        <samlSubjectType>PersistentId</samlSubjectType>
+    </samlConfig>
+</ConnectedApp>

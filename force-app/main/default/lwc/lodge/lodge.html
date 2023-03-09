@@ -1,0 +1,31 @@
+<template>
+    <lightning-quick-action-panel>
+        <div class="spinner">
+            <template if:true={isLoading}>
+                 <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                 </lightning-spinner>
+            </template>
+        </div>
+        <template if:true={showContainer}>
+            <b>Use the API to lodge to {record.Lender__c}</b><br/><br/>
+            Are you sure you want to lodge this application.<br/>
+            <!--<span  class="slds-m-right_xx-small" >We have sent this application to {record.Lender__c} previously, still  send it? </span> 
+            <input type="checkbox" checked={sent} class="sent" />-->
+        </template>
+        <template if:true={message}>
+            <div class="slds-text-heading_medium slds-text-align_center">
+                <lightning-formatted-rich-text value={message}></lightning-formatted-rich-text>
+            </div>
+        </template>
+        <template if:true={deepLink}>
+            <div class="slds-text-align_center">
+                <lightning-formatted-rich-text value={deepLink}></lightning-formatted-rich-text>
+            </div>
+        </template>
+        <div slot="footer">
+            <lightning-button  variant="brand" label="Lodge" if:false={message} onclick={handleLodge}></lightning-button>
+            <lightning-button variant="brand" label="Lodge" if:true={showWarning} disabled></lightning-button>
+            <lightning-button variant="neutral" label="Cancel" onclick={handleCancel} class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </lightning-quick-action-panel>
+</template>

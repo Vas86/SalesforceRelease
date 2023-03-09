@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__MOC__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the ID of the related MOC.</description>
+    <externalId>false</externalId>
+    <label>MOC</label>
+    <referenceTo>smagicinteract__Message_Object_Config__c</referenceTo>
+    <relationshipLabel>Conversation Related Objects</relationshipLabel>
+    <relationshipName>Conversation_Related_Objects</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

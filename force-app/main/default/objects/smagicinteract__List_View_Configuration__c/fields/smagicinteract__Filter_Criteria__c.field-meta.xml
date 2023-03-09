@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Filter_Criteria__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Filter criteria for sms from list view</description>
+    <externalId>false</externalId>
+    <label>Filter Criteria</label>
+    <length>4000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

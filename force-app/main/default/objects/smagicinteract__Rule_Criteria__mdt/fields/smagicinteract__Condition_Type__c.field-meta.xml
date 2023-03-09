@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Condition_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This will store primary criteria option</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>This will store primary criteria option</inlineHelpText>
+    <label>Condition Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Profile</fullName>
+                <default>false</default>
+                <label>Profile</label>
+            </value>
+            <value>
+                <fullName>Object</fullName>
+                <default>false</default>
+                <label>Object</label>
+            </value>
+            <value>
+                <fullName>User</fullName>
+                <default>false</default>
+                <label>User</label>
+            </value>
+            <value>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+                <label>Campaign</label>
+            </value>
+            <value>
+                <fullName>ConverseApp</fullName>
+                <default>false</default>
+                <label>Converse App</label>
+            </value>
+            <value>
+                <fullName>SenderId</fullName>
+                <default>false</default>
+                <label>Sender Id</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

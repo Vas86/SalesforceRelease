@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TwilioSF__Keyword_cannot_be_edited_w_optins</fullName>
+    <active>true</active>
+    <description>If there are numbers that have opted in, the keyword cannot be edited.</description>
+    <errorConditionFormula>ISCHANGED(Name) &amp;&amp; TwilioSF__Total_Opt_In_Records__c &gt; 0</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>The keyword cannot be edited once numbers have opted-in.</errorMessage>
+</ValidationRule>

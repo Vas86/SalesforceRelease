@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Document Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Category__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Drivers License Front</fullName>
+                <default>true</default>
+                <label>Drivers License Front</label>
+            </value>
+            <value>
+                <fullName>Drivers License Back</fullName>
+                <default>false</default>
+                <label>Drivers License Back</label>
+            </value>
+            <value>
+                <fullName>Payslip One</fullName>
+                <default>false</default>
+                <label>Payslip One</label>
+            </value>
+            <value>
+                <fullName>Payslip Two</fullName>
+                <default>false</default>
+                <label>Payslip Two</label>
+            </value>
+            <value>
+                <fullName>Bankstatements</fullName>
+                <default>false</default>
+                <label>Bankstatements</label>
+            </value>
+            <value>
+                <fullName>Manual Uploaded Bankstatements</fullName>
+                <default>false</default>
+                <label>Manual Uploaded Bankstatements</label>
+            </value>
+            <value>
+                <fullName>Privacy Policy</fullName>
+                <default>false</default>
+                <label>Privacy Policy</label>
+            </value>
+            <value>
+                <fullName>Credit File</fullName>
+                <default>false</default>
+                <label>Credit File</label>
+            </value>
+            <value>
+                <fullName>Sales Invoice</fullName>
+                <default>false</default>
+                <label>Sales Invoice</label>
+            </value>
+            <value>
+                <fullName>Insurance Certificate</fullName>
+                <default>false</default>
+                <label>Insurance Certificate</label>
+            </value>
+            <value>
+                <fullName>Preliminary Assessment</fullName>
+                <default>false</default>
+                <label>Preliminary Assessment</label>
+            </value>
+            <value>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+                <label>Medicare</label>
+            </value>
+            <value>
+                <fullName>Centrelink Income Statements</fullName>
+                <default>false</default>
+                <label>Centrelink Income Statements</label>
+            </value>
+            <value>
+                <fullName>Most Recent Tax Return</fullName>
+                <default>false</default>
+                <label>Most Recent Tax Return</label>
+            </value>
+            <value>
+                <fullName>Notice of Assessment</fullName>
+                <default>false</default>
+                <label>Notice of Assessment</label>
+            </value>
+            <value>
+                <fullName>Partner Declared Income</fullName>
+                <default>false</default>
+                <label>Partner Declared Income</label>
+            </value>
+            <value>
+                <fullName>Tenancy Agreement</fullName>
+                <default>false</default>
+                <label>Tenancy Agreement</label>
+            </value>
+            <value>
+                <fullName>Rental Ledger</fullName>
+                <default>false</default>
+                <label>Rental Ledger</label>
+            </value>
+            <value>
+                <fullName>Trust Deed</fullName>
+                <default>false</default>
+                <label>Trust Deed</label>
+            </value>
+            <value>
+                <fullName>Child Support Assessment</fullName>
+                <default>false</default>
+                <label>Child Support Assessment</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Verifier</fullName>
+                <default>false</default>
+                <label>Verifier</label>
+            </value>
+            <value>
+                <fullName>Most Recent Partner Payslip</fullName>
+                <default>false</default>
+                <label>Most Recent Partner Payslip</label>
+            </value>
+            <value>
+                <fullName>Drivers Licence</fullName>
+                <default>false</default>
+                <label>Drivers Licence</label>
+            </value>
+            <value>
+                <fullName>Payslips</fullName>
+                <default>false</default>
+                <label>Payslips</label>
+            </value>
+            <value>
+                <fullName>Partners Payslip</fullName>
+                <default>false</default>
+                <label>Partners Payslip</label>
+            </value>
+            <value>
+                <fullName>Partners Payslip2</fullName>
+                <default>false</default>
+                <label>Partners Payslip2</label>
+            </value>
+            <value>
+                <fullName>Partners N O A</fullName>
+                <default>false</default>
+                <label>Partners N O A</label>
+            </value>
+            <value>
+                <fullName>Partners T R</fullName>
+                <default>false</default>
+                <label>Partners T R</label>
+            </value>
+            <value>
+                <fullName>Partners N O A2</fullName>
+                <default>false</default>
+                <label>Partners N O A2</label>
+            </value>
+            <value>
+                <fullName>Partners T R2</fullName>
+                <default>false</default>
+                <label>Partners T R2</label>
+            </value>
+            <value>
+                <fullName>Centrelink Statement</fullName>
+                <default>false</default>
+                <label>Centrelink Statement</label>
+            </value>
+            <value>
+                <fullName>Rental Income Statement</fullName>
+                <default>false</default>
+                <label>Rental Income Statement</label>
+            </value>
+            <value>
+                <fullName>Rates Notice</fullName>
+                <default>false</default>
+                <label>Rates Notice</label>
+            </value>
+            <value>
+                <fullName>Payments Summary</fullName>
+                <default>false</default>
+                <label>Payments Summary</label>
+            </value>
+            <value>
+                <fullName>Lender Spousal Declaration Form</fullName>
+                <default>false</default>
+                <label>Lender Spousal Declaration Form</label>
+            </value>
+            <value>
+                <fullName>Additional Job1 Payslip1</fullName>
+                <default>false</default>
+                <label>Additional Job1 Payslip1</label>
+            </value>
+            <value>
+                <fullName>Additional Job2 Payslip1</fullName>
+                <default>false</default>
+                <label>Additional Job2 Payslip1</label>
+            </value>
+            <value>
+                <fullName>Additional Job3 Payslip1</fullName>
+                <default>false</default>
+                <label>Additional Job3 Payslip1</label>
+            </value>
+            <value>
+                <fullName>Additional Job4 Payslip1</fullName>
+                <default>false</default>
+                <label>Additional Job4 Payslip1</label>
+            </value>
+            <value>
+                <fullName>Additional Job5 Payslip1</fullName>
+                <default>false</default>
+                <label>Additional Job5 Payslip1</label>
+            </value>
+            <value>
+                <fullName>Additional Job6 Payslip1</fullName>
+                <default>false</default>
+                <label>Additional Job6 Payslip1</label>
+            </value>
+            <value>
+                <fullName>Additional Job7 Payslip1</fullName>
+                <default>false</default>
+                <label>Additional Job7 Payslip1</label>
+            </value>
+            <value>
+                <fullName>Additional Job8 Payslip1</fullName>
+                <default>false</default>
+                <label>Additional Job8 Payslip1</label>
+            </value>
+            <value>
+                <fullName>Additional Job9 Payslip1</fullName>
+                <default>false</default>
+                <label>Additional Job9 Payslip1</label>
+            </value>
+            <value>
+                <fullName>Additional Job10 Payslip1</fullName>
+                <default>false</default>
+                <label>Additional Job10 Payslip1</label>
+            </value>
+            <value>
+                <fullName>Additional Job1 Payslip2</fullName>
+                <default>false</default>
+                <label>Additional Job1 Payslip2</label>
+            </value>
+            <value>
+                <fullName>Additional Job2 Payslip2</fullName>
+                <default>false</default>
+                <label>Additional Job2 Payslip2</label>
+            </value>
+            <value>
+                <fullName>Additional Job3 Payslip2</fullName>
+                <default>false</default>
+                <label>Additional Job3 Payslip2</label>
+            </value>
+            <value>
+                <fullName>Additional Job4 Payslip2</fullName>
+                <default>false</default>
+                <label>Additional Job4 Payslip2</label>
+            </value>
+            <value>
+                <fullName>Additional Job5 Payslip2</fullName>
+                <default>false</default>
+                <label>Additional Job5 Payslip2</label>
+            </value>
+            <value>
+                <fullName>Additional Job6 Payslip2</fullName>
+                <default>false</default>
+                <label>Additional Job6 Payslip2</label>
+            </value>
+            <value>
+                <fullName>Additional Job7 Payslip2</fullName>
+                <default>false</default>
+                <label>Additional Job7 Payslip2</label>
+            </value>
+            <value>
+                <fullName>Additional Job8 Payslip2</fullName>
+                <default>false</default>
+                <label>Additional Job8 Payslip2</label>
+            </value>
+            <value>
+                <fullName>Additional Job9 Payslip2</fullName>
+                <default>false</default>
+                <label>Additional Job9 Payslip2</label>
+            </value>
+            <value>
+                <fullName>Additional Job10 Payslip2</fullName>
+                <default>false</default>
+                <label>Additional Job10 Payslip2</label>
+            </value>
+            <value>
+                <fullName>Additional Job1 Tax Return 1</fullName>
+                <default>false</default>
+                <label>Additional Job1 Tax Return 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job2 Tax Return 1</fullName>
+                <default>false</default>
+                <label>Additional Job2 Tax Return 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job3 Tax Return 1</fullName>
+                <default>false</default>
+                <label>Additional Job3 Tax Return 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job4 Tax Return 1</fullName>
+                <default>false</default>
+                <label>Additional Job4 Tax Return 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job5 Tax Return 1</fullName>
+                <default>false</default>
+                <label>Additional Job5 Tax Return 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job6 Tax Return 1</fullName>
+                <default>false</default>
+                <label>Additional Job6 Tax Return 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job7 Tax Return 1</fullName>
+                <default>false</default>
+                <label>Additional Job7 Tax Return 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job8 Tax Return 1</fullName>
+                <default>false</default>
+                <label>Additional Job8 Tax Return 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job9 Tax Return 1</fullName>
+                <default>false</default>
+                <label>Additional Job9 Tax Return 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job10 Tax Return 1</fullName>
+                <default>false</default>
+                <label>Additional Job10 Tax Return 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job1 Tax Return 2</fullName>
+                <default>false</default>
+                <label>Additional Job1 Tax Return 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job2 Tax Return 2</fullName>
+                <default>false</default>
+                <label>Additional Job2 Tax Return 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job3 Tax Return 2</fullName>
+                <default>false</default>
+                <label>Additional Job3 Tax Return 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job4 Tax Return 2</fullName>
+                <default>false</default>
+                <label>Additional Job4 Tax Return 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job5 Tax Return 2</fullName>
+                <default>false</default>
+                <label>Additional Job5 Tax Return 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job6 Tax Return 2</fullName>
+                <default>false</default>
+                <label>Additional Job6 Tax Return 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job7 Tax Return 2</fullName>
+                <default>false</default>
+                <label>Additional Job7 Tax Return 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job8 Tax Return 2</fullName>
+                <default>false</default>
+                <label>Additional Job8 Tax Return 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job9 Tax Return 2</fullName>
+                <default>false</default>
+                <label>Additional Job9 Tax Return 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job10 Tax Return 2</fullName>
+                <default>false</default>
+                <label>Additional Job10 Tax Return 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job1 Notice Of Assessment 1</fullName>
+                <default>false</default>
+                <label>Additional Job1 Notice Of Assessment 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job2 Notice Of Assessment 1</fullName>
+                <default>false</default>
+                <label>Additional Job2 Notice Of Assessment 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job3 Notice Of Assessment 1</fullName>
+                <default>false</default>
+                <label>Additional Job3 Notice Of Assessment 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job4 Notice Of Assessment 1</fullName>
+                <default>false</default>
+                <label>Additional Job4 Notice Of Assessment 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job5 Notice Of Assessment 1</fullName>
+                <default>false</default>
+                <label>Additional Job5 Notice Of Assessment 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job6 Notice Of Assessment 1</fullName>
+                <default>false</default>
+                <label>Additional Job6 Notice Of Assessment 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job7 Notice Of Assessment 1</fullName>
+                <default>false</default>
+                <label>Additional Job7 Notice Of Assessment 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job8 Notice Of Assessment 1</fullName>
+                <default>false</default>
+                <label>Additional Job8 Notice Of Assessment 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job9 Notice Of Assessment 1</fullName>
+                <default>false</default>
+                <label>Additional Job9 Notice Of Assessment 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job10 Notice Of Assessment 1</fullName>
+                <default>false</default>
+                <label>Additional Job10 Notice Of Assessment 1</label>
+            </value>
+            <value>
+                <fullName>Additional Job1 Notice Of Assessment 2</fullName>
+                <default>false</default>
+                <label>Additional Job1 Notice Of Assessment 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job2 Notice Of Assessment 2</fullName>
+                <default>false</default>
+                <label>Additional Job2 Notice Of Assessment 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job3 Notice Of Assessment 2</fullName>
+                <default>false</default>
+                <label>Additional Job3 Notice Of Assessment 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job4 Notice Of Assessment 2</fullName>
+                <default>false</default>
+                <label>Additional Job4 Notice Of Assessment 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job5 Notice Of Assessment 2</fullName>
+                <default>false</default>
+                <label>Additional Job5 Notice Of Assessment 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job6 Notice Of Assessment 2</fullName>
+                <default>false</default>
+                <label>Additional Job6 Notice Of Assessment 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job7 Notice Of Assessment 2</fullName>
+                <default>false</default>
+                <label>Additional Job7 Notice Of Assessment 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job8 Notice Of Assessment 2</fullName>
+                <default>false</default>
+                <label>Additional Job8 Notice Of Assessment 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job9 Notice Of Assessment 2</fullName>
+                <default>false</default>
+                <label>Additional Job9 Notice Of Assessment 2</label>
+            </value>
+            <value>
+                <fullName>Additional Job10 Notice Of Assessment 2</fullName>
+                <default>false</default>
+                <label>Additional Job10 Notice Of Assessment 2</label>
+            </value>
+            <value>
+                <fullName>Partners2021 Individual Tax Return</fullName>
+                <default>false</default>
+                <label>Partners2021 Individual Tax Return</label>
+            </value>
+            <value>
+                <fullName>creditfile</fullName>
+                <default>false</default>
+                <label>creditFile</label>
+            </value>
+            <value>
+                <fullName>manualUploadedBankstatements</fullName>
+                <default>false</default>
+                <label>manualUploadedBankstatements</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Drivers License Front</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Drivers License Back</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Payslip One</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Payslip Two</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Bankstatements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Manual Uploaded Bankstatements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Privacy Policy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Credit File</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Sales Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Insurance Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Preliminary Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Medicare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Centrelink Income Statements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Most Recent Tax Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Notice of Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Partner Declared Income</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Tenancy Agreement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Rental Ledger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Trust Deed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Child Support Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Verifier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Most Recent Partner Payslip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Drivers Licence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Payslips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Partners Payslip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Partners Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Partners N O A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Partners T R</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Partners N O A2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Partners T R2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Centrelink Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Rental Income Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Rates Notice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Payments Summary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Lender Spousal Declaration Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job1 Payslip1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job2 Payslip1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job3 Payslip1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job4 Payslip1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job5 Payslip1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job6 Payslip1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job7 Payslip1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job8 Payslip1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job9 Payslip1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job10 Payslip1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job1 Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job2 Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job3 Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job4 Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job5 Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job6 Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job7 Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job8 Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job9 Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job10 Payslip2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job1 Tax Return 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job2 Tax Return 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job3 Tax Return 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job4 Tax Return 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job5 Tax Return 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job6 Tax Return 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job7 Tax Return 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job8 Tax Return 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job9 Tax Return 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job10 Tax Return 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job1 Tax Return 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job2 Tax Return 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job3 Tax Return 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job4 Tax Return 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job5 Tax Return 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job6 Tax Return 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job7 Tax Return 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job8 Tax Return 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job9 Tax Return 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job10 Tax Return 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job1 Notice Of Assessment 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job2 Notice Of Assessment 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job3 Notice Of Assessment 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job4 Notice Of Assessment 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job5 Notice Of Assessment 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job6 Notice Of Assessment 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job7 Notice Of Assessment 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job8 Notice Of Assessment 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job9 Notice Of Assessment 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job10 Notice Of Assessment 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job1 Notice Of Assessment 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job2 Notice Of Assessment 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job3 Notice Of Assessment 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job4 Notice Of Assessment 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job5 Notice Of Assessment 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job6 Notice Of Assessment 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job7 Notice Of Assessment 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job8 Notice Of Assessment 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job9 Notice Of Assessment 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>postApproval</controllingFieldValue>
+            <controllingFieldValue>lenderRequested</controllingFieldValue>
+            <controllingFieldValue>supporting</controllingFieldValue>
+            <controllingFieldValue>application</controllingFieldValue>
+            <valueName>Additional Job10 Notice Of Assessment 2</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Related_To__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>To be used in future. This field contains the ID of the related Message Object Config (MOC).</description>
+    <externalId>false</externalId>
+    <label>Related To</label>
+    <referenceTo>smagicinteract__Message_Object_Config__c</referenceTo>
+    <relationshipLabel>Keyword Action Configs</relationshipLabel>
+    <relationshipName>Keyword_Action_Configs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

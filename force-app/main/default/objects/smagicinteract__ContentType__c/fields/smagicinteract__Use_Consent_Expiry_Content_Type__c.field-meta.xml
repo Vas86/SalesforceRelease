@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Use_Consent_Expiry_Content_Type__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox to determine whether to use consent expiry feature for content type or not.</description>
+    <externalId>false</externalId>
+    <label>Use Consent Expiry Content Type</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

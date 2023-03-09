@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>AC_TaskTrigger を有効にするか、無効にするかを選択します。</help>
+    <label></label>
+    <name>amazonconnect__disableTaskTrigger__c</name>
+</CustomFieldTranslation>

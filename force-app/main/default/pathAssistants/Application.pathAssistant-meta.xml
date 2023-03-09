@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Application</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Pre_Approval__c</fieldNames>
+        <fieldNames>Address__c</fieldNames>
+        <fieldNames>Buying_a_Car_From__c</fieldNames>
+        <fieldNames>Vehicle_year__c</fieldNames>
+        <fieldNames>Approval_Expiration_Date__c</fieldNames>
+        <picklistValueName>Approved</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Partner_Account_Name__c</fieldNames>
+        <fieldNames>Follow_Up_Calls__c</fieldNames>
+        <fieldNames>Call_Experiment__c</fieldNames>
+        <fieldNames>Set_follow_up_date__c</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt;Don&amp;#39;t forget public notes for all Partner Leads!&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt;Make sure to always change the Sub-status Last!&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt;Don&amp;#39;t forget to mark follow up calls and experiment calls (when needed!)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Awaiting Documents</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Pre_Approval__c</fieldNames>
+        <fieldNames>Address__c</fieldNames>
+        <fieldNames>Buying_a_Car_From__c</fieldNames>
+        <fieldNames>Vehicle_year__c</fieldNames>
+        <fieldNames>Approval_Expiration_Date__c</fieldNames>
+        <picklistValueName>Conditionally Approved</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Cars24_Potential_Withdraw__c</fieldNames>
+        <fieldNames>Withdraw_Decline_Reason__c</fieldNames>
+        <picklistValueName>Declined</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Loan_Amount__c</fieldNames>
+        <fieldNames>Interest_rate__c</fieldNames>
+        <fieldNames>Partner_Account_Name__c</fieldNames>
+        <fieldNames>Buying_a_Car_From__c</fieldNames>
+        <fieldNames>Asset_Type__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt; Follow up lodged deals which require more information via phone call, text and email. Leave notes once actioned.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt; Keep the partner account (Carsales, Cars24, Dealerships) updated with where the deal is at.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt; When handing over to settlement ensure you check Loan details match, partner account, Credit and Settlement Conditions and complete handover notes.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt; Has the SLA breached? Do you need to engage a TL to escalate the application or can you escalate yourself?&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Lodged</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Partner_Account_Name__c</fieldNames>
+        <fieldNames>Follow_Up_Calls__c</fieldNames>
+        <fieldNames>Call_Experiment__c</fieldNames>
+        <fieldNames>Set_follow_up_date__c</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt; Don&amp;#39;t forget public notes for all Partner Leads!&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt; Make sure to always change the Sub-status Last!&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt; Don&amp;#39;t forget to mark follow up calls and experiment calls (when needed!)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Quoted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Follow_Up_Calls__c</fieldNames>
+        <fieldNames>Partner_Account_Name__c</fieldNames>
+        <fieldNames>Call_Experiment__c</fieldNames>
+        <fieldNames>Set_follow_up_date__c</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt; Don&amp;#39;t forget public notes for all Partner Leads!&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt; Make sure to always change the Sub-status Last!&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 13px;&quot;&gt; Don&amp;#39;t forget to mark follow up calls and experiment calls (when needed!)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Received</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Pre_Approval__c</fieldNames>
+        <fieldNames>Address__c</fieldNames>
+        <fieldNames>Buying_a_Car_From__c</fieldNames>
+        <fieldNames>Vehicle_year__c</fieldNames>
+        <fieldNames>Approval_Expiration_Date__c</fieldNames>
+        <picklistValueName>Settled</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Partner_Account_Name__c</fieldNames>
+        <fieldNames>Follow_Up_Calls__c</fieldNames>
+        <fieldNames>Call_Experiment__c</fieldNames>
+        <fieldNames>Set_follow_up_date__c</fieldNames>
+        <fieldNames>Sub_Status__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;&quot;&gt; Don&amp;#39;t forget public notes for all Partner Leads!&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;&quot;&gt;Make sure to always change the Sub-status Last!&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;&quot;&gt; Don&amp;#39;t forget to mark follow up calls and experiment calls (when needed!)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Started</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Loan_Amount__c</fieldNames>
+        <fieldNames>Asset_Type__c</fieldNames>
+        <fieldNames>Vehicle_year__c</fieldNames>
+        <fieldNames>Buying_a_Car_From__c</fieldNames>
+        <fieldNames>Employment_Status__c</fieldNames>
+        <info>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;&quot;&gt; High/Urgent Assessment quality to be used for higher intent and likely to lodge customers.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;&quot;&gt; Use Docs in Portal for requesting documents where possible.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;&quot;&gt; Partner Leads (Carsales, Cars24, Dealerships) to be prioritized in assessment.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;&quot;&gt; Notes to be left for partner leads. Use the templates provided and remember the dealership team is here to help you&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Under Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Cars24_Potential_Withdraw__c</fieldNames>
+        <fieldNames>Withdraw_Decline_Reason__c</fieldNames>
+        <picklistValueName>Withdrawn</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Applications</recordTypeName>
+</PathAssistant>

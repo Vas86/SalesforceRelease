@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <adapterUrl>https://driva--dev.sandbox.my.salesforce.com/hvcc/amz/index.html</adapterUrl>
+    <customSettings>{&quot;reqTimeout&quot;:&quot;5000&quot;,&quot;vendorInfoApiName&quot;:&quot;c__AMAZON_CONNECT&quot;,&quot;reqStandbyUrl&quot;:&quot;https://domain:port/softphone&quot;,&quot;reqCallCenterType&quot;:&quot;SCVBYOT&quot;,&quot;reqSoftphoneHeight&quot;:&quot;300&quot;,&quot;reqUseApi&quot;:&quot;true&quot;,&quot;reqSoftphoneWidth&quot;:&quot;500&quot;,&quot;reqSalesforceCompatibilityMode&quot;:&quot;Lightning&quot;}</customSettings>
+    <displayName>SCVDrivaDEV</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>InternalName</internalNameLabel>
+    <sections>
+        <items>
+            <label>Conversation Vendor Info Developer Name</label>
+            <name>reqVendorInfoApiName</name>
+            <value>c__AMAZON_CONNECT</value>
+        </items>
+        <items>
+            <label>CTI Adapter URL</label>
+            <name>reqAdapterUrl</name>
+            <value>https://driva--dev.sandbox.my.salesforce.com/hvcc/amz/index.html</value>
+        </items>
+        <label>General Information</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Relay State</label>
+            <name>reqRelayState</name>
+            <value>https://ap-southeast-2.console.aws.amazon.com/connect/federate/ab516d1d-fec5-43cc-b566-2a3102359504</value>
+        </items>
+        <items>
+            <label>Identity URL</label>
+            <name>reqIdentityUrl</name>
+            <value>https://driva--dev.sandbox.my.salesforce.com/idp/login?app=0sp5g000000fxtC</value>
+        </items>
+        <items>
+            <label>Telephony Integration Certificate</label>
+            <name>reqTelephonyIntegrationCertificate</name>
+            <value>-----BEGIN CERTIFICATE-----
+MIIDNzCCAh8CFGo79XbpOJzK4JbZHpIuDm9onpGOMA0GCSqGSIb3DQEBCwUAMFgx
+CzAJBgNVBAYTAkFVMQwwCgYDVQQIDANOU1cxDDAKBgNVBAcMA1N5ZDEOMAwGA1UE
+CgwFRHJpdmExCzAJBgNVBAsMAmNjMRAwDgYDVQQDDAdjb25uZWN0MB4XDTIyMTAy
+NzExMzE0N1oXDTIyMTAyODExMzE0N1owWDELMAkGA1UEBhMCQVUxDDAKBgNVBAgM
+A05TVzEMMAoGA1UEBwwDU3lkMQ4wDAYDVQQKDAVEcml2YTELMAkGA1UECwwCY2Mx
+EDAOBgNVBAMMB2Nvbm5lY3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQDLeCqlxMtR5P7lYjU9ZVfs/ZBlpbuTZUoktn3WuAwEfx20IRyRcD79wZvGRLU6
+p8gUTKXsSEC60qCnoWyYxtnWpjW4MQjrEdhPkpjeaHc3rIvHOYvxVT6h4VxhCPOt
+7FBA5MdOfK5PTYyHfjnu4mWkXfXpTikG8AVr6i5H4PdryHdYs47DTiTh/Fv8kDmA
+076gebobU+wNFdWhDDO7VT3DWtN1nevnMLmwLR8rzAGv995WiKIQ3X9XnSlwhU0x
+K6lvmxmQNF6a70p5n+Kj5tjQ2BxOmkZu8vU4oLTYk2VyvHy7x3HBtkRQxoyNixOV
+QJo6rUNkwcu+Wm1CjcRI3+T3AgMBAAEwDQYJKoZIhvcNAQELBQADggEBAC2bcdxG
+GNzwjQZpoVCwXjMT5fXQTAmW8WcWnepylr1WccyfAwyQvpyOMYIHPUJi1SnN0NoT
+WNMrWP8EcOu1j5E+ln35y7vIWrSOSKvUXDdZbBhDPFaQD68BUduOCQksj2oT64In
+HPjGIrVT8B/1cIV+/eHuUCR6VZoB8b8Ee1vYyzZeJIUZ0Z4aFk5keYlZWoalwT9R
+hDJgyjW/86VvcfCWHWfhS8aHq88dnKpyg4aqp8W+eW8zKMSZol9Wc+3SmuSZM6l5
+YLIiby/vjCbb0IgBrE8QnNZKttXGkISs+3tITvbD0P4KuVZOQt7ce1UzRaUdAjrV
++4x8qhrlFfFonvg=
+-----END CERTIFICATE-----</value>
+        </items>
+        <items>
+            <label>Long Distance Prefix</label>
+            <name>reqLongDistPrefix</name>
+            <value>+61</value>
+        </items>
+        <items>
+            <label>Instance Name</label>
+            <name>reqInstanceName</name>
+            <value>connect-driva-nonprod</value>
+        </items>
+        <items>
+            <label>Instance Recording Role</label>
+            <name>reqInstanceRecordingRole</name>
+            <value>arn:aws:iam::943846385165:role/SCVDrivaDEV-ConnectCallRole</value>
+        </items>
+        <items>
+            <label>Settings Relay State</label>
+            <name>reqSettingsRelayState</name>
+            <value>https://ap-southeast-2.console.aws.amazon.com/connect/federate/ab516d1d-fec5-43cc-b566-2a3102359504</value>
+        </items>
+        <items>
+            <label>Universal Call Recording Access</label>
+            <name>reqUniversalCallRecordingAccess</name>
+            <value>false</value>
+        </items>
+        <items>
+            <label>Telephony Provider</label>
+            <name>reqTelephonyProvider</name>
+            <value>AMAZON_CONNECT</value>
+        </items>
+        <items>
+            <label>Cloud Formation template version</label>
+            <name>reqVersion</name>
+            <value>1.0</value>
+        </items>
+        <items>
+            <label>Telephony Integration Keypair Expiration Date</label>
+            <name>reqTelephonyIntegrationKeyPairExpDate</name>
+            <value>27/10/2023 11:33:43</value>
+        </items>
+        <label>SCV Settings</label>
+        <name>reqHvcc</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Region</label>
+            <name>reqRegion</name>
+            <value>ap-southeast-2</value>
+        </items>
+        <label>Amazon Connect Settings</label>
+        <name>AmazonConnectSettings</name>
+    </sections>
+    <version>1</version>
+</CallCenter>

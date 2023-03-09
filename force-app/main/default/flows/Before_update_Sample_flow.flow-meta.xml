@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Add_comment_in_description</name>
+        <label>Add comment in description</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Description</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Deposit changed more than 10000</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>check_if_current_amount_value_is_greater_than_10000_than_previous_amount</name>
+        <label>check if current amount value is greater than 10000 than previous amount</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Deposit__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>depositplus10000</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_comment_in_description</targetReference>
+            </connector>
+            <label>If yes</label>
+        </rules>
+    </decisions>
+    <description>Add comment in description if deposit is greater than 10000 to previous value</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>depositplus10000</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record__Prior.Deposit__c}+10000</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>previousAmountvalueplus10000</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record__Prior.Loan_Amount__c}+10000</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Before update flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Before update Sample flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>check_if_current_amount_value_is_greater_than_10000_than_previous_amount</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

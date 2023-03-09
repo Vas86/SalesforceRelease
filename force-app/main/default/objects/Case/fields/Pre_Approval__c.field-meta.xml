@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pre_Approval__c</fullName>
+    <externalId>false</externalId>
+    <label>Pre-Approval Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Requires Pre-approval Call</fullName>
+                <default>false</default>
+                <label>Requires Pre-approval Call</label>
+            </value>
+            <value>
+                <fullName>Awaiting Settlement Conditions From Customer</fullName>
+                <default>false</default>
+                <label>Awaiting Settlement Conditions</label>
+            </value>
+            <value>
+                <fullName>Tax Invoice Request</fullName>
+                <default>false</default>
+                <label>Tax Invoice Request</label>
+            </value>
+            <value>
+                <fullName>Verimoto Pending</fullName>
+                <default>false</default>
+                <label>Verimoto Pending</label>
+            </value>
+            <value>
+                <fullName>Awaiting Registration</fullName>
+                <default>false</default>
+                <label>Awaiting Registration</label>
+            </value>
+            <value>
+                <fullName>Lender Contract Generator</fullName>
+                <default>false</default>
+                <label>Lender Contract Generation</label>
+            </value>
+            <value>
+                <fullName>Documents for Customer for Signing</fullName>
+                <default>false</default>
+                <label>Documents with Customer for Signing</label>
+            </value>
+            <value>
+                <fullName>Settlement Pending</fullName>
+                <default>false</default>
+                <label>Settlement Pending</label>
+            </value>
+            <value>
+                <fullName>Cancellation In Progress</fullName>
+                <default>false</default>
+                <label>Cancellation In Progress</label>
+            </value>
+            <value>
+                <fullName>Delayed Delivery</fullName>
+                <default>false</default>
+                <label>Delayed Delivery</label>
+            </value>
+            <value>
+                <fullName>Vehicle Search</fullName>
+                <default>false</default>
+                <label>Vehicle Search</label>
+            </value>
+            <value>
+                <fullName>Unresponsive</fullName>
+                <default>false</default>
+                <label>Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Not Proceeding</fullName>
+                <default>false</default>
+                <label>Not Proceeding</label>
+            </value>
+            <value>
+                <fullName>-</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-</label>
+            </value>
+            <value>
+                <fullName>Awaiting Customer Response Contract Generaton</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Awaiting Customer Response Contract Generaton</label>
+            </value>
+            <value>
+                <fullName>Documents with Customer for Signing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Documents with Customer for Signing</label>
+            </value>
+            <value>
+                <fullName>VEI Post - Settlement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VEI Post - Settlement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

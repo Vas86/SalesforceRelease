@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flowdometer__Without_Goals</fullName>
+    <columns>NAME</columns>
+    <columns>Flowdometer__Tracked_Object_Link__c</columns>
+    <columns>Flowdometer__Tracked_Field_Name__c</columns>
+    <columns>Flowdometer__Type__c</columns>
+    <columns>Flowdometer__Steps_in_Flow__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Flowdometer__Goal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Flowdometer__Goal__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Flowdometer__Flow__c.Flowdometer__Tracker</value>
+    </filters>
+    <label>Without Goals</label>
+</ListView>

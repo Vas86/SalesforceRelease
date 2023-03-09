@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Not_Responded_By_Agent</fullName>
+    <columns>NAME</columns>
+    <columns>smagicinteract__Last_Incoming_Time__c</columns>
+    <columns>smagicinteract__Last_Message_Direction__c</columns>
+    <columns>smagicinteract__Last_Message_Time__c</columns>
+    <columns>smagicinteract__Object__c</columns>
+    <columns>smagicinteract__State__c</columns>
+    <columns>smagicinteract__Sender__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>smagicinteract__Last_Message_Direction__c</field>
+        <operation>equals</operation>
+        <value>IN</value>
+    </filters>
+    <label>Not Responded By Agent</label>
+    <language>en_US</language>
+</ListView>

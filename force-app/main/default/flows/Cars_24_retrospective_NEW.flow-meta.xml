@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <name>Add_to_Case_Collection</name>
+        <label>Add to Case Collection</label>
+        <locationX>138</locationX>
+        <locationY>876</locationY>
+        <assignmentItems>
+            <assignToReference>UpdateCaseCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_All_Cases</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_All_Cases</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Tyes</name>
+        <label>Update Case</label>
+        <locationX>138</locationX>
+        <locationY>756</locationY>
+        <assignmentItems>
+            <assignToReference>Loop_All_Cases.Sub_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Cold Lead</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_to_Case_Collection</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>If_Cases_exist</name>
+        <label>If Cases exist</label>
+        <locationX>182</locationX>
+        <locationY>516</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Cases_Exist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Cases</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_All_Cases</targetReference>
+            </connector>
+            <label>Cases Exist</label>
+        </rules>
+    </decisions>
+    <description>Scheduled to run at 12am/midnight  - updates selected CARS24 Cases to  SubStatus &quot;Cold Lead&quot;
+
+1) Partner account = Cars24
+2)Status is either Awaiting Documents or Under Review
+3)7 days since the Status was changed to Awaiting Documents
+4) Sub Status for either Under Review Status or Awaiting Documents Status = Awaiting Customer Response
+Then change the Sub-status to Cold Lead</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Sevendaysago</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()-7</expression>
+    </formulas>
+    <formulas>
+        <name>SevenDaysAgoWithTime</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()-7</expression>
+    </formulas>
+    <interviewLabel>Cars 24 retrospective - NEW {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Cars 24 retrospective - NEW</label>
+    <loops>
+        <name>Loop_All_Cases</name>
+        <label>Loop All Cases</label>
+        <locationX>50</locationX>
+        <locationY>636</locationY>
+        <collectionReference>Get_Cases</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Tyes</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Case_records_from_Collection</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Account</name>
+        <label>Get Account</label>
+        <locationX>182</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Cases</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>CARS24</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Cases</name>
+        <label>Get Cases</label>
+        <locationX>182</locationX>
+        <locationY>396</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_Cases_exist</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3) AND 4 AND 5</filterLogic>
+        <filters>
+            <field>Partner_Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Account.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Awaiting Documents</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Under Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Awaiting Customer Response</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Awaiting_Documents_Date__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Sevendaysago</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Case_records_from_Collection</name>
+        <label>Update Case records from Collection</label>
+        <locationX>50</locationX>
+        <locationY>1092</locationY>
+        <inputReference>UpdateCaseCollection</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Account</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2022-03-23</startDate>
+            <startTime>03:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>UpdateCaseCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

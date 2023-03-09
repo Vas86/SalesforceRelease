@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Sender_JSON_Detail__c</fullName>
+    <deprecated>false</deprecated>
+    <description>It will store JSON of specific sender Id from user or queue.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>It will store JSON of specific sender Id from user or queue.</inlineHelpText>
+    <label>Sender JSON Detail</label>
+    <length>10000</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

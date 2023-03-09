@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Disable_Mail_Sending__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Check this field to disable managed package code to send email notifications on incoming messages.</description>
+    <externalId>false</externalId>
+    <label>Disable Mail Sending</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

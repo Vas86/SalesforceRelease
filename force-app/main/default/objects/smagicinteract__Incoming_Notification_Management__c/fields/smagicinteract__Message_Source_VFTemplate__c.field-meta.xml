@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Message_Source_VFTemplate__c</fullName>
+    <defaultValue>&quot;Conversation&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>To configure the source of message history for the incoming that can be part of a &quot;Default SMS Magic Email Template (html)&quot; notification template. Possible values &quot;Conversation&quot; or &quot;Record&quot;. Default value Conversation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Possible values &quot;Conversation&quot; or &quot;Record&quot;.</inlineHelpText>
+    <label>Message History Source VFTemplate</label>
+    <length>144</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

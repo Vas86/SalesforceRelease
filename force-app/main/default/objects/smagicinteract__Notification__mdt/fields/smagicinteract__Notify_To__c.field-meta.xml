@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Notify_To__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Notify To</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Record Owner</fullName>
+                <default>true</default>
+                <label>Record Owner</label>
+            </value>
+            <value>
+                <fullName>Conversation Owner</fullName>
+                <default>false</default>
+                <label>Conversation Owner</label>
+            </value>
+            <value>
+                <fullName>Sender ID Owner</fullName>
+                <default>false</default>
+                <label>Sender ID Owner</label>
+            </value>
+            <value>
+                <fullName>Last Sender</fullName>
+                <default>false</default>
+                <label>Last Sender</label>
+            </value>
+            <value>
+                <fullName>Profile</fullName>
+                <default>false</default>
+                <label>Profile</label>
+            </value>
+            <value>
+                <fullName>Specific User(s)</fullName>
+                <default>false</default>
+                <label>Specific User(s)</label>
+            </value>
+            <value>
+                <fullName>Role</fullName>
+                <default>false</default>
+                <label>Role</label>
+            </value>
+            <value>
+                <fullName>Specific Email Address/ Chatter User/ Number</fullName>
+                <default>false</default>
+                <label>Specific Email Address/ Chatter User/ Number</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

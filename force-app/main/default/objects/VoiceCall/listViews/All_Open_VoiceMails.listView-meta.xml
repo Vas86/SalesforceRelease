@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_VoiceMails</fullName>
+    <columns>CallStartDateTime</columns>
+    <columns>FromPhoneNumber</columns>
+    <columns>CallType</columns>
+    <columns>CallResolution</columns>
+    <columns>RelatedRecord</columns>
+    <columns>Owner</columns>
+    <columns>Name</columns>
+    <columns>EndUser</columns>
+    <columns>QualityScore</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CallResolution</field>
+        <operation>notEqual</operation>
+        <value>Resolved</value>
+    </filters>
+    <label>All Open Voice Calls</label>
+</ListView>

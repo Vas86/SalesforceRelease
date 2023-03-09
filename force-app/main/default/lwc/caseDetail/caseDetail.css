@@ -1,0 +1,22 @@
+.panel-header{
+    background-color:black !important; 
+    color:rgb(127,177,153) !important;
+}
+:host {
+    --slds-c-tabs-scoped-color-background: black !important;
+  }
+  .tab-active {
+    --sds-c-tabs-scoped-color-text-active: red;
+}
+.slds-tabs_scoped__nav, .slds-tabs--scoped__nav {
+    display: flex;
+    align-items: flex-start;
+    background-color: black !important;
+    border: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorderButtonDefault,rgb(201, 201, 201));
+    border-top-left-radius: var(--lwc-borderRadiusMedium,0.25rem);
+    border-top-right-radius: var(--lwc-borderRadiusMedium,0.25rem);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    text-decoration: none;
+    color: white;
+}

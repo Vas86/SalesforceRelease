@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Lodged_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Partner_Account__c</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Lender__c</columns>
+    <columns>Assessment_Quality__c</columns>
+    <columns>Set_follow_up_date__c</columns>
+    <columns>Credit_Agent__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Lodged</value>
+    </filters>
+    <filters>
+        <field>Lender__c</field>
+        <operation>notEqual</operation>
+        <value>ANZ,BFS,Afs,Prospa,SocietyOne,Westpac</value>
+    </filters>
+    <label>My Open Lodged Cases</label>
+</ListView>

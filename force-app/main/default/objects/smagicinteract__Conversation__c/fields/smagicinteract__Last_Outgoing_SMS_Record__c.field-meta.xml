@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Last_Outgoing_SMS_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Last Outgoing SMS Record</label>
+    <referenceTo>smagicinteract__smsMagic__c</referenceTo>
+    <relationshipLabel>Conversations (Last Outgoing SMS Record)</relationshipLabel>
+    <relationshipName>Conversations1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

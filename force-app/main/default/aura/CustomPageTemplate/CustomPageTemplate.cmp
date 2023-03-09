@@ -1,0 +1,38 @@
+<aura:component implements="lightning:recordHomeTemplate" description="Main column
+                                                                       and right sidebar. On a phone, the regions are of equal width">
+    <aura:attribute name="left" type="Aura.Component[]" />
+    <aura:attribute name="right" type="Aura.Component[]" />
+    <aura:attribute name="header" type="Aura.Component[]" />
+    <aura:attribute name="footer" type="Aura.Component[]" />
+    <aura:attribute name="leftWidth" type="Aura.Component[]" />
+    <aura:attribute name="rightWidth" type="Aura.Component[]" />
+    <div>
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem size="12" padding="around-small">
+                {!v.header}
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem size="12" smallDeviceSize="12" mediumDeviceSize="6" largeDeviceSize="6" padding="around-small">
+                {!v.leftWidth}
+            </lightning:layoutItem>
+            <lightning:layoutItem  size="12" smallDeviceSize="12" mediumDeviceSize="6" largeDeviceSize="6" padding="around-small">
+                {!v.rightWidth}
+            </lightning:layoutItem>            
+        </lightning:layout>
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem size="4" padding="around-small">
+                {!v.left}
+            </lightning:layoutItem>
+            <lightning:layoutItem  size="8" padding="around-small">
+                {!v.right}
+            </lightning:layoutItem>            
+        </lightning:layout>
+
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem size="12" padding="around-small">
+                {!v.footer}
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

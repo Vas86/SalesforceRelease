@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Reason__c</fullName>
+    <description>Tracking the reason for why customers call in</description>
+    <externalId>false</externalId>
+    <label>Call Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Have documents been received</fullName>
+                <default>false</default>
+                <label>Have documents been received</label>
+            </value>
+            <value>
+                <fullName>Application update</fullName>
+                <default>false</default>
+                <label>Application update</label>
+            </value>
+            <value>
+                <fullName>Confirming loan details (vehicle price/deposit)</fullName>
+                <default>false</default>
+                <label>Confirming loan details (vehicle price/deposit)</label>
+            </value>
+            <value>
+                <fullName>Insurance queries</fullName>
+                <default>false</default>
+                <label>Insurance queries</label>
+            </value>
+            <value>
+                <fullName>Changing loan details</fullName>
+                <default>false</default>
+                <label>Changing loan details</label>
+            </value>
+            <value>
+                <fullName>Returning call</fullName>
+                <default>false</default>
+                <label>Returning call</label>
+            </value>
+            <value>
+                <fullName>Stuck on application / portal</fullName>
+                <default>false</default>
+                <label>Stuck on application / portal</label>
+            </value>
+            <value>
+                <fullName>Document upload issues</fullName>
+                <default>false</default>
+                <label>Document upload issues</label>
+            </value>
+            <value>
+                <fullName>Dealership - client application</fullName>
+                <default>false</default>
+                <label>Dealership - client application</label>
+            </value>
+            <value>
+                <fullName>Lender call regarding client application</fullName>
+                <default>false</default>
+                <label>Lender call regarding client application</label>
+            </value>
+            <value>
+                <fullName>Marketing / Call Spam</fullName>
+                <default>false</default>
+                <label>Marketing / Call Spam</label>
+            </value>
+            <value>
+                <fullName>Post settlement queries</fullName>
+                <default>false</default>
+                <label>Post settlement queries</label>
+            </value>
+            <value>
+                <fullName>Request to withdraw</fullName>
+                <default>false</default>
+                <label>Request to withdraw</label>
+            </value>
+            <value>
+                <fullName>VISA inquiry</fullName>
+                <default>false</default>
+                <label>VISA inquiry</label>
+            </value>
+            <value>
+                <fullName>Requesting to speak to credit agent</fullName>
+                <default>false</default>
+                <label>Requesting to speak to credit agent</label>
+            </value>
+            <value>
+                <fullName>Requesting to Speak to Settlements agent</fullName>
+                <default>false</default>
+                <label>Requesting to Speak to Settlements agent</label>
+            </value>
+            <value>
+                <fullName>Stuck on how to progress</fullName>
+                <default>false</default>
+                <label>Stuck on how to progress</label>
+            </value>
+            <value>
+                <fullName>Unsure of how to provide additional documents</fullName>
+                <default>false</default>
+                <label>Unsure of how to provide additional documents</label>
+            </value>
+            <value>
+                <fullName>Asking for context around documents requested</fullName>
+                <default>false</default>
+                <label>Asking for context around documents requested</label>
+            </value>
+            <value>
+                <fullName>Start an application</fullName>
+                <default>false</default>
+                <label>Start an application</label>
+            </value>
+            <value>
+                <fullName>Add information to application</fullName>
+                <default>false</default>
+                <label>Add information to application</label>
+            </value>
+            <value>
+                <fullName>Concern about Lender Switch</fullName>
+                <default>false</default>
+                <label>Concern about Lender Switch</label>
+            </value>
+            <value>
+                <fullName>Question about credit profile</fullName>
+                <default>false</default>
+                <label>Question about credit profile</label>
+            </value>
+            <value>
+                <fullName>Question about our loan products</fullName>
+                <default>false</default>
+                <label>Question about our loan products</label>
+            </value>
+            <value>
+                <fullName>Rate match</fullName>
+                <default>false</default>
+                <label>Rate match</label>
+            </value>
+            <value>
+                <fullName>Private seller calling regarding client application</fullName>
+                <default>false</default>
+                <label>Private seller calling regarding client application</label>
+            </value>
+            <value>
+                <fullName>Haven&apos;t received email</fullName>
+                <default>false</default>
+                <label>Haven&apos;t received email</label>
+            </value>
+            <value>
+                <fullName>Finance Policy Questions</fullName>
+                <default>false</default>
+                <label>Finance Policy Questions</label>
+            </value>
+            <value>
+                <fullName>General enquiry</fullName>
+                <default>false</default>
+                <label>General enquiry</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

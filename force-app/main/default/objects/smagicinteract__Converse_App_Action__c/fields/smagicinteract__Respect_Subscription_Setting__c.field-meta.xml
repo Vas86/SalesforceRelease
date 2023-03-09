@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Respect_Subscription_Setting__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If selected, people who have opted out won&apos;t get messages and people who&apos;ve opted in would get messages.</description>
+    <externalId>false</externalId>
+    <label>Respect Subscription Setting</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

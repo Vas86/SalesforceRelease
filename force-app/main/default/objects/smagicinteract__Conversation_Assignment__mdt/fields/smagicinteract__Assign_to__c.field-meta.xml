@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Assign_to__c</fullName>
+    <deprecated>false</deprecated>
+    <description>It will store assignment senders. 
+Eg- Specific User, queue</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>It will store assignment senders. 
+Eg- Specific User, queue</inlineHelpText>
+    <label>Assign to</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DefaultOwner</fullName>
+                <default>false</default>
+                <label>Default Setting</label>
+            </value>
+            <value>
+                <fullName>Queue</fullName>
+                <default>false</default>
+                <label>Queue</label>
+            </value>
+            <value>
+                <fullName>RecordOwner</fullName>
+                <default>false</default>
+                <label>Record Owner</label>
+            </value>
+            <value>
+                <fullName>SenderIdOwner</fullName>
+                <default>false</default>
+                <label>SenderId Owner</label>
+            </value>
+            <value>
+                <fullName>SpecificUser</fullName>
+                <default>false</default>
+                <label>Specific User</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__List_View_Configuration__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>To be deprecated.</description>
+    <externalId>false</externalId>
+    <label>List View Configuration</label>
+    <referenceTo>smagicinteract__List_View_Configuration__c</referenceTo>
+    <relationshipLabel>SMS Scheduled</relationshipLabel>
+    <relationshipName>SMS_Scheduled</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mortgage</fullName>
+    <active>true</active>
+    <label>Mortgage</label>
+    <picklistValues>
+        <picklist>Liability_Source__c</picklist>
+        <values>
+            <fullName>Credit cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mortgages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay Laters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal loans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Loans</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

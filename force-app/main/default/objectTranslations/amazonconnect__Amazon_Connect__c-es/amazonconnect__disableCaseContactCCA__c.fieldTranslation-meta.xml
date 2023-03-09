@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Elija para activar o desactivar el desencadenador AC_AssociateCaseContactCCA, que asocia casos y contactos a un registro de análisis de canal de contacto.</help>
+    <label></label>
+    <name>amazonconnect__disableCaseContactCCA__c</name>
+</CustomFieldTranslation>

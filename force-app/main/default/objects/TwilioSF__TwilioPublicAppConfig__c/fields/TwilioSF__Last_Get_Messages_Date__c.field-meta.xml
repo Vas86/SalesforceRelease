@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TwilioSF__Last_Get_Messages_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The last date used to get messages from the Twilio account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The last date used to get messages from the Twilio account.</inlineHelpText>
+    <label>Last Get Messages Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

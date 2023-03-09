@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lender_Legal_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( TEXT(Lender__c), 
+&apos;AutoPay&apos;, &apos;MoneyMe Financial Group Pty Ltd&apos;,
+&apos;Wisr&apos;, &apos;Wisr Finance Pty Ltd&apos;,
+&apos;MoneyPlace&apos;, &apos;Secure Funding Pty Ltd&apos;,
+&apos;Plenti&apos;, &apos;Plenti Finance Pty Ltd&apos;,
+&apos;Firstmac&apos;, &apos;FirstMac Asset Funding Pty Ltd&apos;,
+&apos;Finance One&apos;, &apos;Finance One&apos;,
+&apos;Money3&apos;, &apos;Money3&apos;,
+&apos;LoanU&apos;, &apos;United Loan Solutions Pty Ltd / Gedda Money&apos;,
+&apos;Pepper&apos;, &apos;Pepper Asset Finance Pty Ltd&apos;,
+&apos;Liberty&apos;, &apos;Liberty Financial Pty Ltd&apos;,
+&apos;Macquarie&apos;, &apos;Macquarie Leasing Pty Ltd&apos;,
+&apos;Angle&apos;, &apos;Angle Finance&apos;,
+&apos;Metro&apos;, &apos;Metro Finance Pty Limited&apos;,
+&apos;Latitude&apos;, &apos;Latitude&apos;,
+&apos;Grow&apos;, &apos;Grow Finance Group Pty Ltd&apos;,
+&apos;Alex Bank&apos;, &apos;Alex Bank Pty Ltd&apos;,
+&apos;CarStart&apos;, &apos;Credit Corp Financial Services Pty Limited T/A CarStart&apos;,
+&apos;Selfco&apos;, &apos;Specialist Equipment Leasing Finance Company Pty Ltd t/as SELFCO&apos;,
+&apos;Shift&apos;, &apos;Shift Financial Pty Ltd&apos;,
+&apos;Medfin&apos;, &apos;Medfin Australia Pty Ltd&apos;,
+&apos;BOQ&apos;, &apos;Bank of Queensland Limited&apos;,
+&apos;Azora&apos;, &apos;Azora Finance Group Pty Ltd&apos;,
+&apos;Scottish Pacific&apos;, &apos;Scottish Pacific Group Limited&apos;,
+&apos;Affordable Car Loans&apos;, &apos;Affordable Car Loans Pty Ltd&apos;,
+&apos;OurMoneyMarket&apos;, &apos;OurMoneyMarket Pty Ltd&apos;,
+&apos;Westpac&apos;, &apos;WESTPAC BANKING CORPORATION&apos;,
+&apos;AMMF&apos;, &apos;Australian Motorcycle and Marine Finance Pty Ltd&apos;,
+&apos;Grow Consumer&apos;, &apos;Grow Finance Group Pty Ltd&apos;,
+TEXT(Lender__c))</formula>
+    <label>Lender Legal Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

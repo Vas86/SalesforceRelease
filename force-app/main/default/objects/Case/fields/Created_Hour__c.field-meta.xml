@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_Hour__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(
+    ISBLANK( $User.Summertime_Start_Offset__c ),
+
+    CreatedDate&lt; DATETIMEVALUE(DATE(YEAR(DATEVALUE(CreatedDate)),MONTH($User.Summertime_Start_Date__c),DAY($User.Summertime_Start_Date__c))
+    -(WEEKDAY(DATE(YEAR(DATEVALUE(CreatedDate)),MONTH($User.Summertime_Start_Date__c),DAY($User.Summertime_Start_Date__c)))-1)) + $User.Summertime_Start_Offset__c /24,
+
+    CreatedDate&gt;=
+    DATETIMEVALUE(DATE(YEAR(DATEVALUE(CreatedDate)),MONTH($User.Wintertime_Start_Date__c),DAY($User.Wintertime_Start_Date__c))
+    -(WEEKDAY(DATE(YEAR(DATEVALUE(CreatedDate)),MONTH($User.Wintertime_Start_Date__c),DAY($User.Wintertime_Start_Date__c)))-1))+$User.Wintertime_Start_Offset__c/24
+
+    ),
+
+    HOUR(TIMEVALUE(CreatedDate+$User.GMT_Offset__c /24))
+    +IF( AND($User.Southern_Hemisphere__c, NOT(ISBLANK( $User.Summertime_Start_Offset__c ))),1,0)
+    -IF(HOUR(TIMEVALUE(CreatedDate+ $User.GMT_Offset__c /24))
+    +IF( AND($User.Southern_Hemisphere__c, NOT(ISBLANK( $User.Summertime_Start_Offset__c ))),1,0)&gt;23,24,0)
+
+    ,
+    HOUR(TIMEVALUE(CreatedDate+(1+ $User.GMT_Offset__c )/24))
+    -IF( AND($User.Southern_Hemisphere__c, NOT(ISBLANK( $User.Summertime_Start_Offset__c ))),1,0)
+    -IF(HOUR(TIMEVALUE(CreatedDate+(1+ $User.GMT_Offset__c )/24))
+    -IF( AND($User.Southern_Hemisphere__c, NOT(ISBLANK( $User.Summertime_Start_Offset__c ))),1,0)&gt;23,24,0)
+
+    )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Created Hour</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

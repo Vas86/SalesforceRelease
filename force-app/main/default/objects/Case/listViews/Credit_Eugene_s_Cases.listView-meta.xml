@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Eugene_s_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Lender__c</columns>
+    <columns>Assessment_Quality__c</columns>
+    <columns>Set_follow_up_date__c</columns>
+    <columns>Credit_Agent__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Partner_Account__c</columns>
+    <columns>Under_Review_Date__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>contains</operation>
+        <value>Under Review,Lodged,Withdrawn,Declined</value>
+    </filters>
+    <filters>
+        <field>Under_Review_Date__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Credit - Eugene&apos;s Cases</label>
+</ListView>

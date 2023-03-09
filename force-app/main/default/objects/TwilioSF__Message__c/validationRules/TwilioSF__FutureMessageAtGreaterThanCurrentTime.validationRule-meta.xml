@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TwilioSF__FutureMessageAtGreaterThanCurrentTime</fullName>
+    <active>true</active>
+    <description>If user scheduling the message, and Schedule time is less than current time then system will throw this validation.</description>
+    <errorConditionFormula>AND(TwilioSF__Send_Future_Message__c, AND((!ISBLANK(TwilioSF__Send_Future_Message_At__c)),TwilioSF__Send_Future_Message_At__c  &lt; NOW()))</errorConditionFormula>
+    <errorDisplayField>TwilioSF__Send_Future_Message_At__c</errorDisplayField>
+    <errorMessage>Send Future Message At must be greater than current time.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Fallback_SenderId__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Fallback sender id would be used if a sender id corresponding to criteria can&apos;t be found. Not specifying this field would fail messages for records where sender selection criteria didn&apos;t return a valid sender id</description>
+    <externalId>false</externalId>
+    <label>Fallback SenderId</label>
+    <referenceTo>smagicinteract__SMS_SenderId__c</referenceTo>
+    <relationshipLabel>Converse App Action</relationshipLabel>
+    <relationshipName>Converse_App_Action</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

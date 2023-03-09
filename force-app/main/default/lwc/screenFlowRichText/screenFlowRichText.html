@@ -1,0 +1,11 @@
+<template>
+    <template if:true={recordValue}>
+        <!--<lightning-input-rich-text value={recordValue} label={fieldLabel} label-visible required={required}
+            formats={allowedFormats} valid={validity} class="visibleLines" onchange={handleChange}
+            share-with-entity-id={recordId} message-when-bad-input={errorMessage}>
+        </lightning-input-rich-text>-->
+        <lightning-textarea label={fieldLabel} value={recordValue} validity={validity} class="visibleLines"
+            required={required} message-when-bad-input={errorMessage} onchange={handleChange}></lightning-textarea>
+    </template>
+
+</template>

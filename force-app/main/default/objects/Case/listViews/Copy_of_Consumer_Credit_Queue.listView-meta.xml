@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Consumer_Credit_Queue</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4) AND 5</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Lender__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>Assessment_Quality__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Partner_Account__c</columns>
+    <columns>Credit_Agent__c</columns>
+    <columns>Comprehensive_Score__c</columns>
+    <columns>Under_Review_Date__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sub_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Follow up Date Set,Declinature Sent</value>
+    </filters>
+    <filters>
+        <field>Loan_Class__c</field>
+        <operation>equals</operation>
+        <value>Consumer</value>
+    </filters>
+    <filters>
+        <field>Under_Review_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>2/20/2022</value>
+    </filters>
+    <filters>
+        <field>Under_Review_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Partner_Account__c</field>
+        <operation>equals</operation>
+        <value>CARS24</value>
+    </filters>
+    <label>Pran queue test</label>
+</ListView>

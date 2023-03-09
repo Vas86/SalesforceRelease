@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>18</activeVersionNumber>
+    <description>When an email comes in, the Case Status gets changed to Chase for Status&apos; Awaiting documentations and received. If the Sub Status is Under Review, then the Sub Status will be Correspondence Received.</description>
+    <masterLabel>When email comes in to Case, Update Status to Substatus</masterLabel>
+</FlowDefinition>

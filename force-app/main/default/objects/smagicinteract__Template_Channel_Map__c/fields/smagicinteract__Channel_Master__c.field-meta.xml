@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Channel_Master__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Channel Master</label>
+    <referenceTo>smagicinteract__Channel_Master__c</referenceTo>
+    <relationshipLabel>Template Channels Map</relationshipLabel>
+    <relationshipName>Template_Channels_Map</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

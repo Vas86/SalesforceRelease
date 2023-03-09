@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__SMS_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Template attached to Confirmation Config for Multi Channel</description>
+    <externalId>false</externalId>
+    <label>Converse Template</label>
+    <referenceTo>smagicinteract__SMS_Template__c</referenceTo>
+    <relationshipLabel>Confirmation Configs</relationshipLabel>
+    <relationshipName>Confirmation_Configs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

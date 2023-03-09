@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__noOfDaysForCutOffDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the value of the number of days for search on outgoing recieptent can be done to map to an incoming sender.</description>
+    <externalId>false</externalId>
+    <label>noOfDaysForCutOffDate</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

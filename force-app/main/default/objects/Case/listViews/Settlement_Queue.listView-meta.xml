@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Settlement_Queue</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Lender__c</columns>
+    <columns>Partner_Account__c</columns>
+    <columns>Credit_Agent_First_Name__c</columns>
+    <columns>Settlement_Agent_First_Name__c</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>Checkout_Date__c</columns>
+    <columns>Is_Finance_First__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Conditionally Approved,Approved</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>Settlement Queue</value>
+    </filters>
+    <label>Settlement Queue</label>
+    <sharedTo>
+        <group>Settlements_Managers</group>
+    </sharedTo>
+</ListView>

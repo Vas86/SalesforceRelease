@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Andrew_All_Lodged_Follow_Up_Queue</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Lender__c</columns>
+    <columns>Partner_Account__c</columns>
+    <columns>Lodgement_Date__c</columns>
+    <columns>Credit_Agent__c</columns>
+    <columns>Loan_Processor__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sub_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Call 1 Made,Call 2 Made,Follow up Date,Declinature Sent,Settlement in Progress,Settled,Withdrawn</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Lodged</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notEqual</operation>
+        <value>michael</value>
+    </filters>
+    <filters>
+        <field>Lodgement_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>5/1/2022</value>
+    </filters>
+    <label>Loan Processor Lodgement Follow Up</label>
+</ListView>

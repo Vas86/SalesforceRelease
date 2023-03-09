@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Living_situation__c</fullName>
+    <externalId>false</externalId>
+    <label>Living Situation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Renting</fullName>
+                <default>false</default>
+                <label>Renting</label>
+            </value>
+            <value>
+                <fullName>Renting But Own Property</fullName>
+                <default>false</default>
+                <label>Renting But Own Property</label>
+            </value>
+            <value>
+                <fullName>Owner With Mortgage</fullName>
+                <default>false</default>
+                <label>Owner With Mortgage</label>
+            </value>
+            <value>
+                <fullName>Owner Without Mortgage</fullName>
+                <default>false</default>
+                <label>Owner Without Mortgage</label>
+            </value>
+            <value>
+                <fullName>Living With Parents</fullName>
+                <default>false</default>
+                <label>Living With Parents</label>
+            </value>
+            <value>
+                <fullName>Board</fullName>
+                <default>false</default>
+                <label>Board</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

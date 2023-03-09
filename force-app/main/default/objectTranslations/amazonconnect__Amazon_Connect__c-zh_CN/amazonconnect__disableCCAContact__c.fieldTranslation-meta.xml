@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>选择启用或禁用 AC_AssociateCCAContact 触发器，该触发器将联系人与联系人渠道分析记录相关联。</help>
+    <label></label>
+    <name>amazonconnect__disableCCAContact__c</name>
+</CustomFieldTranslation>

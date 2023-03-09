@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Template__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Master detail relationship with Converse templates</description>
+    <externalId>false</externalId>
+    <label>Converse Template</label>
+    <referenceTo>smagicinteract__SMS_Template__c</referenceTo>
+    <relationshipLabel>Template Short Link Maps</relationshipLabel>
+    <relationshipName>Template_Short_Link_Maps</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

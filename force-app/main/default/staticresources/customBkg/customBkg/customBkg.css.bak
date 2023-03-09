@@ -1,0 +1,33 @@
+.customColorBackground .slds-tabs_scoped__nav{
+	background-color: #000;
+    color: #76a48e;
+    text-decoration: none;
+    --uiBgColor: black;
+    --uiBgColorHover: #a41c2f;
+    --backgroundColorActive: black;
+    --lwc-colorBackground: var(--backgroundColor);
+    --lwc-colorBackgroundAlt: var(--backgroundColorActive);
+    --lwc-colorBackgroundPathIncompleteHover: var(--uiBgColorHover);
+    --lwc-colorTextActionLabelActive: #76a48e;
+    --lwc-brandTextLinkActive: #76a48e;
+    --lwc-brandTextLink: #76a48e;
+    --lwc-colorTextIconDefault: black;
+    --lwc-colorTextActionLabel: #76a48e;
+}
+
+.customColorBackground .slds-tabs_scoped__link{
+	border: none !important;
+}
+
+.customColorBackground .slds-tabs_scoped__link, .customColorBackground .slds-tabs--scoped__link{
+	height: 2.25rem ;
+    line-height: 22px;
+    padding: 7px;
+}
+
+.customColorBackground .slds-tabs_scoped__item:first-child .slds-tabs_scoped__link, 
+.customColorBackground .slds-tabs_scoped__item:first-child .slds-tabs--scoped__link, 
+.customColorBackground .slds-tabs--scoped__item:first-child .slds-tabs_scoped__link, 
+.customColorBackground .slds-tabs--scoped__item:first-child .slds-tabs--scoped__link {
+   border-radius: 5px;
+}

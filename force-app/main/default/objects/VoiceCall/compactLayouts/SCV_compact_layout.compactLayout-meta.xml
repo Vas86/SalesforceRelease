@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCV_compact_layout</fullName>
+    <fields>FromPhoneNumber</fields>
+    <fields>CallerId</fields>
+    <fields>RecipientId</fields>
+    <fields>RelatedRecordId</fields>
+    <fields>CallStartDateTime</fields>
+    <fields>CallDurationInSeconds</fields>
+    <fields>CallType</fields>
+    <label>SCV_compact_layout</label>
+</CompactLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <description>Updates to Require Driva Action when Follow Up Date Set</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>body</name>
+        <dataType>String</dataType>
+        <expression>&quot;Follow up date: &quot; + TEXT(DAY(DATEVALUE($Record.Set_follow_up_date__c )))+&quot;/&quot; +TEXT(MONTH(DATEVALUE($Record.Set_follow_up_date__c ) ))+&quot;/&quot; +TEXT(YEAR(DATEVALUE($Record.Set_follow_up_date__c ))) + &quot;, &quot; +  IF( 
+OR( 
+ VALUE( MID( TEXT( $Record.Set_follow_up_date__c + (11/24)), 12, 2 ) ) = 0, 
+ VALUE( MID( TEXT( $Record.Set_follow_up_date__c + (11/24) ), 12, 2 ) ) = 12 
+), 
+  &quot;12&quot;, 
+ TEXT( VALUE( MID( TEXT( $Record.Set_follow_up_date__c + (11/24) ), 12, 2 ) ) 
+ - 
+IF( 
+VALUE( MID( TEXT( $Record.Set_follow_up_date__c + (11/24)), 12, 2 ) ) &lt; 12, 
+  0, 
+  12 
+  ) 
+ ) 
+) 
+&amp; &quot;:&quot; &amp; 
+MID( TEXT( $Record.Set_follow_up_date__c + (11 /24)), 15, 2 ) 
+&amp; &quot; &quot; &amp; 
+IF( 
+ VALUE( MID( TEXT( $Record.Set_follow_up_date__c + (11 /24)), 12, 2 ) ) &lt; 12, 
+ &quot;am&quot;, 
+ &quot;pm&quot; 
+)</expression>
+    </formulas>
+    <interviewLabel>RT {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>RT - Follow Up Date Set</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Feed</name>
+        <label>Create Feed</label>
+        <locationX>308</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Body</field>
+            <value>
+                <elementReference>body</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CreatedById</field>
+            <value>
+                <stringValue>0055g00000Cg0cNAAR</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>FeedItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Update_Case_to_RDA</name>
+        <label>Update Case to RDA</label>
+        <locationX>308</locationX>
+        <locationY>288</locationY>
+        <connector>
+            <targetReference>Create_Feed</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Withdrawn</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Correspondence Received</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Document Received</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Requires Driva Action</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Follow_Up_Time_Due</name>
+            <connector>
+                <targetReference>Update_Case_to_RDA</targetReference>
+            </connector>
+            <label>Follow Up Time Due</label>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <recordField>Set_follow_up_date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__Provider_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Provider Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>OptIn Registered</fullName>
+                <default>false</default>
+                <label>OptIn Registered</label>
+            </value>
+            <value>
+                <fullName>OptOut Registered</fullName>
+                <default>false</default>
+                <label>OptOut Registered</label>
+            </value>
+            <value>
+                <fullName>OptIn Error</fullName>
+                <default>false</default>
+                <label>OptIn Error</label>
+            </value>
+            <value>
+                <fullName>OptOut Error</fullName>
+                <default>false</default>
+                <label>OptOut Error</label>
+            </value>
+            <value>
+                <fullName>OptIn Submitted</fullName>
+                <default>false</default>
+                <label>OptIn Submitted</label>
+            </value>
+            <value>
+                <fullName>OptOut Submitted</fullName>
+                <default>false</default>
+                <label>OptOut Submitted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

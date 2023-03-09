@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Conversation meeting criteria will be assigned to which sender.</description>
+    <label>Conversation Assignment</label>
+    <pluralLabel>Conversation Assignments</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

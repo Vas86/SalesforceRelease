@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smagicinteract__OptOutDisclaimerInterval__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Number of days after which the disclaimer needs to be auto appended to be stored here.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Auto append in an Interval of n Days.</inlineHelpText>
+    <label>OptOutDisclaimerInterval</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

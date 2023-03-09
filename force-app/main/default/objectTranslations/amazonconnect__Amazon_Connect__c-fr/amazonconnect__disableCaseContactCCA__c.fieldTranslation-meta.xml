@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Choisissez d&apos;activer ou de désactiver le déclencheur AC_AssociateCaseContactCCA, qui associe les cas et les contacts à un enregistrement d&apos;analytique de la méthode de contact.</help>
+    <label></label>
+    <name>amazonconnect__disableCaseContactCCA__c</name>
+</CustomFieldTranslation>
